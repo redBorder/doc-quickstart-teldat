@@ -1,0 +1,33 @@
+:doctype: book
+:author: redborder
+:copyrights: GNU Affero General Public License
+:lang: es
+:docinfo:
+:revnumber: 0.1.0
+:keywords: redborder, teldat, quickstart, guide, manual
+:toc:
+:toc-title: Índice
+:toclevels: 3
+:toc-position: left
+:nofooter:
+:header:
+:imagesdir: imagenes
+:icons: font
+:table-caption: Tabla
+:stem: latexmath
+
+= redborder quickstart - Teldat
+
+include::chapters/01-install.adoc[]
+
+include::chapters/02-license.adoc[]
+
+include::chapters/03-users.adoc[]
+
+include::chapters/04-sensors.adoc[]
+
+include::chapters/05-data-visualization.adoc[]
+
+include::chapters/06-dashboards.adoc[]
+
+include::chapters/07-update.adoc[]

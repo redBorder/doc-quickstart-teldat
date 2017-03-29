@@ -1,0 +1,13 @@
+== Capítulo 7: Actualización del cluster
+
+En este capítulo se describe el procedimiento para actualizar un cluster de servidores Manager de redborder.
+
+El procedimiento será diferente en función de si se cuenta o no con conexión a Internet desde el cluster de redborder.
+
+
+=== Actualización desde repositorio remoto
+
+
+=== Actualización desde ISO (offline mode)
+
+Para realizar la actualización de un cluster que no tiene acceso a Internet será necesario contar previamente con la ISO de redBorder de la versión a la que se desea actualizar. A partir de la ISO se realizará una actualización del repositorio local del nodo master del cluster, el cual será usado por los restantes nodos que conforman el cluster.
