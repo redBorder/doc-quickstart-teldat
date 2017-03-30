@@ -7,7 +7,134 @@ El procedimiento será diferente en función de si se cuenta o no con conexio�
 
 === Actualización desde repositorio remoto
 
+Para realizar la actualización de un cluster en el que se dispone de acceso a Internet no será necesario contar previamente
+con una ISO de redborder. Tan sólo tendremos que ejecutar el script rb_cluster_update.sh en el nodo manager.
+
+----
+# rb_cluster_update.sh
+----
+
+
+En primer lugar nos preguntará qué paquetes deseamos actualizar.
+Podemos optar por actualizar los paquetes del sistema, o los paquetes de redborder
+(lo cual supone la actualización de redborder).
+En este caso serán los paquetes de redBorder (opción 2).
+
+----
+##################################################################
+#  redBorder cluster ready to be updated
+##################################################################
+Which packages would you like to update:
+   1.- system packages
+   2.- redBorder packages
+   3.- both
+   4.- nothing
+Choose an option: 2
+----
+
+A continuación podremos indicar si deseamos actualizar desde un repositorio remoto
+(para lo cual necesitamos conexión a internet), o desde un repositorio local.
+
+En este caso nos interesa actualizar el sistema desde un repositorio remoto, por indicaremos la opción 1.
+
+----
+Available repositories:
+   1.- remote (repo: http://repo.redborder.com)
+   2.- local
+Choose an option: 1
+----
+
+En el siguiente paso, tras detectar la versión actual del sistema, se preguntará por la versión a la que se desea actualizar,
+a partir de las que se tenga disponible en el repositorio remoto.
+
+----
+Detecting available redBorder versions:                    [  OK  ]
+ 1.-  3.1.79-5
+Choose a valid version: 1
+----
+
+A continuación el script nos mostrará el orden en que se vana actualizar los nodos del cluster.
+
+----
+INFO: The following nodes will be updated in the following order:
+   * node1
+   * node2
+   * node3
+Are you sure you want to continue? (y/N) y
+----
+
+A partir de este momento se procederá a realizar la actualización del cluster.
 
 === Actualización desde ISO (offline mode)
 
-Para realizar la actualización de un cluster que no tiene acceso a Internet será necesario contar previamente con la ISO de redBorder de la versión a la que se desea actualizar. A partir de la ISO se realizará una actualización del repositorio local del nodo master del cluster, el cual será usado por los restantes nodos que conforman el cluster.
+Para realizar la actualización de un cluster que no tiene acceso a Internet será necesario contar previamente con
+la ISO de redBorder de la versión a la que se desea actualizar. A partir de la ISO se realizará una actualización
+del repositorio local del nodo master del cluster, el cual será usado por los restantes nodos que conforman el cluster.
+
+Lo primero a realizar es ejecutar el script ​*rb_cluster_update.sh*
+
+Una vez se ejecute el script rb_cluster_update.sh entraremos en un “wizard” donde
+seremos guiados para realizar la actualización.
+
+En primer lugar nos preguntará qué paquetes deseamos actualizar. Podemos optar por actualizar los paquetes del sistema,
+o los paquetes de redborder (lo cual supone la actualización de redborder).
+
+En este caso serán los paquetes de redBorder (opción 2).
+
+----
+##################################################################
+#  redBorder cluster ready to be updated
+##################################################################
+Which packages would you like to update:
+   1.- system packages
+   2.- redBorder packages
+   3.- both
+   4.- nothing
+Choose an option: 2
+----
+
+A continuación podremos indicar si deseamos actualizar desde un repositorio remoto (para lo cual necesitamos conexión a internet),
+o desde un repositorio local.
+
+En este caso nos interesa actualizar el sistema desde un repositorio local, por indicaremos la opción 2.
+
+----
+Available repositories:
+   1.- remote (repo: http://repo.redborder.com)
+   2.- local
+Choose an option: 2
+----
+
+A continuación el programa nos preguntará si deseamos actualizar el repositorio local a partir de una ISO de redborder.
+Esto nos permitirá incluir una nueva versión de redBorder en el repositorio local y tenerla disponible para que sea usada
+por todos los nodos del cluster.
+
+----
+Would you like to update local repo from a new ISO file? (y/N) y
+
+Set redBorder ISO path: /tmp/redBorder-3.1.79-5-x86_64-6.5-enterprise.iso
+
+Mounting ISO and copying files in local repo
+----
+
+En el siguiente paso, tras detectar la versión actual del sistema, se preguntará por la versión a la que se desea actualizar,
+a partir de las que se tenga disponible en el repositorio local.
+
+----
+Detecting available redBorder versions:                    [  OK  ]
+ 1.-  3.1.79-5
+Choose a valid version: 1
+----
+
+Una vez seleccionamos la versión a actualizar, el programa nos informará de los nodos del cluster que van a ser actualizados
+y nos pedirá confirmación antes de comenzar el proceso.
+
+----
+INFO: The following nodes will be updated in the following order:
+   * node1
+   * node2
+   * node3
+Are you sure you want to continue? (y/N) y
+----
+
+A partir de este momento se procederá a realizar la actualización del cluster.
