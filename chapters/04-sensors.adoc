@@ -6,17 +6,16 @@ En este capítulo se describe el procedimiento para agregar nuevos sensores al M
 En este caso encontraremos:
 
 * *Submenú de la sección*: en la que se encuentra las opciones disponibles para la configuración y gestión de los sensores.
-  - Opciones (*Options*)
-  - Añadir sensor (*+Add sensor*)
-  - Añadir dominio (*+Add domain*)
-  - Vista (*View*)
+** Opciones (*Options*)
+** Añadir sensor (*+Add sensor*)
+** Añadir dominio (*+Add domain*)
+** Vista (*View*)
 * *Área principal*: la información que se muestra en este área dependenrá de la vista seleccionada en *View*. Existen tres vistas disponibles para visualizar la organización de los sensores registrados en el Manager:
-  - Árbol (*Tree*): listado que muestra la infraestructura de red según niveles de jerarquía y dependencia entre los elementos que la componen.
-
-  Al lado de cada uno de los elementos se muestran dos iconos que permiten realizar las acciones de edición y borrado de los mismos. Esta es la vista que se muestra por defecto.
-
-  - Proxis clientes (*Client Proxies*):
-  - Sensores flow (*Flow sensors*):
+** Árbol (*Tree*): listado que muestra la infraestructura de red según niveles de jerarquía y dependencia entre los elementos que la componen.
++
+Al lado de cada uno de los elementos se muestran dos iconos que permiten realizar las acciones de edición y borrado de los mismos. Esta es la vista que se muestra por defecto.
+** Proxis clientes (*Client Proxies*):
+** Sensores flow (*Flow sensors*):
 
 TIP: Cada vista presenta su propio menú de opciones y las diferentes posibilidades de creación y edición de sensores o dominios.
 
