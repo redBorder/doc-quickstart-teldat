@@ -26,7 +26,7 @@ Para añadir un sensor seleccionar la opción *+Add Sensor*. En el menú despleg
 
 Seleccione el tipo de sensor en el menú desplegable y a continuación, complete la información que se solicita.
 
-image:../images/add_sensors_dialog.png[]
+image:../images/sensors/add_sensors_dialog.png[]
 
 
 [IMPORTANT]
@@ -37,3 +37,10 @@ El usuario puede organizar su infraestructura de sensores en cualquier momento, 
 
 El sensor heredará de manera automática las propiedades del dominio raíz.
 =================================
+
+=== 4.3 Añadir un dominio
+
+Para añadir un dominio seleccionar la opción *+Add Domain* que se encuentra en el submenú superior derecha, elegir el tipo de dominio que se quiere añadir, y a continuación, rellenar los campos requeridos (estos variarán según el tipo de dominio a crear)
+
+image:../images/sensors/add_domain_menu.png[]
+image:../images/sensors/add_domain_dialog.png[]
