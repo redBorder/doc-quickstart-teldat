@@ -16,6 +16,24 @@ En este caso encontraremos:
   Al lado de cada uno de los elementos se muestran dos iconos que permiten realizar las acciones de edición y borrado de los mismos. Esta es la vista que se muestra por defecto.
 
   - Proxis clientes (*Client Proxies*):
-  - Sensores flow (*Flow sensors*): 
+  - Sensores flow (*Flow sensors*):
 
 TIP: Cada vista presenta su propio menú de opciones y las diferentes posibilidades de creación y edición de sensores o dominios.
+
+=== 4.2 Añadir un sensor
+
+Para añadir un sensor seleccionar la opción *+Add Sensor*. En el menú desplegable se muestran los diferentes tipos de sensores que pueden añadirse al árbol.
+
+Seleccione el tipo de sensor en el menú desplegable y a continuación, complete la información que se solicita.
+
+image:../images/add_sensors_dialog.png[]
+
+
+[IMPORTANT]
+=================================
+En el momento en el que se crea un sensor en redBorder este pasa, por defecto, a colocarse como raíz, por encima del nivel de dominio.
+
+El usuario puede organizar su infraestructura de sensores en cualquier momento, arrastrando y soltando el sensor en el nivel en el que se quiera colocar.
+
+El sensor heredará de manera automática las propiedades del dominio raíz.
+=================================
