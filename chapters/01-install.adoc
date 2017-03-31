@@ -1,9 +1,9 @@
 == Capítulo 1: Instalación de Teldat Visualizer
 
-=== Instalación
-
 En este capítulo se describe el proceso para realizar una instalación de Teldat Visualizer Enterprise. En lo que resta de
 la presente documentación nos referiremos a la máquina donde se va a instalar Teldat Visualizer como *manager*.
+
+=== Instalación
 
 Para la instalación del manager, el usuario dispondrá de una imagen ISO con la que se deberá arrancar la máquina
 en la que se va a instalar.
