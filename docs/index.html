@@ -712,7 +712,14 @@ b.conum * { color: inherit !important; }
 <li><a href="#_capítulo_1_instalación">Capítulo 1: Instalación</a></li>
 <li><a href="#_capítulo_2_licencias">Capítulo 2: Licencias</a></li>
 <li><a href="#_capítulo_3_gestión_de_usuarios">Capítulo 3: Gestión de usuarios</a></li>
-<li><a href="#_capítulo_4_sensores">Capítulo 4: Sensores</a></li>
+<li><a href="#_capítulo_4_sensores">Capítulo 4: Sensores</a>
+<ul class="sectlevel2">
+<li><a href="#_4_1_sensors_menú_y_opciones">4.1 Sensors: menú y opciones</a></li>
+<li><a href="#_4_2_añadir_un_sensor">4.2 Añadir un sensor</a></li>
+<li><a href="#_4_3_añadir_un_dominio">4.3 Añadir un dominio</a></li>
+<li><a href="#_4_4_editar_un_dominio">4.4 Editar un dominio</a></li>
+</ul>
+</li>
 <li><a href="#_capítulo_5_visualización_de_datos">Capítulo 5: Visualización de datos</a></li>
 <li><a href="#_capítulo_6_dashboards">Capítulo 6: Dashboards</a></li>
 <li><a href="#_capítulo_7_actualización_del_cluster">Capítulo 7: Actualización del cluster</a>
@@ -746,7 +753,167 @@ b.conum * { color: inherit !important; }
 <div class="sect1">
 <h2 id="_capítulo_4_sensores">Capítulo 4: Sensores</h2>
 <div class="sectionbody">
-
+<div class="paragraph">
+<p>En este capítulo se describe el procedimiento para agregar nuevos sensores y dominios al Manager de redborder.</p>
+</div>
+<div class="paragraph">
+<p><strong>Sensors</strong> se encuentra disponible en el margen superior derecho del menú de cabecera, junto a la sección <strong>Tools</strong> y la zona de usuario.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/sensors/sensors_menu.png" alt="sensors menu">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_1_sensors_menú_y_opciones">4.1 Sensors: menú y opciones</h3>
+<div class="paragraph">
+<p>En este apartado se introduce de forma breve al menú <strong>Sensors</strong> y sus correspondientes opciones:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Submenú de la sección</strong>: en la que se encuentra las opciones disponibles para la configuración y gestión de los sensores.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Opciones (<strong>Options</strong>)</p>
+</li>
+<li>
+<p>Añadir sensor (<strong>+Add sensor</strong>)</p>
+</li>
+<li>
+<p>Añadir dominio (<strong>+Add domain</strong>)</p>
+</li>
+<li>
+<p>Vista (<strong>View</strong>)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Área principal</strong>: la información que se muestra en este área dependenrá de la vista seleccionada en <strong>View</strong>. Existen tres vistas disponibles para visualizar la organización de los sensores registrados en el Manager:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Árbol (<strong>Tree</strong>): listado que muestra la infraestructura de red según niveles de jerarquía y dependencia entre los elementos que la componen.</p>
+<div class="paragraph">
+<p>Al lado de cada uno de los elementos se muestran dos iconos que permiten realizar las acciones de edición y borrado de los mismos. Esta es la vista que se muestra por defecto.</p>
+</div>
+</li>
+<li>
+<p>Proxis clientes (<strong>Client Proxies</strong>): listado que muestra los proxies clientes por orden alfabético</p>
+</li>
+<li>
+<p>Sensores Flow (<strong>Flow sensors</strong>): listado que muestra los sensores de tipo flow por orden alfabético.</p>
+</li>
+<li>
+<p>Sensores IPS (<strong>IPS sensors</strong>): listado que muestra los sensores de tipo IPS por orden alfabético.</p>
+</li>
+<li>
+<p>Sensores de Social (<strong>Social sensors</strong>): listado que muestra los sensores de tipo Social por orden alfabético.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Cada vista presenta su propio menú de opciones y las diferentes posibilidades de creación y edición de sensores o dominios.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_2_añadir_un_sensor">4.2 Añadir un sensor</h3>
+<div class="paragraph">
+<p>Para añadir un sensor debe seleccionar la opción <strong>+Add Sensor</strong>. En el menú desplegable se muestran los diferentes tipos de sensores que pueden añadirse al árbol.</p>
+</div>
+<div class="paragraph">
+<p>Seleccione el tipo de sensor en el menú desplegable y a continuación, complete la información que se solicita.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/sensors/add_sensors_dialog.png" alt="add sensors dialog">
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>En el momento en el que se crea un sensor en redBorder este pasa, por defecto, a colocarse como raíz, por encima del nivel de dominio.</p>
+</div>
+<div class="paragraph">
+<p>El usuario puede organizar su infraestructura de sensores en cualquier momento, arrastrando y soltando el sensor en el nivel en el que se quiera colocar.</p>
+</div>
+<div class="paragraph">
+<p>El sensor heredará de manera automática las propiedades del dominio raíz.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_3_añadir_un_dominio">4.3 Añadir un dominio</h3>
+<div class="paragraph">
+<p>Para añadir un dominio debe seleccionar la opción <strong>+Add Domain</strong> que se encuentra en el submenú superior derecha, elegir el tipo de dominio que se quiere añadir, y a continuación, rellenar los campos requeridos (estos variarán según el tipo de dominio a crear)</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/sensors/add_domain_menu.png" alt="add domain menu">
+</div>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/sensors/add_domain_dialog.png" alt="add domain dialog">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_4_editar_un_dominio">4.4 Editar un dominio</h3>
+<div class="paragraph">
+<p>Para acceder a la edición de un dominio debe hacer clic en el icono "Editar" situado a la derecha del dominio que desea editar desde la vistsa de árbol y seleccionar la opción <strong>Edit</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Estos son algunos de los datos que se pueden editar en un dominio. Dependiendo del tipo de dominio que se seleccione, aparecerán unos campos u otros:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>General</strong>: muestra información general del sensor. Nombre (no editable desde la web), tipo de dominio y descripción.</p>
+</li>
+<li>
+<p><strong>Namespace Rules</strong>: permite añadir reglas que se aplicarán a nivel de dominio.</p>
+</li>
+<li>
+<p><strong>IPS/IDS Settings</strong>: permite configurar los parámetros generales de los sensores IPS/IDS que cuelgan del dominio. Esta será la configuración que hereden todos los sensores que se encuentren debajo de este dominio.</p>
+</li>
+<li>
+<p><strong>Servidores (Servers)</strong>: En este apartado el usuario puede definir la configuración de los servidores Proxy y Syslog. Todos los valores que se muestran son los heredados por defecto. Sobreescribir en caso de que sea necesario.</p>
+</li>
+<li>
+<p><strong>IP variables</strong>: en este apartado se muestran los valores para las variables IP Snort. Aquellas que sean heredadas de un nivel superior, aparecerán con un check en la casilla <strong>Inherited</strong>.</p>
+</li>
+<li>
+<p><strong>Variables de puerto (Port variables)</strong>: en este apartado se muestran los valores para las variables de los puertos Snort. Aquellas que sean heredadas de un nivel superior, aparecerán con un check en la casilla <strong>Inherited</strong></p>
+</li>
+<li>
+<p><strong>Localización (Location)</strong>:  Localiza el sensor o el dominio en un mapamundi.</p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
