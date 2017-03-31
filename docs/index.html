@@ -709,7 +709,12 @@ b.conum * { color: inherit !important; }
 <div id="toc" class="toc2">
 <div id="toctitle">Índice</div>
 <ul class="sectlevel1">
-<li><a href="#_capítulo_1_instalación">Capítulo 1: Instalación</a></li>
+<li><a href="#_capítulo_1_instalación_de_teldat_visualizer">Capítulo 1: Instalación de Teldat Visualizer</a>
+<ul class="sectlevel2">
+<li><a href="#_instalación">Instalación</a></li>
+<li><a href="#_configuración_inicial_wizard">Configuración inicial - Wizard</a></li>
+</ul>
+</li>
 <li><a href="#_capítulo_2_licencias">Capítulo 2: Licencias</a></li>
 <li><a href="#_capítulo_3_gestión_de_usuarios">Capítulo 3: Gestión de usuarios</a></li>
 <li><a href="#_capítulo_4_sensores">Capítulo 4: Sensores</a></li>
@@ -726,15 +731,350 @@ b.conum * { color: inherit !important; }
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_capítulo_1_instalación">Capítulo 1: Instalación</h2>
+<h2 id="_capítulo_1_instalación_de_teldat_visualizer">Capítulo 1: Instalación de Teldat Visualizer</h2>
 <div class="sectionbody">
-
+<div class="paragraph">
+<p>En este capítulo se describe el proceso para realizar una instalación de Teldat Visualizer Enterprise. En lo que resta de
+la presente documentación nos referiremos a la máquina donde se va a instalar Teldat Visualizer como <strong>manager</strong>.</p>
+</div>
+<div class="sect2">
+<h3 id="_instalación">Instalación</h3>
+<div class="paragraph">
+<p>Para la instalación del manager, el usuario dispondrá de una imagen ISO con la que se deberá arrancar la máquina
+en la que se va a instalar.</p>
+</div>
+<div class="paragraph">
+<p>Al iniciar el asistente de instalación tendrá acceso a un menú tal y como se muestra a continuación:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="images/install/install-01.png"><img src="images/install/install-01.png" alt="install-01"></a></span></p>
+</div>
+<div class="paragraph">
+<p>Seleccionamos "<strong>Install Teldat Visualizer</strong>" para comenzar la instalación.</p>
+</div>
+<div class="paragraph">
+<p>En pocos segundos nos aparecerá otro menú como el que se muestra a continuación:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="images/install/install-02.png"><img src="images/install/install-02.png" alt="install-02"></a></span></p>
+</div>
+<div class="paragraph">
+<p>En este paso el instalador nos preguntará la unidad de disco en la que deseamos realizar la instalación.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>La unidad seleccionada será formateada por el instalador</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>También en este menú se nos preguntará por la contraseña que deseamos configurar para el usuario "root" del sistema.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Por defecto la contraseña de root es "<strong>teldat</strong>"
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Tras esto se procederá a la instalación de los paquetes de instalación del software en el disco duro.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="images/install/install-03.png"><img src="images/install/install-03.png" alt="install-03"></a></span></p>
+</div>
+<div class="paragraph">
+<p>Espere hasta que lla instalación se haya completado al 100%. Este proceso puede durar unos minutos.</p>
+</div>
+<div class="paragraph">
+<p>Una vez finalizada la instalación, el sistema será reiniciado. Durante el primer arranque el sistema procederá
+a realizar una serie de acciones para configurarse por primera vez.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Este proceso puede tardar varios minutos</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Una vez que en la terminal nos apareczca la sigueinte imagen, ya podremos acceder.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="images/install/install-04.png"><img src="images/install/install-04.png" alt="install-04"></a></span></p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+LAs credenciales por defecto son "usuario: root / password: teldat"
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuración_inicial_wizard">Configuración inicial - Wizard</h3>
+<div class="paragraph">
+<p>Una vez hemos hecho login en el manager, debemos ejecutar el comando <strong>rb_sysconf</strong> para realizar la configuración inicial.</p>
+</div>
+<div class="paragraph">
+<p>Estas son las opciones que encontrará en la pantalla principal de este menú:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>System Configuration</strong>: configuración del hostname, IP del Manager, hora y estado del Manager.</p>
+</li>
+<li>
+<p><strong>Network Configuration</strong>: creación de bondings, segmentos, DNS, rutas e IPMI. Recuerde que, para poner en funcionamiento el Manager, se necesitan por lo menos dos conexiones de red.</p>
+</li>
+<li>
+<p><strong>Passwords</strong>: acceda a esta opción si desea modificar las contraseñas que haya definido por cada rol de usuario.</p>
+</li>
+<li>
+<p><strong>w) start simple wizard</strong>: inicia un asistente que le permitirá de forma sencilla y rápida realizar la instalación y configuración del Manager.</p>
+</li>
+<li>
+<p><strong>q) quit</strong>: Salir. Nos devuelve a la pantalla principal de configuración del sistema.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="images/install/install-05.png"><img src="images/install/install-05.png" alt="install-05"></a></span></p>
+</div>
+<div class="paragraph">
+<p>Para realizar la instalación automática del manager, usaremos la opción <strong>w) start simple wizard</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Como podrá comprobar, existen una serie de opciones definidas por defecto.
+Para aceptarlas tan solo tiene que pulsar Enter. No obstante, puede modificarlas manualmente
+en cualquier momento del proceso de instalación.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mode, Hostname, DNS y NTP</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Selected Mode: cluster. Seleccionar el modo cluster para unir más de un Manager.</p>
+</li>
+<li>
+<p>Insert Hostname [rbmanager]. La opción que viene definida por defecto es la de rbmanager. Este es un nombre que identifica de manera clara y sencilla al Manager y su posición dentro del cluster.</p>
+</li>
+<li>
+<p>Insert domain: [redborder.cluster]. Dominio definido por defecto.</p>
+</li>
+<li>
+<p>Insert DNS Primary. Definido por defecto. El usuario podrá cambiarlo para indicar el servidor que provee DNS a su red y al que estará asociado el Manager.</p>
+</li>
+<li>
+<p>Insert DNS Secondary (optional). Indicar DNS secundario de manera opcional. Se aconseja introducir un DNS alternativo que sustituya al DNS primario en caso de fallo del servidor</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Es importante que se utilicen diferentes nombres para cada uno de los Managers que se van a unir al cluster.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Una vez introducidos estos valores, el sistema le avisará de que los cambios han sido aplicados con éxito mediante el siguiente
+mensaje rotulado en verde: DNS and domain settings applied successfully.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="images/install/install-06.png"><img src="images/install/install-06.png" alt="install-06"></a></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Configuración de NTP y red de gestión</strong></p>
+</div>
+<div class="paragraph">
+<p>El siguiente paso es indicar el servidor de hora: <strong>NTP server [pool.ntp.org]:</strong>
+Si existe algún NTP server en su red, se debe indicar. En caso contrario, se asignará uno por defecto.</p>
+</div>
+<div class="paragraph">
+<p>Si sólo va a desplegar un manager, necesitará una única interfaz de red. Por el contrario, si va a desplegar un cluster
+con múltiples managers será necesario al menos reservar 2 interfaces de red.</p>
+</div>
+<div class="paragraph">
+<p>Para la creación de un cluster es necesario que el usuario reserve dos interfaces de red:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Una para la red de gestión (Management IP address)</p>
+</li>
+<li>
+<p>Otra para la red de sincronismo (Sync IP address)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>En cada una de estas interfaces se configurará un bonding de red.</p>
+</div>
+<div class="paragraph">
+<p>La configuración del bonding de gestión solicitará los siguientes datos:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Insert management IP address:</p>
+</li>
+<li>
+<p>Insert management Netmask</p>
+</li>
+<li>
+<p>Insert default gateway for this management interface (Y/n)</p>
+</li>
+<li>
+<p>Insert a route for this bonding (y/N)?: Opción para insertar una ruta estática.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Una vez introducidos estos valores, el sistema le avisará de que el bonding ha sido creado con éxito.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="images/install/install-07.png"><img src="images/install/install-07.png" alt="install-07"></a></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Configuración de red de sincronismo</strong></p>
+</div>
+<div class="paragraph">
+<p>Si hemos configurado la máquina con 2 interfaces de red, a continuación tendremos que configurar el bonding para
+la red de sincronismo.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="images/install/install-08.png"><img src="images/install/install-08.png" alt="install-08"></a></span></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Esta parte no aparecerá si sólo hemos configurado una interfaz de red en la máquina</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>Configuración de cluster y servicios externos</strong></p>
+</div>
+<div class="paragraph">
+<p>Como último paso se preguntan una serie de opciones de configuración relacionadas con la creación de un cluster de varios managers
+y la configuración de servicios fuera del manager.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="images/install/install-09.png"><img src="images/install/install-09.png" alt="install-09"></a></span></p>
+</div>
+<div class="paragraph">
+<p>Una vez finalizado, aceptamos y se iniciará el proceso de configuración.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Este proceso puede tardar varios minutos</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_capítulo_2_licencias">Capítulo 2: Licencias</h2>
 <div class="sectionbody">
-
+<div class="paragraph">
+<p>En este capítulo se describe el proceso para licenciar un manager de Teldat Visualizer.</p>
+</div>
+<div class="paragraph">
+<p>Es necesario disponer de una licencia válida para poder dar de alta sensores y visualizar datos. Si intentamos dar de alta
+un nuevo sensor sin disponer de una licencia válida, nos aparecerá un mensaje indicando que es necesario solictar una licencia.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="images/install/license-06.png"><img src="images/license/license-06.png" alt="license-06"></a></span></p>
+</div>
+<div class="paragraph">
+<p>Para acceder al menú de gestión de licencias tenemos que autenticarnos como administrador al manager.
+A través de la interfaz web nos dirigimos a Tools &#8594; Licenses</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="images/install/license-01.png"><img src="images/license/license-01.png" alt="license-01"></a></span></p>
+</div>
+<div class="paragraph">
+<p>Dentro de esta vista podemos gestionar las licencias que tenemos cargadas en el manager.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="images/install/license-02.png"><img src="images/license/license-02.png" alt="license-02"></a></span></p>
+</div>
+<div class="paragraph">
+<p>En una instalación nueva nos encontraremos esta vista como se muestra arriba, donde aún no se ha cargado ninguna licencia.</p>
+</div>
+<div class="paragraph">
+<p>Para obtener una licencia debemos de pulsa en el botón "Request license". Nos aparecerá un formulario donde tendremos que
+indicar la cantidad de MB diarios que se van a consumir y el número máximo de sensores de cada tipo.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="images/install/license-05.png"><img src="images/license/license-05.png" alt="license-05"></a></span></p>
+</div>
+<div class="paragraph">
+<p>Una vez dispongamos del archivo de licencia (extensión .lic), para cargarla pulsaremos en el botón "Upload license"
+y subiremos el archivo.</p>
+</div>
+<div class="paragraph">
+<p>A partir de este momento podremos ver la licencia cargada en ésta vista.</p>
+</div>
+<div class="paragraph">
+<p>Dentro de esta vista podemos ver todas las licencias que tenemos cargadas y activas, la cantidad de bytes diarios consumidos o
+el límite de sensores de cada tipo que podemos usar.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="images/install/license-04.png"><img src="images/license/license-04.png" alt="license-04"></a></span></p>
+</div>
+<div class="paragraph">
+<p>Un dato importante dentro de la vista de licencias es la cantidad de bytes diarios consumidos. Si superamos este valor
+automáticamente se dejarán de procesar eventos para los sensores asociados.</p>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -772,12 +1112,165 @@ b.conum * { color: inherit !important; }
 </div>
 <div class="sect2">
 <h3 id="_actualización_desde_repositorio_remoto">Actualización desde repositorio remoto</h3>
-
+<div class="paragraph">
+<p>Para realizar la actualización de un cluster en el que se dispone de acceso a Internet no será necesario contar previamente
+con una ISO de redborder. Tan sólo tendremos que ejecutar el script rb_cluster_update.sh en el nodo manager.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre># rb_cluster_update.sh</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>En primer lugar nos preguntará qué paquetes deseamos actualizar.
+Podemos optar por actualizar los paquetes del sistema, o los paquetes de redborder
+(lo cual supone la actualización de redborder).
+En este caso serán los paquetes de redBorder (opción 2).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>##################################################################
+#  redBorder cluster ready to be updated
+##################################################################
+Which packages would you like to update:
+   1.- system packages
+   2.- redBorder packages
+   3.- both
+   4.- nothing
+Choose an option: 2</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A continuación podremos indicar si deseamos actualizar desde un repositorio remoto
+(para lo cual necesitamos conexión a internet), o desde un repositorio local.</p>
+</div>
+<div class="paragraph">
+<p>En este caso nos interesa actualizar el sistema desde un repositorio remoto, por indicaremos la opción 1.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Available repositories:
+   1.- remote (repo: http://repo.redborder.com)
+   2.- local
+Choose an option: 1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>En el siguiente paso, tras detectar la versión actual del sistema, se preguntará por la versión a la que se desea actualizar,
+a partir de las que se tenga disponible en el repositorio remoto.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Detecting available redBorder versions:                    [  OK  ]
+ 1.-  3.1.79-5
+Choose a valid version: 1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A continuación el script nos mostrará el orden en que se vana actualizar los nodos del cluster.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>INFO: The following nodes will be updated in the following order:
+   * node1
+   * node2
+   * node3
+Are you sure you want to continue? (y/N) y</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A partir de este momento se procederá a realizar la actualización del cluster.</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_actualización_desde_iso_offline_mode">Actualización desde ISO (offline mode)</h3>
 <div class="paragraph">
-<p>Para realizar la actualización de un cluster que no tiene acceso a Internet será necesario contar previamente con la ISO de redBorder de la versión a la que se desea actualizar. A partir de la ISO se realizará una actualización del repositorio local del nodo master del cluster, el cual será usado por los restantes nodos que conforman el cluster.</p>
+<p>Para realizar la actualización de un cluster que no tiene acceso a Internet será necesario contar previamente con
+la ISO de redBorder de la versión a la que se desea actualizar. A partir de la ISO se realizará una actualización
+del repositorio local del nodo master del cluster, el cual será usado por los restantes nodos que conforman el cluster.</p>
+</div>
+<div class="paragraph">
+<p>Lo primero a realizar es ejecutar el script ​<strong>rb_cluster_update.sh</strong></p>
+</div>
+<div class="paragraph">
+<p>Una vez se ejecute el script rb_cluster_update.sh entraremos en un “wizard” donde
+seremos guiados para realizar la actualización.</p>
+</div>
+<div class="paragraph">
+<p>En primer lugar nos preguntará qué paquetes deseamos actualizar. Podemos optar por actualizar los paquetes del sistema,
+o los paquetes de redborder (lo cual supone la actualización de redborder).</p>
+</div>
+<div class="paragraph">
+<p>En este caso serán los paquetes de redBorder (opción 2).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>##################################################################
+#  redBorder cluster ready to be updated
+##################################################################
+Which packages would you like to update:
+   1.- system packages
+   2.- redBorder packages
+   3.- both
+   4.- nothing
+Choose an option: 2</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A continuación podremos indicar si deseamos actualizar desde un repositorio remoto (para lo cual necesitamos conexión a internet),
+o desde un repositorio local.</p>
+</div>
+<div class="paragraph">
+<p>En este caso nos interesa actualizar el sistema desde un repositorio local, por indicaremos la opción 2.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Available repositories:
+   1.- remote (repo: http://repo.redborder.com)
+   2.- local
+Choose an option: 2</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A continuación el programa nos preguntará si deseamos actualizar el repositorio local a partir de una ISO de redborder.
+Esto nos permitirá incluir una nueva versión de redBorder en el repositorio local y tenerla disponible para que sea usada
+por todos los nodos del cluster.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Would you like to update local repo from a new ISO file? (y/N) y
+
+Set redBorder ISO path: /tmp/redBorder-3.1.79-5-x86_64-6.5-enterprise.iso
+
+Mounting ISO and copying files in local repo</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>En el siguiente paso, tras detectar la versión actual del sistema, se preguntará por la versión a la que se desea actualizar,
+a partir de las que se tenga disponible en el repositorio local.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Detecting available redBorder versions:                    [  OK  ]
+ 1.-  3.1.79-5
+Choose a valid version: 1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Una vez seleccionamos la versión a actualizar, el programa nos informará de los nodos del cluster que van a ser actualizados
+y nos pedirá confirmación antes de comenzar el proceso.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>INFO: The following nodes will be updated in the following order:
+   * node1
+   * node2
+   * node3
+Are you sure you want to continue? (y/N) y</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A partir de este momento se procederá a realizar la actualización del cluster.</p>
 </div>
 </div>
 </div>

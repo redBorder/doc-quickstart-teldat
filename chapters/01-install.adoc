@@ -10,13 +10,13 @@ en la que se va a instalar.
 
 Al iniciar el asistente de instalación tendrá acceso a un menú tal y como se muestra a continuación:
 
-image:../images/install/install-01.png["install-01",link="../images/install/install-01.png"]
+image::images/install/install-01.png["install-01",link="images/install/install-01.png",align="center"]
 
 Seleccionamos "*Install Teldat Visualizer*" para comenzar la instalación.
 
 En pocos segundos nos aparecerá otro menú como el que se muestra a continuación:
 
-image:../images/install/install-02.png["install-02",link="../images/install/install-02.png",align="center"]
+image::images/install/install-02.png["install-02",link="images/install/install-02.png",align="center"]
 
 En este paso el instalador nos preguntará la unidad de disco en la que deseamos realizar la instalación.
 
@@ -31,7 +31,7 @@ IMPORTANT: Por defecto la contraseña de root es "*teldat*"
 
 Tras esto se procederá a la instalación de los paquetes de instalación del software en el disco duro.
 
-image:../images/install/install-03.png["install-03",link="../images/install/install-03.png"]
+image::images/install/install-03.png["install-03",link="images/install/install-03.png",align="center"]
 
 Espere hasta que lla instalación se haya completado al 100%. Este proceso puede durar unos minutos.
 
@@ -45,7 +45,7 @@ Este proceso puede tardar varios minutos
 
 Una vez que en la terminal nos apareczca la sigueinte imagen, ya podremos acceder.
 
-image:../images/install/install-04.png["install-04",link="../images/install/install-04.png"]
+image::images/install/install-04.png["install-04",link="images/install/install-04.png",align="center"]
 
 IMPORTANT: LAs credenciales por defecto son "usuario: root / password: teldat"
 
@@ -61,7 +61,7 @@ Estas son las opciones que encontrará en la pantalla principal de este menú:
 . *w) start simple wizard*: inicia un asistente que le permitirá de forma sencilla y rápida realizar la instalación y configuración del Manager.
 . *q) quit*: Salir. Nos devuelve a la pantalla principal de configuración del sistema.
 
-image:../images/install/install-05.png["install-05",link="../images/install/install-05.png"]
+image::images/install/install-05.png["install-05",link="images/install/install-05.png",align="center"]
 
 Para realizar la instalación automática del manager, usaremos la opción *w) start simple wizard*.
 
@@ -82,7 +82,7 @@ IMPORTANT: Es importante que se utilicen diferentes nombres para cada uno de los
 Una vez introducidos estos valores, el sistema le avisará de que los cambios han sido aplicados con éxito mediante el siguiente
 mensaje rotulado en verde: DNS and domain settings applied successfully.
 
-image:../images/install-06.png["install-06",link="../images/install-06.png"]
+image:images/install/install-06.png["install-06",link="images/install/install-06.png",align="center"]
 
 *Configuración de NTP y red de gestión*
 
@@ -108,14 +108,14 @@ La configuración del bonding de gestión solicitará los siguientes datos:
 
 Una vez introducidos estos valores, el sistema le avisará de que el bonding ha sido creado con éxito.
 
-image:../images/install/install-07.png["install-07",link="../images/install/install-07.png"]
+image::images/install/install-07.png["install-07",link="images/install/install-07.png",align="center"]
 
 *Configuración de red de sincronismo*
 
 Si hemos configurado la máquina con 2 interfaces de red, a continuación tendremos que configurar el bonding para
 la red de sincronismo.
 
-image:../images/install/install-08.png["install-08",link="../images/install/install-08.png"]
+image::images/install/install-08.png["install-08",link="images/install/install-08.png",align="center"]
 
 [NOTE]
 ===============================
@@ -127,7 +127,7 @@ Esta parte no aparecerá si sólo hemos configurado una interfaz de red en la m�
 Como último paso se preguntan una serie de opciones de configuración relacionadas con la creación de un cluster de varios managers
 y la configuración de servicios fuera del manager.
 
-image:../images/install/install-09.png["install-09",link="../images/install/install-09.png"]
+image::images/install/install-09.png["install-09",link="images/install/install-09.png",align="center"]
 
 Una vez finalizado, aceptamos y se iniciará el proceso de configuración.
 
