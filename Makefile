@@ -6,7 +6,7 @@ CHAPTERS=chapters
 .PHONY: html
 html: $(SOURCES) styles/$(CSS)
 	asciidoctor $(MAIN) -a stylesheet=./styles/rubygems.css --attribute tabsize=4 -o $(OUTDIR)/index.html
-	cp -r $(CHAPTERS)/images docs
+	cp -r $(CHAPTERS)/images $(OUTDIR)
 
 .PHONY: pdf
 pdf: $(SOURCES) styles/$(CSS)
