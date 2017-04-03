@@ -131,3 +131,9 @@ El usuario puede elegir entre cuatro tipos de widgets aplicables a las opciones 
 * *Clúster*: Diagrama/Tabla
 * *Alarm*: insertar detalles de configuración en el formulario adjunto
 * *Monitor*: Serie/Valor
+
+===== 6.1.4.3 Widgets de formato
+
+La opción *Shapes* nos permite editar e insertar elementos auxiliares en nuestros widgets tales como: texto, imagen, forma del widget e incrustar una URL personalizada.
+
+Para incorporar cualquiera de estos elementos a los widgets, basta con completar el formulario que aparezca en cada caso y aplicar los cambios mediante la opción *Create Widget*.
