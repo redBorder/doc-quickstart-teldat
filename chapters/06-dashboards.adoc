@@ -91,3 +91,35 @@ El primer paso consiste en seleccionar el tipo de widget que se quiere añadir. 
 ** Shapes
 
 image::images/dashboard/widget_selection.png[align="center"]
+
+===== 6.1.4.1 Personalizar un widget de producto
+Algunos de los widgets que el usuario encuentra disponibles para añadir al dashboard de la plataforma redBorder permiten una personalización completa.
+
+Este es el caso del widget asignado a la App *Intrusion*. En primer lugar, veamos qué opciones de personalización se incluyen en este tipo de widgets.
+
+El primer paso consiste en seleccionar el modo de visualización de datos o la cardinalidad, esto es, de qué modo deseamos visualizar los valores o datos de una determinada columna.
+
+[NOTE]
+==================================
+Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenerse como datos propios del evento que son los que realmente nos aportan información.
+
+A lo largo de este documento podrán encontrarse referencias al concepto de columna como "atributo" o "dimensión".
+
+El primer paso para personalizar un widget consiste en seleccionar el modo de visualización de los datos, pudiendo elegir además, vistas en las que se representa la cardinalidad de los mismos.
+==================================
+
+====== *Configuración de widgets según vistas de eventos:*
+* *Bandwith Line*: es un widget predefinido que muestra el uso del ancho de banda en bps. Muestra una gráfica simple. Es característico de la app *Traffic*.
+* *Bandwith*: es como *Bandwith line* ofreciendo un contenido más detallado. Es característico de la app *Traffic*.
+* *Map*: muestra información de geoposicionamiento. Es característico de la app *Traffic*
+* *Movements*: muestra información de movimiento asociada a los eventos. Es característico de la app *Mobility*
+* *RAW*: muestra los eventos en bruto (sin agregación).
+* *Tops*: agrega los eventos n base a una unidad para mostrar los más destacados, de manera que lo que se muestra es la suma del total de datos de diferentes eventos para mostrarlos como uno único.
+* *compare*: comparativa en el tiempo (horas, días, semanas y meses) de los eventos más destacados.
++
+Un ejemplo de uso sería el de comparar en distintos días la evolución temporal del tráfico para una aplicación en concreto. A diferencia de la vista Tops, esto solo permite el estilo de gráfico "Serie".
+* *Performance Index*: permite definir un indicador donde visualizar el rendimiento de los eventos que se deseen.
+
+====== *Configuración de widgets según cardinalidad:*
+* *Single Unique*: mediante esta opción se aislan las ocurrencias o eventos de una columna para un momento determinado.
+* *Group Unique*: mediante esta opción se aislan las ocurrencias o eventos de una columna para un momento determinado agrupados según determinados criterios.
