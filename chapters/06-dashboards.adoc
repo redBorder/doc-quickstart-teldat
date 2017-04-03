@@ -26,3 +26,31 @@ Al lado de cada uno de los dashboards se encuentran dos iconos:
 * Máquina del tiempo (*Time Machine*): esta opción permite "viajar en el tiempo" y visualizar os resultados de las métricas de un día y hora determinados por el usuario a modo de histórico.
 
 image::images/dashboard/dashboard_menu.png[align="center", frame=all]
+
+==== 6.1.1 Editar y clonar dashboards disponibles
+===== *Editar dashboard: Configuración general (General Settings)*
+El usuario podrá modificar en cualquier momento la información asociada a cada uno de los dashboards disponibles seleccionando la opción Configuración general haciendo clic en el icono image:images/dashboard/wrench.png[width=14, height=14].
+
+Información editable de la configuración general del dashboard:
+
+* Nombre del dashboard (*Name*)
+* Establecer el dashboard como predeterminado (*Set this dashboard as default*)
+* Estructura de visualización de los widgets y métricas del dashboard (*Layout*)
+* Descripción del contenido del dashboard (Description)
+* Color de fondo (*Background Color*)
+* Usuarios que pueden visualizar el dashboard y permisos de edición (*Dashboard users*): añadir y eliminar
+* Dominios que se incluyen en el dashboard (*Dashboard domains*): añadir y eliminar
+
+Además, en el margen inferior de la pantalla el usuario verá una serie de opciones disponibles:
+
+* Actualizar dashboard (*Update dashboard*)
+* Cancelar (*Cancel*)
+* Borrar (*Delete*)
+* Convertir a informe (*Convert to report*)
+* Exportar dashboard (*Export dashboard*): el sistema creará un archivo comprimido para su descarga; paso necesario en caso de que se quiera realizar una importación.
+
+image::images/dashboard/edit_dashboard.png[align="center"]
+
+clonar dashboard (*Clone dashboard*): es posible clonar (copiar) los dashboards con el fin de enerlo disponibles para diferentes usuarios, importarlo, etc. Para ello, basta con asignarle un nombre al dashboard copiado.
+
+image::images/dashboard/clone_dashboard.png[align="center"]
