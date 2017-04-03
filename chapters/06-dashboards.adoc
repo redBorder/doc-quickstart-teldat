@@ -74,3 +74,20 @@ Debe seleccionar el archivo que se desea importar y a continuación hacer clic s
 dentro del listado de dashboards disponibles.
 
 image::images/dashboard/import_dashboard.png[align="center"]
+
+==== 6.1.4 Añadir widget: personalización de los dashboards
+El usuario puede crear y añadir widgets a sus dashboards con el fin de personalizar al máximo la visualización de los datos obtenidos por las diferentes Apps. Es posible incorporar tanto widgets preconfigurados como crear widgets 100% personalizados.
+
+El primer paso consiste en seleccionar el tipo de widget que se quiere añadir. Existen tres tipos de widgets dependiendo del tipo de información que queramos visualizar:
+
+* *Apps*: visualización de los datos recibios por las diferentes Apps.
+** Traffic
+** Intrusion
+** Mobility
+** Social
+* *Estado*: visualización de la configuración y estado de las máquinas e infraestructura de la red.
+** Infraestructure
+* *Formato*: permite configurar el contenido y el formato de los widgets: texto, imágenes, URL, etc.
+** Shapes
+
+image::images/dashboard/widget_selection.png[align="center"]
