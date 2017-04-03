@@ -137,3 +137,11 @@ El usuario puede elegir entre cuatro tipos de widgets aplicables a las opciones 
 La opción *Shapes* nos permite editar e insertar elementos auxiliares en nuestros widgets tales como: texto, imagen, forma del widget e incrustar una URL personalizada.
 
 Para incorporar cualquiera de estos elementos a los widgets, basta con completar el formulario que aparezca en cada caso y aplicar los cambios mediante la opción *Create Widget*.
+
+==== 6.1.5 Time machine
+
+Esta opción devuelve a la máquina al estado en el que se encontraba en el día y hora que determinemos. El usuario visualizará los datos como si fueran en tiempo real.
+
+Este "viaje en el tiempo" nos ofrece un grado de precisión máximo en el análisis ya que se puede indicar el minuto exacto que se desea consultar.
+
+image::images/dashboard/timemachine.png[align="center"]
