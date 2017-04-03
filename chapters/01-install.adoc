@@ -82,7 +82,7 @@ IMPORTANT: Es importante que se utilicen diferentes nombres para cada uno de los
 Una vez introducidos estos valores, el sistema le avisará de que los cambios han sido aplicados con éxito mediante el siguiente
 mensaje rotulado en verde: DNS and domain settings applied successfully.
 
-image:images/install/install-06.png["install-06",link="images/install/install-06.png",align="center"]
+image::images/install/install-06.png["install-06",link="images/install/install-06.png",align="center"]
 
 *Configuración de NTP y red de gestión*
 
