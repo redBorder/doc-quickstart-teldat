@@ -54,3 +54,13 @@ image::images/dashboard/edit_dashboard.png[align="center"]
 clonar dashboard (*Clone dashboard*): es posible clonar (copiar) los dashboards con el fin de enerlo disponibles para diferentes usuarios, importarlo, etc. Para ello, basta con asignarle un nombre al dashboard copiado.
 
 image::images/dashboard/clone_dashboard.png[align="center"]
+
+==== 6.1.2 Añadir dashboard
+Los dashboards permiten tener un resumen visual que incluye los principales KPIs que son necesarios para el análisis de una infraestructura de red. El usuario puede combinar una serie de widgets que le permitan, una sola mirada, obtener información muy valiosa sobre las tendencias, cambios y excepciones asociadas al tráfico que se produce o pasa por su red.
+
+Para crear un nuevo dashboard es necesario seleccionar la opción *Add dashboard*. A continuación, introducir una serie de datos de configuración general y guardar los cambios mediante el botón *Create dashboard*. El primer paso para crear un dashboard personalizado es la creación de un panel en blanco al que, posteriormente, se le añadirán aquellos widgets que cumplan con nuestras necesidades de
+visualización.
+
+Para crear un nuevo dashboard debemos indicar una serie de preferencias en la interfaz de Configuración general (*General Settings*), anteriormente descrita para la edición de dashboards.
+
+image::images/dashboard/add_dashboard.png[align="center"]
