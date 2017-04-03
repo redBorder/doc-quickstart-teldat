@@ -64,3 +64,13 @@ visualización.
 Para crear un nuevo dashboard debemos indicar una serie de preferencias en la interfaz de Configuración general (*General Settings*), anteriormente descrita para la edición de dashboards.
 
 image::images/dashboard/add_dashboard.png[align="center"]
+
+==== 6.1.3 Importar dashboard
+La opción *Importar dashboard* es muy útil en el caso de que queramos compartir dashboards con otros usuarios , o incorporar a redBorder información obtenida de otras aplicaciones compatibles.
+
+IMPORTANT: Para importar un dashboard, es necesario que este, previamente, haya sido exportado como fichero comprimido y se encuentre disponible entre nuestros archivos.
+
+Debe seleccionar el archivo que se desea importar y a continuación hacer clic sobre la opción *Import dashboard*. Una vez que hayamos realizado la importación, encontraremos este nuevo dashboard
+dentro del listado de dashboards disponibles.
+
+image::images/dashboard/import_dashboard.png[align="center"]
