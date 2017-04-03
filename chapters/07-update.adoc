@@ -39,7 +39,7 @@ En este caso nos interesa actualizar el sistema desde un repositorio remoto, por
 
 ----
 Available repositories:
-   1.- remote (repo: http://repo.redborder.com)
+   1.- remote (repo: http://repo.redborder.com/teldat)
    2.- local
 Choose an option: 1
 ----
@@ -100,7 +100,7 @@ En este caso nos interesa actualizar el sistema desde un repositorio local, por 
 
 ----
 Available repositories:
-   1.- remote (repo: http://repo.redborder.com)
+   1.- remote (repo: http://repo.redborder.com/teldat)
    2.- local
 Choose an option: 2
 ----
