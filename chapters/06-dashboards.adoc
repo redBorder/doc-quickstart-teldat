@@ -1,1 +1,28 @@
 == Capítulo 6: Dashboards
+
+=== 6.1 Opciones del Dashboard
+
+La primera opción que encontramos en la barra de menú en el área de análisis es la de Dashboard. Esta es la opción que se encuentra seleccionada por defecto nada más ingresar al administrador del Manager redBorder:
+
+image::images/dashboard/dashboard.png[align="center"]
+
+La sección dashboard presenta múltiples opciones:
+
+* Listado de dashboards disponibles: en la primera parte del menú de dashboards, el usuario visualizará los dashboards que se han creado y que están disponibles para su perfil.
+*
+Al lado de cada uno de los dashboards se encuentran dos iconos:
+
+** image:images/dashboard/wrench.png[width=24, height=24] : permite visualizar y editar la configuración general del panel.
+** image:images/dashboard/copy.png[width=24, height=24] : permite clonar el dashboard seleccionado.
+
+* Añadir e importar dashboards (*Add dashboard/Import dashboard*): estas dos opciones permiten añadir un nuevo dashboard personalizado e importar aquellos que ya estén creados con el fin de poder compartirlos con otros usuarios o que se encuentren disponibles para otros perfiles.
+
+* Añadir widget (*Add widget*): esta opción permite añadir los widgets que se deseen para personalizar el dashboards.
+
+* URL de dashboard (*Dashboard URL*): esta opción copia el enlace del actual dashboard al portapapeles del sistema.
+
+* Bloqueo (*Locked/Unlocked*): el usuario tiene la opción de bloquear/desbloquear el dashboard que esté consultando para que ningún otro usuario con permisos pueda editarlo.
+
+* Máquina del tiempo (*Time Machine*): esta opción permite "viajar en el tiempo" y visualizar os resultados de las métricas de un día y hora determinados por el usuario a modo de histórico.
+
+image::images/dashboard/dashboard_menu.png[align="center", frame=all]
