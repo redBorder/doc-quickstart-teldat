@@ -123,3 +123,11 @@ Un ejemplo de uso sería el de comparar en distintos días la evolución tempora
 ====== *Configuración de widgets según cardinalidad:*
 * *Single Unique*: mediante esta opción se aislan las ocurrencias o eventos de una columna para un momento determinado.
 * *Group Unique*: mediante esta opción se aislan las ocurrencias o eventos de una columna para un momento determinado agrupados según determinados criterios.
+
+===== 6.1.4.2 Personalizar un widget de estado
+El usuario puede elegir entre cuatro tipos de widgets aplicables a las opciones de configuración del Manager redBorder. La opción de *Infrastructure* permite seleccionar el modo en el que se va a visualizar la información sobre configuración y estado de la infraestructura de red:
+
+* *Sensor*: Mapa/Árbol
+* *Clúster*: Diagrama/Tabla
+* *Alarm*: insertar detalles de configuración en el formulario adjunto
+* *Monitor*: Serie/Valor
