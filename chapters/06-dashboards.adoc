@@ -145,3 +145,16 @@ Esta opción devuelve a la máquina al estado en el que se encontraba en el día
 Este "viaje en el tiempo" nos ofrece un grado de precisión máximo en el análisis ya que se puede indicar el minuto exacto que se desea consultar.
 
 image::images/dashboard/timemachine.png[align="center"]
+
+==== 6.1.6 Clonar, editar, recargar y eliminar widget desde el dashboard
+
+Desde el dashboard el usuario tiene acceso directo a los widgets. En la esquina superior derecha aparece un menú que da acceso directo a las siguientes acciones
+
+* Clonar (*Clone*): permite duplicar el widget e incorporarlo directamente en el dashboard que seleccione el usuario.
+* Editar (*Edit*): da acceso a la configuración general del widget para modificar aquellos campose que se deseen.
+* Reacargar (*Reload*): actialización de los datos
+* Eliminar (*Delete*)
+
+image::images/dashboard/widget_menu.png[align="center"]
+
+CAUTION: Cuando seleccione la opción *Delete*, el sistema no le mostrará una pregunta de confirmación, por lo que debe estar seguro de que desea eliminar ese widget. En caso de que elimine un widget por accidente, recuerde que siempre puede acudir a la opción "Añadir widget" para volver a insertarlo o duplicar alguno de similares características y editarlo a continuación.
