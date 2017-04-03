@@ -730,7 +730,20 @@ b.conum * { color: inherit !important; }
 </ul>
 </li>
 <li><a href="#_capítulo_5_visualización_de_datos">Capítulo 5: Visualización de datos</a></li>
-<li><a href="#_capítulo_6_dashboards">Capítulo 6: Dashboards</a></li>
+<li><a href="#_capítulo_6_dashboards">Capítulo 6: Dashboards</a>
+<ul class="sectlevel2">
+<li><a href="#_6_1_opciones_del_dashboard">6.1 Opciones del Dashboard</a>
+<ul class="sectlevel3">
+<li><a href="#_6_1_1_editar_y_clonar_dashboards_disponibles">6.1.1 Editar y clonar dashboards disponibles</a></li>
+<li><a href="#_6_1_2_añadir_dashboard">6.1.2 Añadir dashboard</a></li>
+<li><a href="#_6_1_3_importar_dashboard">6.1.3 Importar dashboard</a></li>
+<li><a href="#_6_1_4_añadir_widget_personalización_de_los_dashboards">6.1.4 Añadir widget: personalización de los dashboards</a></li>
+<li><a href="#_6_1_5_time_machine">6.1.5 Time machine</a></li>
+<li><a href="#_6_1_6_clonar_editar_recargar_y_eliminar_widget_desde_el_dashboard">6.1.6 Clonar, editar, recargar y eliminar widget desde el dashboard</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href="#_capítulo_7_actualización_del_cluster">Capítulo 7: Actualización del cluster</a>
 <ul class="sectlevel2">
 <li><a href="#_actualización_desde_repositorio_remoto">Actualización desde repositorio remoto</a></li>
@@ -1444,7 +1457,396 @@ Cada vista presenta su propio menú de opciones y las diferentes posibilidades d
 <div class="sect1">
 <h2 id="_capítulo_6_dashboards">Capítulo 6: Dashboards</h2>
 <div class="sectionbody">
-
+<div class="sect2">
+<h3 id="_6_1_opciones_del_dashboard">6.1 Opciones del Dashboard</h3>
+<div class="paragraph">
+<p>La primera opción que encontramos en la barra de menú en el área de análisis es la de Dashboard. Esta es la opción que se encuentra seleccionada por defecto nada más ingresar al administrador del Manager redBorder:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/dashboards/dashboard.png" alt="dashboard">
+</div>
+</div>
+<div class="paragraph">
+<p>La sección dashboard presenta múltiples opciones:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Listado de dashboards disponibles: en la primera parte del menú de dashboards, el usuario visualizará los dashboards que se han creado y que están disponibles para su perfil.
+*
+Al lado de cada uno de los dashboards se encuentran dos iconos:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="images/dashboards/wrench.png" alt="wrench" width="24" height="24"></span> : permite visualizar y editar la configuración general del panel.</p>
+</li>
+<li>
+<p><span class="image"><img src="images/dashboards/copy.png" alt="copy" width="24" height="24"></span> : permite clonar el dashboard seleccionado.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Añadir e importar dashboards (<strong>Add dashboard/Import dashboard</strong>): estas dos opciones permiten añadir un nuevo dashboard personalizado e importar aquellos que ya estén creados con el fin de poder compartirlos con otros usuarios o que se encuentren disponibles para otros perfiles.</p>
+</li>
+<li>
+<p>Añadir widget (<strong>Add widget</strong>): esta opción permite añadir los widgets que se deseen para personalizar el dashboards.</p>
+</li>
+<li>
+<p>URL de dashboard (<strong>Dashboard URL</strong>): esta opción copia el enlace del actual dashboard al portapapeles del sistema.</p>
+</li>
+<li>
+<p>Bloqueo (<strong>Locked/Unlocked</strong>): el usuario tiene la opción de bloquear/desbloquear el dashboard que esté consultando para que ningún otro usuario con permisos pueda editarlo.</p>
+</li>
+<li>
+<p>Máquina del tiempo (<strong>Time Machine</strong>): esta opción permite "viajar en el tiempo" y visualizar os resultados de las métricas de un día y hora determinados por el usuario a modo de histórico.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/dashboards/dashboard_menu.png" alt="dashboard menu">
+</div>
+</div>
+<div class="sect3">
+<h4 id="_6_1_1_editar_y_clonar_dashboards_disponibles">6.1.1 Editar y clonar dashboards disponibles</h4>
+<div class="sect4">
+<h5 id="__strong_editar_dashboard_configuración_general_general_settings_strong"><strong>Editar dashboard: Configuración general (General Settings)</strong></h5>
+<div class="paragraph">
+<p>El usuario podrá modificar en cualquier momento la información asociada a cada uno de los dashboards disponibles seleccionando la opción Configuración general haciendo clic en el icono <span class="image"><img src="images/dashboards/wrench.png" alt="wrench" width="14" height="14"></span>.</p>
+</div>
+<div class="paragraph">
+<p>Información editable de la configuración general del dashboard:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Nombre del dashboard (<strong>Name</strong>)</p>
+</li>
+<li>
+<p>Establecer el dashboard como predeterminado (<strong>Set this dashboard as default</strong>)</p>
+</li>
+<li>
+<p>Estructura de visualización de los widgets y métricas del dashboard (<strong>Layout</strong>)</p>
+</li>
+<li>
+<p>Descripción del contenido del dashboard (Description)</p>
+</li>
+<li>
+<p>Color de fondo (<strong>Background Color</strong>)</p>
+</li>
+<li>
+<p>Usuarios que pueden visualizar el dashboard y permisos de edición (<strong>Dashboard users</strong>): añadir y eliminar</p>
+</li>
+<li>
+<p>Dominios que se incluyen en el dashboard (<strong>Dashboard domains</strong>): añadir y eliminar</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Además, en el margen inferior de la pantalla el usuario verá una serie de opciones disponibles:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Actualizar dashboard (<strong>Update dashboard</strong>)</p>
+</li>
+<li>
+<p>Cancelar (<strong>Cancel</strong>)</p>
+</li>
+<li>
+<p>Borrar (<strong>Delete</strong>)</p>
+</li>
+<li>
+<p>Convertir a informe (<strong>Convert to report</strong>)</p>
+</li>
+<li>
+<p>Exportar dashboard (<strong>Export dashboard</strong>): el sistema creará un archivo comprimido para su descarga; paso necesario en caso de que se quiera realizar una importación.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/dashboards/edit_dashboard.png" alt="edit dashboard">
+</div>
+</div>
+<div class="paragraph">
+<p>clonar dashboard (<strong>Clone dashboard</strong>): es posible clonar (copiar) los dashboards con el fin de enerlo disponibles para diferentes usuarios, importarlo, etc. Para ello, basta con asignarle un nombre al dashboard copiado.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/dashboards/clone_dashboard.png" alt="clone dashboard">
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_6_1_2_añadir_dashboard">6.1.2 Añadir dashboard</h4>
+<div class="paragraph">
+<p>Los dashboards permiten tener un resumen visual que incluye los principales KPIs que son necesarios para el análisis de una infraestructura de red. El usuario puede combinar una serie de widgets que le permitan, una sola mirada, obtener información muy valiosa sobre las tendencias, cambios y excepciones asociadas al tráfico que se produce o pasa por su red.</p>
+</div>
+<div class="paragraph">
+<p>Para crear un nuevo dashboard es necesario seleccionar la opción <strong>Add dashboard</strong>. A continuación, introducir una serie de datos de configuración general y guardar los cambios mediante el botón <strong>Create dashboard</strong>. El primer paso para crear un dashboard personalizado es la creación de un panel en blanco al que, posteriormente, se le añadirán aquellos widgets que cumplan con nuestras necesidades de
+visualización.</p>
+</div>
+<div class="paragraph">
+<p>Para crear un nuevo dashboard debemos indicar una serie de preferencias en la interfaz de Configuración general (<strong>General Settings</strong>), anteriormente descrita para la edición de dashboards.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/dashboards/add_dashboard.png" alt="add dashboard">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_6_1_3_importar_dashboard">6.1.3 Importar dashboard</h4>
+<div class="paragraph">
+<p>La opción <strong>Importar dashboard</strong> es muy útil en el caso de que queramos compartir dashboards con otros usuarios , o incorporar a redBorder información obtenida de otras aplicaciones compatibles.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Para importar un dashboard, es necesario que este, previamente, haya sido exportado como fichero comprimido y se encuentre disponible entre nuestros archivos.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Debe seleccionar el archivo que se desea importar y a continuación hacer clic sobre la opción <strong>Import dashboard</strong>. Una vez que hayamos realizado la importación, encontraremos este nuevo dashboard
+dentro del listado de dashboards disponibles.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/dashboards/import_dashboard.png" alt="import dashboard">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_6_1_4_añadir_widget_personalización_de_los_dashboards">6.1.4 Añadir widget: personalización de los dashboards</h4>
+<div class="paragraph">
+<p>El usuario puede crear y añadir widgets a sus dashboards con el fin de personalizar al máximo la visualización de los datos obtenidos por las diferentes Apps. Es posible incorporar tanto widgets preconfigurados como crear widgets 100% personalizados.</p>
+</div>
+<div class="paragraph">
+<p>El primer paso consiste en seleccionar el tipo de widget que se quiere añadir. Existen tres tipos de widgets dependiendo del tipo de información que queramos visualizar:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Apps</strong>: visualización de los datos recibios por las diferentes Apps.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Traffic</p>
+</li>
+<li>
+<p>Intrusion</p>
+</li>
+<li>
+<p>Mobility</p>
+</li>
+<li>
+<p>Social</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Estado</strong>: visualización de la configuración y estado de las máquinas e infraestructura de la red.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Infraestructure</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Formato</strong>: permite configurar el contenido y el formato de los widgets: texto, imágenes, URL, etc.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Shapes</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/dashboards/widget_selection.png" alt="widget selection">
+</div>
+</div>
+<div class="sect4">
+<h5 id="_6_1_4_1_personalizar_un_widget_de_producto">6.1.4.1 Personalizar un widget de producto</h5>
+<div class="paragraph">
+<p>Algunos de los widgets que el usuario encuentra disponibles para añadir al dashboard de la plataforma redBorder permiten una personalización completa.</p>
+</div>
+<div class="paragraph">
+<p>Este es el caso del widget asignado a la App <strong>Intrusion</strong>. En primer lugar, veamos qué opciones de personalización se incluyen en este tipo de widgets.</p>
+</div>
+<div class="paragraph">
+<p>El primer paso consiste en seleccionar el modo de visualización de datos o la cardinalidad, esto es, de qué modo deseamos visualizar los valores o datos de una determinada columna.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenerse como datos propios del evento que son los que realmente nos aportan información.</p>
+</div>
+<div class="paragraph">
+<p>A lo largo de este documento podrán encontrarse referencias al concepto de columna como "atributo" o "dimensión".</p>
+</div>
+<div class="paragraph">
+<p>El primer paso para personalizar un widget consiste en seleccionar el modo de visualización de los datos, pudiendo elegir además, vistas en las que se representa la cardinalidad de los mismos.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect5">
+<h6 id="__strong_configuración_de_widgets_según_vistas_de_eventos_strong"><strong>Configuración de widgets según vistas de eventos:</strong></h6>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Bandwith Line</strong>: es un widget predefinido que muestra el uso del ancho de banda en bps. Muestra una gráfica simple. Es característico de la app <strong>Traffic</strong>.</p>
+</li>
+<li>
+<p><strong>Bandwith</strong>: es como <strong>Bandwith line</strong> ofreciendo un contenido más detallado. Es característico de la app <strong>Traffic</strong>.</p>
+</li>
+<li>
+<p><strong>Map</strong>: muestra información de geoposicionamiento. Es característico de la app <strong>Traffic</strong></p>
+</li>
+<li>
+<p><strong>Movements</strong>: muestra información de movimiento asociada a los eventos. Es característico de la app <strong>Mobility</strong></p>
+</li>
+<li>
+<p><strong>RAW</strong>: muestra los eventos en bruto (sin agregación).</p>
+</li>
+<li>
+<p><strong>Tops</strong>: agrega los eventos n base a una unidad para mostrar los más destacados, de manera que lo que se muestra es la suma del total de datos de diferentes eventos para mostrarlos como uno único.</p>
+</li>
+<li>
+<p><strong>compare</strong>: comparativa en el tiempo (horas, días, semanas y meses) de los eventos más destacados.</p>
+<div class="paragraph">
+<p>Un ejemplo de uso sería el de comparar en distintos días la evolución temporal del tráfico para una aplicación en concreto. A diferencia de la vista Tops, esto solo permite el estilo de gráfico "Serie".</p>
+</div>
+</li>
+<li>
+<p><strong>Performance Index</strong>: permite definir un indicador donde visualizar el rendimiento de los eventos que se deseen.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect5">
+<h6 id="__strong_configuración_de_widgets_según_cardinalidad_strong"><strong>Configuración de widgets según cardinalidad:</strong></h6>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Single Unique</strong>: mediante esta opción se aislan las ocurrencias o eventos de una columna para un momento determinado.</p>
+</li>
+<li>
+<p><strong>Group Unique</strong>: mediante esta opción se aislan las ocurrencias o eventos de una columna para un momento determinado agrupados según determinados criterios.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_6_1_4_2_personalizar_un_widget_de_estado">6.1.4.2 Personalizar un widget de estado</h5>
+<div class="paragraph">
+<p>El usuario puede elegir entre cuatro tipos de widgets aplicables a las opciones de configuración del Manager redBorder. La opción de <strong>Infrastructure</strong> permite seleccionar el modo en el que se va a visualizar la información sobre configuración y estado de la infraestructura de red:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Sensor</strong>: Mapa/Árbol</p>
+</li>
+<li>
+<p><strong>Clúster</strong>: Diagrama/Tabla</p>
+</li>
+<li>
+<p><strong>Alarm</strong>: insertar detalles de configuración en el formulario adjunto</p>
+</li>
+<li>
+<p><strong>Monitor</strong>: Serie/Valor</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_6_1_4_3_widgets_de_formato">6.1.4.3 Widgets de formato</h5>
+<div class="paragraph">
+<p>La opción <strong>Shapes</strong> nos permite editar e insertar elementos auxiliares en nuestros widgets tales como: texto, imagen, forma del widget e incrustar una URL personalizada.</p>
+</div>
+<div class="paragraph">
+<p>Para incorporar cualquiera de estos elementos a los widgets, basta con completar el formulario que aparezca en cada caso y aplicar los cambios mediante la opción <strong>Create Widget</strong>.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_6_1_5_time_machine">6.1.5 Time machine</h4>
+<div class="paragraph">
+<p>Esta opción devuelve a la máquina al estado en el que se encontraba en el día y hora que determinemos. El usuario visualizará los datos como si fueran en tiempo real.</p>
+</div>
+<div class="paragraph">
+<p>Este "viaje en el tiempo" nos ofrece un grado de precisión máximo en el análisis ya que se puede indicar el minuto exacto que se desea consultar.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/dashboards/timemachine.png" alt="timemachine">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_6_1_6_clonar_editar_recargar_y_eliminar_widget_desde_el_dashboard">6.1.6 Clonar, editar, recargar y eliminar widget desde el dashboard</h4>
+<div class="paragraph">
+<p>Desde el dashboard el usuario tiene acceso directo a los widgets. En la esquina superior derecha aparece un menú que da acceso directo a las siguientes acciones</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Clonar (<strong>Clone</strong>): permite duplicar el widget e incorporarlo directamente en el dashboard que seleccione el usuario.</p>
+</li>
+<li>
+<p>Editar (<strong>Edit</strong>): da acceso a la configuración general del widget para modificar aquellos campose que se deseen.</p>
+</li>
+<li>
+<p>Reacargar (<strong>Reload</strong>): actialización de los datos</p>
+</li>
+<li>
+<p>Eliminar (<strong>Delete</strong>)</p>
+</li>
+</ul>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/dashboards/widget_menu.png" alt="widget menu">
+</div>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+Cuando seleccione la opción <strong>Delete</strong>, el sistema no le mostrará una pregunta de confirmación, por lo que debe estar seguro de que desea eliminar ese widget. En caso de que elimine un widget por accidente, recuerde que siempre puede acudir a la opción "Añadir widget" para volver a insertarlo o duplicar alguno de similares características y editarlo a continuación.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
