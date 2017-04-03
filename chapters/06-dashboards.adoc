@@ -4,7 +4,7 @@
 
 La primera opción que encontramos en la barra de menú en el área de análisis es la de Dashboard. Esta es la opción que se encuentra seleccionada por defecto nada más ingresar al administrador del Manager redBorder:
 
-image::images/dashboard/dashboard.png[align="center"]
+image::images/dashboards/dashboard.png[align="center"]
 
 La sección dashboard presenta múltiples opciones:
 
@@ -12,8 +12,8 @@ La sección dashboard presenta múltiples opciones:
 *
 Al lado de cada uno de los dashboards se encuentran dos iconos:
 
-** image:images/dashboard/wrench.png[width=24, height=24] : permite visualizar y editar la configuración general del panel.
-** image:images/dashboard/copy.png[width=24, height=24] : permite clonar el dashboard seleccionado.
+** image:images/dashboards/wrench.png[width=24, height=24] : permite visualizar y editar la configuración general del panel.
+** image:images/dashboards/copy.png[width=24, height=24] : permite clonar el dashboard seleccionado.
 
 * Añadir e importar dashboards (*Add dashboard/Import dashboard*): estas dos opciones permiten añadir un nuevo dashboard personalizado e importar aquellos que ya estén creados con el fin de poder compartirlos con otros usuarios o que se encuentren disponibles para otros perfiles.
 
@@ -25,11 +25,11 @@ Al lado de cada uno de los dashboards se encuentran dos iconos:
 
 * Máquina del tiempo (*Time Machine*): esta opción permite "viajar en el tiempo" y visualizar os resultados de las métricas de un día y hora determinados por el usuario a modo de histórico.
 
-image::images/dashboard/dashboard_menu.png[align="center", frame=all]
+image::images/dashboards/dashboard_menu.png[align="center", frame=all]
 
 ==== 6.1.1 Editar y clonar dashboards disponibles
 ===== *Editar dashboard: Configuración general (General Settings)*
-El usuario podrá modificar en cualquier momento la información asociada a cada uno de los dashboards disponibles seleccionando la opción Configuración general haciendo clic en el icono image:images/dashboard/wrench.png[width=14, height=14].
+El usuario podrá modificar en cualquier momento la información asociada a cada uno de los dashboards disponibles seleccionando la opción Configuración general haciendo clic en el icono image:images/dashboards/wrench.png[width=14, height=14].
 
 Información editable de la configuración general del dashboard:
 
@@ -49,11 +49,11 @@ Además, en el margen inferior de la pantalla el usuario verá una serie de opci
 * Convertir a informe (*Convert to report*)
 * Exportar dashboard (*Export dashboard*): el sistema creará un archivo comprimido para su descarga; paso necesario en caso de que se quiera realizar una importación.
 
-image::images/dashboard/edit_dashboard.png[align="center"]
+image::images/dashboards/edit_dashboard.png[align="center"]
 
 clonar dashboard (*Clone dashboard*): es posible clonar (copiar) los dashboards con el fin de enerlo disponibles para diferentes usuarios, importarlo, etc. Para ello, basta con asignarle un nombre al dashboard copiado.
 
-image::images/dashboard/clone_dashboard.png[align="center"]
+image::images/dashboards/clone_dashboard.png[align="center"]
 
 ==== 6.1.2 Añadir dashboard
 Los dashboards permiten tener un resumen visual que incluye los principales KPIs que son necesarios para el análisis de una infraestructura de red. El usuario puede combinar una serie de widgets que le permitan, una sola mirada, obtener información muy valiosa sobre las tendencias, cambios y excepciones asociadas al tráfico que se produce o pasa por su red.
@@ -63,7 +63,7 @@ visualización.
 
 Para crear un nuevo dashboard debemos indicar una serie de preferencias en la interfaz de Configuración general (*General Settings*), anteriormente descrita para la edición de dashboards.
 
-image::images/dashboard/add_dashboard.png[align="center"]
+image::images/dashboards/add_dashboard.png[align="center"]
 
 ==== 6.1.3 Importar dashboard
 La opción *Importar dashboard* es muy útil en el caso de que queramos compartir dashboards con otros usuarios , o incorporar a redBorder información obtenida de otras aplicaciones compatibles.
@@ -73,7 +73,7 @@ IMPORTANT: Para importar un dashboard, es necesario que este, previamente, haya 
 Debe seleccionar el archivo que se desea importar y a continuación hacer clic sobre la opción *Import dashboard*. Una vez que hayamos realizado la importación, encontraremos este nuevo dashboard
 dentro del listado de dashboards disponibles.
 
-image::images/dashboard/import_dashboard.png[align="center"]
+image::images/dashboards/import_dashboard.png[align="center"]
 
 ==== 6.1.4 Añadir widget: personalización de los dashboards
 El usuario puede crear y añadir widgets a sus dashboards con el fin de personalizar al máximo la visualización de los datos obtenidos por las diferentes Apps. Es posible incorporar tanto widgets preconfigurados como crear widgets 100% personalizados.
@@ -90,7 +90,7 @@ El primer paso consiste en seleccionar el tipo de widget que se quiere añadir. 
 * *Formato*: permite configurar el contenido y el formato de los widgets: texto, imágenes, URL, etc.
 ** Shapes
 
-image::images/dashboard/widget_selection.png[align="center"]
+image::images/dashboards/widget_selection.png[align="center"]
 
 ===== 6.1.4.1 Personalizar un widget de producto
 Algunos de los widgets que el usuario encuentra disponibles para añadir al dashboard de la plataforma redBorder permiten una personalización completa.
@@ -144,7 +144,7 @@ Esta opción devuelve a la máquina al estado en el que se encontraba en el día
 
 Este "viaje en el tiempo" nos ofrece un grado de precisión máximo en el análisis ya que se puede indicar el minuto exacto que se desea consultar.
 
-image::images/dashboard/timemachine.png[align="center"]
+image::images/dashboards/timemachine.png[align="center"]
 
 ==== 6.1.6 Clonar, editar, recargar y eliminar widget desde el dashboard
 
@@ -155,6 +155,6 @@ Desde el dashboard el usuario tiene acceso directo a los widgets. En la esquina 
 * Reacargar (*Reload*): actialización de los datos
 * Eliminar (*Delete*)
 
-image::images/dashboard/widget_menu.png[align="center"]
+image::images/dashboards/widget_menu.png[align="center"]
 
 CAUTION: Cuando seleccione la opción *Delete*, el sistema no le mostrará una pregunta de confirmación, por lo que debe estar seguro de que desea eliminar ese widget. En caso de que elimine un widget por accidente, recuerde que siempre puede acudir a la opción "Añadir widget" para volver a insertarlo o duplicar alguno de similares características y editarlo a continuación.
