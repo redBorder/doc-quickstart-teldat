@@ -1,1 +1,11 @@
 == Capítulo 5: Visualización de datos
+
+En esta sección el usuario puede realizar la visualización, análisis y gestión de los eventos recogidos.
+
+=== 5.1 Traffic: menú y opciones
+
+En el área de análisis de la barra de menú (lateral izquierdo), encontramos las diferentes secciones que corresponden a las Apps que tengamos integradas en la plataforma.
+
+A continuación veremos las diferentes opciones de visualización de datos, tipos de gráficas, granularidad (máximo grado de detalle temporal con el que consultar eventos) y atributos que se pueden combinar para obtener un visor de tráfico de red completamente personalizado.
+
+image::images/data-visualization/traffic_data_visualization.png[align="center"]
