@@ -40,3 +40,17 @@ image::images/data-visualization/traffic_submenu.png[align="center"]
 * Atributos: Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenderse como datos propios del evento que son los que realmente nos aportan información. Estos son llamados "atributos".
 +
 Los atributos pueden mostrarse de varias maneras: en forma de pestañas o de columnas. (*Add tabs/Columns*) dependiendo de la vista que estemos consultando.
+==== 5.1.2 Cuerpo de la pantalla: filtrado por rango de tiempo, pestañas de atributos y vistas.
+*Filtrado por rango de tiempo*: acceso directo a los eventos filtrados en base a un periodo de tiempo
+
+Existe la posibilidad de seleccionar un rango de fechas diferente a las que se ofrecen por defecto. Dependiendo de las necesidades del usuario, podrá realizar una selección de tiempo personalizada a través de la opción *Custom*. Más adelante se especificará el procedimiento a seguir para realizar un filtro temporal personalizado.
+
+*Pestañas de atributos*: clasifican la información del tráfico de red por atributos. Navegando por cada una de las pestañas podemos conocer en detalle los valores asociados a los atributos que hayamos seleccionado.
+
+NOTE: El usuario puede variar el orden en el que se muestran las pestañas en cualquier momento. Para ello arrastrar la pestaña y soltar en la posición en la que se desea colocar.
+
+image::images/data-visualization/body.png[align="center"]
+
+*Vista*:  en esta zona se muestran los datos según la vista y tipo de gráfica seleccionadas. Al posicionar el cursor sobre cualquiera de los puntos que componen la gráfica, aparece un cuadro de diálogo en el que se le muestra en detalle la información para ese instante de tiempo, agregación y atributo.
+
+image::images/data-visualization/view.png[align="center"]
