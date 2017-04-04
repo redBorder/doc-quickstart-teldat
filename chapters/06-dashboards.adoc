@@ -82,9 +82,6 @@ El primer paso consiste en seleccionar el tipo de widget que se quiere añadir. 
 
 * *Apps*: visualización de los datos recibios por las diferentes Apps.
 ** Traffic
-** Intrusion
-** Mobility
-** Social
 * *Estado*: visualización de la configuración y estado de las máquinas e infraestructura de la red.
 ** Infraestructure
 * *Formato*: permite configurar el contenido y el formato de los widgets: texto, imágenes, URL, etc.
@@ -116,6 +113,7 @@ El primer paso para personalizar un widget consiste en seleccionar el modo de vi
 * *RAW*: muestra los eventos en bruto (sin agregación).
 * *Tops*: agrega los eventos n base a una unidad para mostrar los más destacados, de manera que lo que se muestra es la suma del total de datos de diferentes eventos para mostrarlos como uno único.
 * *compare*: comparativa en el tiempo (horas, días, semanas y meses) de los eventos más destacados.
+
 +
 Un ejemplo de uso sería el de comparar en distintos días la evolución temporal del tráfico para una aplicación en concreto. A diferencia de la vista Tops, esto solo permite el estilo de gráfico "Serie".
 * *Performance Index*: permite definir un indicador donde visualizar el rendimiento de los eventos que se deseen.
