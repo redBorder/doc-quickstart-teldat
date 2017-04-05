@@ -189,3 +189,10 @@ A continuación se enumeran todas las opciones disponibles en esta pestaña. El 
 * Orden de las columnas (Sort columns): mediante esta opción el usuario puede elegir el orden en el que se mostrarán las columnas o pestañas. Disponible para la vista de Raw.
 
 * Recargar (*Start reloading*): activa la cuenta atrás para que se efectúe la recarga de los datos. En cualquier momento, el usuario puede detener esta recarga seleccionando Stop reloading (opción que sustituye a Start reloading una vez que se ha activado esta). En el extremo izquierdo de la barra de sección aparecerá una cuenta atrás indicándole el tiempo de espera hasta la recarga. Disponible para la vista Raw.
+
+=== 5.8 Atributos: pestañas y columnas
+Los atributos nos ayudan a realizar un análisis exhaustivo y personalizado de cada uno de los elementos que intervienen en el tráfico de la red que se está analizando.
+
+Estos se organizan en *pestañas o columnas* según la vista que estemos consultando. Las opciones que se muestran son comunes a todas las vistas salvo para el caso de Compare (ofrece solo la posibilidad de comparación no por atributos sino por semanas o meses) y Maps.
+
+Existen dos opciones muy útiles para la localización de las IPs que mayor tráfico generan: Scatter Plot y SRC/DST MAP.
