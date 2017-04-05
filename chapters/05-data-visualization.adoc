@@ -63,3 +63,22 @@ image::images/data-visualization/view.png[align="center"]
 *Tabla de datos*: muestra los valores clasificados por tipo de atributo seleccionado. Por ejemplo, cada fila puede estar mostrando cada una de las IPs de origen (Columna/Atributo: SRC Adress) con el detalle del porcentaje de bytes (Agregación) que está consumiendo ese elemento dentro de la red. Para el análisis aislado de uno o más elementos de esta barra (seleccionar como filtro), es necesario clicar sobre el elemento que desea filtrar. Para selección múltiple basta con mantener pulsada la tecla *Shift*.
 
 image::images/data-visualization/overview.png[align="center"]
+
+=== 5.2 Filtrar eventos
+
+La opción *Filters* permite el filtrado de eventos según criterios definidos por el usuario. Estos filtros pueden ser almacenados para ser usados posteriormente como plantilla para la visualización de los eventos.
+
+*Opciones de filtrado*:
+* Filter zoom: aisla gráficamente los eventos según un rango de tiempo.
+* Filtrar por valor de atributo (*Filter Selected*): nos permite convertir en filtro a uno o más elementos presentes en la tabla.
+* Búsqueda avanzada (*Advanced Search*): permite establecer condiciones para realizar una búsqueda avanzada que actúe a modo de filtro. Muy útil para aislar y analizar datos muy concretos.
+
+Para guardar un filtro como "habitual" basta con seleccionar la opción *+Save Current Filter*.
+
+image::images/data-visualization/advanced_search.png[align="center"]
+
+*Acciones para los filtros:*
+
+Además de la opción de búsqueda avanzada (*Advaced Search*), el menú *Filters* muestra las siguientes opciones:
+* Crear alarmas (*Create an alarm*) : nos permite configurar una alarma en base a los filtros aplicados.
+* Crear un widget en (*Create a widget on*) : crea un widget a partir de los filtros aplicados que se puede incluir en dashboards  o informes.
