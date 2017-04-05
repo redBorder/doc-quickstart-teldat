@@ -126,3 +126,25 @@ En la tabla de datos se mostrarán aquellos que corresponden al intervalo tempor
 A través de la vista *Unique*, el usuario podrá obtener información acerca de los elementos diferentes que han interactuado, al menos, una vez con la red en un periodo de tiempo determinado.
 
 Seleccionar el grupo de atributos que se desea analizar mediante la opción *Group By*.
+
+=== 5.4 Tipos de agregación
+El tipo de agregación permite que el usuario seleccione la unidad de medida en la que desea que se muestre la información.
+
+Estas son las diferentes unidades y métricas que encontrará en esta pestaña:
+* bps
+* bytes
+* packets
+* packets/s
+* flows
+* flows/s
+* client
+* quality
+* wireless stations
+* client/station
+* bps/client
+* flows/client
+* fps/client
+* bytes/station
+* bps/station
+
+NOTE: Optimice sus métricas combinando diferentes tipos de agregación con las opciones de granuralidad (lapsos de tiempo) que se encuentran disponibles.
