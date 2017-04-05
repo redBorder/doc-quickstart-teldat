@@ -82,3 +82,20 @@ image::images/data-visualization/advanced_search.png[align="center"]
 Además de la opción de búsqueda avanzada (*Advaced Search*), el menú *Filters* muestra las siguientes opciones:
 * Crear alarmas (*Create an alarm*) : nos permite configurar una alarma en base a los filtros aplicados.
 * Crear un widget en (*Create a widget on*) : crea un widget a partir de los filtros aplicados que se puede incluir en dashboards  o informes.
+
+
+=== 5.3 Vistas: múltiples opciones para visualizar los datos
+
+Las vistas ofrecen múltiples perspectivas para la visualización de los datos asociados al tráfico de red.
+
+NOTE: Recuerde que en la sección *Dashboard* puede crear widgets personalizados para monitorizar los eventos y que se muestren en una vista determinada.
+Las vistas que se encuentran disponibles para el Flow son las siguientes:
+
+* *Tops:* agregación de los eventos en base a una unidad para mostrar los más destacados. Suma el total de datos de diferentes eventos para mostrarlo como uno único.
+* *Raw:* vista de la totalidad de datos de los eventos en bruto, clasificados por atributos y franjas de tiempo.
+* *Compare:* comparación de intervalos de tiempo para analizar diferencias en el estado de la red.
+* *Unique:* muestra los elementos diferentes que ha interactuado con la red según atributo.
+
+NOTE: Las opciones que se muestran en la pestaña *Options* y los atributos *Add tab/Columns* variarán según el tipo de vista elegida.
+
+IMPORTANT: No olvide combinar las vistas con los diferentes tipos de gráficas. De este modo obtendrá múltiples posibilidades de análisis de los datos.
