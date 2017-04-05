@@ -69,6 +69,7 @@ image::images/data-visualization/overview.png[align="center"]
 La opción *Filters* permite el filtrado de eventos según criterios definidos por el usuario. Estos filtros pueden ser almacenados para ser usados posteriormente como plantilla para la visualización de los eventos.
 
 *Opciones de filtrado*:
+
 * Filter zoom: aisla gráficamente los eventos según un rango de tiempo.
 * Filtrar por valor de atributo (*Filter Selected*): nos permite convertir en filtro a uno o más elementos presentes en la tabla.
 * Búsqueda avanzada (*Advanced Search*): permite establecer condiciones para realizar una búsqueda avanzada que actúe a modo de filtro. Muy útil para aislar y analizar datos muy concretos.
@@ -80,6 +81,7 @@ image::images/data-visualization/advanced_search.png[align="center"]
 *Acciones para los filtros:*
 
 Además de la opción de búsqueda avanzada (*Advaced Search*), el menú *Filters* muestra las siguientes opciones:
+
 * Crear alarmas (*Create an alarm*) : nos permite configurar una alarma en base a los filtros aplicados.
 * Crear un widget en (*Create a widget on*) : crea un widget a partir de los filtros aplicados que se puede incluir en dashboards  o informes.
 
@@ -131,6 +133,7 @@ Seleccionar el grupo de atributos que se desea analizar mediante la opción *Gro
 El tipo de agregación permite que el usuario seleccione la unidad de medida en la que desea que se muestre la información.
 
 Estas son las diferentes unidades y métricas que encontrará en esta pestaña:
+
 * bps
 * bytes
 * packets
@@ -153,3 +156,19 @@ NOTE: Optimice sus métricas combinando diferentes tipos de agregación con las 
 Llamamos granularidad al grado de detalle con el que podemos visualizar los eventos. Las opciones de granuralidad varían según el rango de tiempo que se esté mostrando (1h., 2h., last week, last month, all, etc.).
 
 NOTE: La vista Raw es la más indicada para aplicar granuralidad para observar los datos en detalle.
+
+=== 5.6 Tipo de gráfica
+
+Es posible seleccionar el tipo de gráfica con el que se desean visualizar los datos obtenidos en las diferentes vistas. Las opciones son muy similares a las que se han mostrado en el proceso de creación de widgets personalizados.
+
+Las gráficas que se encuentran disponibles en cada momento, dependerán de la vista seleccionada. Esta opción no aparece, por ejemplo, al aplicar la vista Map a los datos, puesto que los datos se representarán en esta vista, sobre un mapa.
+
+*Stacked*: muestra la manera comparativa en una misma gráfica los datos correspondientes a cada una de los atributos seleccionados.
+
+*Area*: gráfica que ofrece de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado, siendo el total del tráfico la suma del tráfico por atributo.
+
+*Line*: muestra de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado; en este caso no se muestra el área sino que la gráfica viene representada por una línea.
+
+*Bars*: ofrece los datos de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado, siendo el total, la suma de todos los valores de cada uno de esos elementos. En este caso, los datos se representan gráficamente a través de barras.
+
+*SBars*: o Stacked Bars, ofrece en una misma gráfica los datos obtenidos para cada uno de los elementos incluidos en el atributo seleccionado, por lo que se pueden visualizar los resultados de manera independiente por IP, sensor, etc., representados gráficamente or barras.
