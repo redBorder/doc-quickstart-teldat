@@ -18,7 +18,7 @@ image::images/data-visualization/traffic_submenu.png[align="center"]
 ** Crear un filtro avanzado (*Advance Search*)
 ** Crear una alarma en base a las condiciones de los filtros aplicados (*Create an alarm*)
 ** Crear un widget basado en los filtros aplicados y aplicarlo en un dashboard o informe (*Create a widget on*)
-* vistas: ofrece diferentes opciones de visualización de la información.
+* *Vistas*: ofrece diferentes opciones de visualización de la información.
 ** *Raw*: datos de los eventos en bruto.
 ** *Tops*: suma el total de datos de diferentes eventos para mostrarlo como uno único.
 ** *Compare*: comparación de eventos comprendidos dentro de un periodo determinado.
