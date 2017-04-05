@@ -734,12 +734,14 @@ b.conum * { color: inherit !important; }
 <li><a href="#_5_1_traffic_menú_y_opciones">5.1 Traffic: menú y opciones</a>
 <ul class="sectlevel3">
 <li><a href="#_5_1_1_opciones_disponibles_en_el_submenú_de_la_sección_traffic">5.1.1 Opciones disponibles en el submenú de la sección Traffic</a></li>
-<li><a href="#_5_1_3">5.1.3</a></li>
+<li><a href="#_5_1_2_cuerpo_de_la_pantalla_filtrado_por_rango_de_tiempo_pestañas_de_atributos_y_vistas">5.1.2 Cuerpo de la pantalla: filtrado por rango de tiempo, pestañas de atributos y vistas.</a></li>
+<li><a href="#_5_1_3_resumen_buscador_y_tabla_de_datos">5.1.3 Resumen, buscador y tabla de datos</a></li>
 </ul>
 </li>
 <li><a href="#_5_2_filtrar_eventos">5.2 Filtrar eventos</a></li>
 <li><a href="#_5_3_vistas_múltiples_opciones_para_visualizar_los_datos">5.3 Vistas: múltiples opciones para visualizar los datos</a>
 <ul class="sectlevel3">
+<li><a href="#_5_3_1_tops">5.3.1 Tops</a></li>
 <li><a href="#_5_3_2_raw">5.3.2 Raw</a></li>
 <li><a href="#_5_3_3_compare">5.3.3 Compare</a></li>
 <li><a href="#_5_3_4_unique">5.3.4 Unique</a></li>
@@ -747,7 +749,7 @@ b.conum * { color: inherit !important; }
 </li>
 <li><a href="#_5_4_tipos_de_agregación">5.4 Tipos de agregación</a></li>
 <li><a href="#_5_5_granularidad">5.5 Granularidad</a></li>
-<li><a href="#_5_6_tipo_de_gráfica">5.6 Tipo de gráfica</a></li>
+<li><a href="#_5_6_tipos_de_gráficas">5.6 Tipos de gráficas</a></li>
 <li><a href="#_5_7_opciones">5.7 Opciones</a></li>
 <li><a href="#_5_8_atributos_pestañas_y_columnas">5.8 Atributos: pestañas y columnas</a></li>
 </ul>
@@ -1521,28 +1523,28 @@ Cada vista presenta su propio menú de opciones y las diferentes posibilidades d
 <div class="ulist">
 <ul>
 <li>
-<p>Raw: datos de los eventos en bruto.</p>
+<p><strong>Raw</strong>: datos de los eventos en bruto.</p>
 </li>
 <li>
-<p>Tops: suma el total de datos de diferentes eventos para mostrarlo como uno único.</p>
+<p><strong>Tops</strong>: suma el total de datos de diferentes eventos para mostrarlo como uno único.</p>
 </li>
 <li>
-<p>Compare: comparación de eventos comprendidos dentro de un periodo determinado.</p>
+<p><strong>Compare</strong>: comparación de eventos comprendidos dentro de un periodo determinado.</p>
 </li>
 <li>
-<p>Unique: muestra eventos que solo han sucedido una vez.</p>
+<p><strong>Unique</strong>: muestra eventos que solo han sucedido una vez.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Agregación: son los diferentes valores o unidades de medida en las que se pueden mostrar los datos. Por ejemplo, flows por segundo (flows/s) o bytes por segundo (bps)</p>
+<p><strong>Agregación</strong>: son los diferentes valores o unidades de medida en las que se pueden mostrar los datos. Por ejemplo, flows por segundo (flows/s) o bytes por segundo (bps)</p>
 </li>
 <li>
-<p>Granularidad: indica el grado de detalle temporal con el que es posible visualizar los datos. El mínimo valor de granularidad es un minuto.</p>
+<p><strong>Granularidad</strong>: indica el grado de detalle temporal con el que es posible visualizar los datos. El mínimo valor de granularidad es un minuto.</p>
 </li>
 <li>
-<p>Tipo de gráfica: muestra los diferentes tipos de gráfica entre los que podemos elegir para mostrar los datos. Los tipos de gráficas disponibles varían según el tipo de vista seleccionada. Estos son los siguientes:</p>
+<p><strong>Tipo de gráfica</strong>: muestra los diferentes tipos de gráfica entre los que podemos elegir para mostrar los datos. Los tipos de gráficas disponibles varían según el tipo de vista seleccionada. Estos son los siguientes:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1564,7 +1566,7 @@ Cada vista presenta su propio menú de opciones y las diferentes posibilidades d
 </div>
 </li>
 <li>
-<p>Opciones: en este apartado el usuario podrá realizar diferentes acciones para la gestión de los datos que se muestran en esta sección. Las opciones varían según el tipo de vista seleccionada.</p>
+<p><strong>Opciones</strong>: en este apartado el usuario podrá realizar diferentes acciones para la gestión de los datos que se muestran en esta sección. Las opciones varían según el tipo de vista seleccionada.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1582,18 +1584,25 @@ Cada vista presenta su propio menú de opciones y las diferentes posibilidades d
 <li>
 <p>Ordenar agregaciones (<strong>Sort Aggregations</strong>)</p>
 </li>
+<li>
+<p>Ordenar colummnas (<strong>Sort columns</strong>)</p>
+</li>
 </ul>
 </div>
 </li>
 <li>
-<p>Atributos: Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenderse como datos propios del evento que son los que realmente nos aportan información. Estos son llamados "atributos".</p>
+<p><strong>Atributos</strong>: Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenderse como datos propios del evento que son los que realmente nos aportan información. Estos son llamados "atributos".</p>
 <div class="paragraph">
-<p>Los atributos pueden mostrarse de varias maneras: en forma de pestañas o de columnas. (<strong>Add tabs/Columns</strong>) dependiendo de la vista que estemos consultando.
-==== 5.1.2 Cuerpo de la pantalla: filtrado por rango de tiempo, pestañas de atributos y vistas.
-<strong>Filtrado por rango de tiempo</strong>: acceso directo a los eventos filtrados en base a un periodo de tiempo</p>
+<p>Los atributos pueden mostrarse de varias maneras: en forma de pestañas o de columnas. (<strong>Add tabs/Columns</strong>) dependiendo de la vista que estemos consultando.</p>
 </div>
 </li>
 </ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_5_1_2_cuerpo_de_la_pantalla_filtrado_por_rango_de_tiempo_pestañas_de_atributos_y_vistas">5.1.2 Cuerpo de la pantalla: filtrado por rango de tiempo, pestañas de atributos y vistas.</h4>
+<div class="paragraph">
+<p><strong>Filtrado por rango de tiempo</strong>: acceso directo a los eventos filtrados en base a un periodo de tiempo</p>
 </div>
 <div class="paragraph">
 <p>Existe la posibilidad de seleccionar un rango de fechas diferente a las que se ofrecen por defecto. Dependiendo de las necesidades del usuario, podrá realizar una selección de tiempo personalizada a través de la opción <strong>Custom</strong>. Más adelante se especificará el procedimiento a seguir para realizar un filtro temporal personalizado.</p>
@@ -1628,7 +1637,7 @@ El usuario puede variar el orden en el que se muestran las pestañas en cualquie
 </div>
 </div>
 <div class="sect3">
-<h4 id="_5_1_3">5.1.3</h4>
+<h4 id="_5_1_3_resumen_buscador_y_tabla_de_datos">5.1.3 Resumen, buscador y tabla de datos</h4>
 <div class="paragraph">
 <p><strong>Resumen</strong>: bajo el área de Vista se encuentra un resumen relativo a todos los datos cargados que aparecen tanto en la vista como en la tabla de datos. En este resumen se indican, por este orden, el valor total de la agregación de todos los datos cargados, el valor total de la agregación de todos los datos cargados y seleccionados, el número de filas de datos cargadas y el porcentaje del valor agregado de los datos cargados sobre el total de datos.</p>
 </div>
@@ -1745,13 +1754,15 @@ Las opciones que se muestran en la pestaña <strong>Options</strong> y los atrib
 </td>
 <td class="content">
 No olvide combinar las vistas con los diferentes tipos de gráficas. De este modo obtendrá múltiples posibilidades de análisis de los datos.
-==== 5.3.1 Tops
 </td>
 </tr>
 </table>
 </div>
+<div class="sect3">
+<h4 id="_5_3_1_tops">5.3.1 Tops</h4>
 <div class="paragraph">
 <p>La vista <strong>Tops</strong> nos permite visualizar cuáles han sido los eventos más destacados según el intervalo de tiempo que se haya seleccionado. Lo que visualizamos en la gráfica es la suma del total de dichos eventos mostrados como un único evento. Si posamos el ratón por encima de cada uno de estos "picos" o Tops, veremos el desglose del evento por día, hora y tipo de dimensión o atributo que se esté consultando.</p>
+</div>
 </div>
 <div class="sect3">
 <h4 id="_5_3_2_raw">5.3.2 Raw</h4>
@@ -1770,7 +1781,7 @@ No olvide combinar las vistas con los diferentes tipos de gráficas. De este mod
 <td class="content">
 <div class="paragraph">
 <p>Como se puede observar en la imagen, el tipo de gráfica ideal para la vista Raw es el de flujo de
-datos o <strong>Streams</strong>.</p>
+  datos o <strong>Streams</strong>.</p>
 </div>
 <div class="paragraph">
 <p>En la vista Raw los atributos se muestran en columnas</p>
@@ -1827,34 +1838,12 @@ datos o <strong>Streams</strong>.</p>
 <li>
 <p>flows/s</p>
 </li>
-<li>
-<p>client</p>
-</li>
-<li>
-<p>quality</p>
-</li>
-<li>
-<p>wireless stations</p>
-</li>
-<li>
-<p>client/station</p>
-</li>
-<li>
-<p>bps/client</p>
-</li>
-<li>
-<p>flows/client</p>
-</li>
-<li>
-<p>fps/client</p>
-</li>
-<li>
-<p>bytes/station</p>
-</li>
-<li>
-<p>bps/station</p>
-</li>
 </ul>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/aggregations.png" alt="aggregations">
+</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1886,9 +1875,14 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 </tr>
 </table>
 </div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/granularity.png" alt="granularity">
+</div>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_5_6_tipo_de_gráfica">5.6 Tipo de gráfica</h3>
+<h3 id="_5_6_tipos_de_gráficas">5.6 Tipos de gráficas</h3>
 <div class="paragraph">
 <p>Es posible seleccionar el tipo de gráfica con el que se desean visualizar los datos obtenidos en las diferentes vistas. Las opciones son muy similares a las que se han mostrado en el proceso de creación de widgets personalizados.</p>
 </div>
@@ -1898,17 +1892,50 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 <div class="paragraph">
 <p><strong>Stacked</strong>: muestra la manera comparativa en una misma gráfica los datos correspondientes a cada una de los atributos seleccionados.</p>
 </div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/stacked_graphic.png" alt="stacked graphic">
+</div>
+</div>
 <div class="paragraph">
 <p><strong>Area</strong>: gráfica que ofrece de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado, siendo el total del tráfico la suma del tráfico por atributo.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/area_graphic.png" alt="area graphic">
+</div>
 </div>
 <div class="paragraph">
 <p><strong>Line</strong>: muestra de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado; en este caso no se muestra el área sino que la gráfica viene representada por una línea.</p>
 </div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/line_graphic.png" alt="line graphic">
+</div>
+</div>
 <div class="paragraph">
 <p><strong>Bars</strong>: ofrece los datos de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado, siendo el total, la suma de todos los valores de cada uno de esos elementos. En este caso, los datos se representan gráficamente a través de barras.</p>
 </div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/bars_graphic.png" alt="bars graphic">
+</div>
+</div>
 <div class="paragraph">
 <p><strong>SBars</strong>: o Stacked Bars, ofrece en una misma gráfica los datos obtenidos para cada uno de los elementos incluidos en el atributo seleccionado, por lo que se pueden visualizar los resultados de manera independiente por IP, sensor, etc., representados gráficamente or barras.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/sbars_graphic.png" alt="sbars graphic">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Streams</strong>: gráfica solo disponible para la vista Raw. Muestra los flujos de tráfico por sensor.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/streams_graphic.png" alt="streams graphic">
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -1925,21 +1952,65 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 <p>Mostrar total (<strong>Show Total</strong>): al seleccionar esta opción se muestra en la gráfica el valor del total del tráfico diferenciado del recibido o emitido por cada uno de los atributos que se estén consultando. Cuando esta opción se encuentra activa, en el listado de opciones aparecerá "Hide total". Disponible en las vistas Top y Unique.</p>
 </li>
 <li>
-<p>Exportar a CSV (<strong>Export to CSV</strong>): el usuario obtendrá un fichero de descarga en formato CSV que incluye los datos correspondientes al atributo que se seleccione, pudiendo fijar un límite de las filas que se incluirán en el archivo. Disponible solo para las vistas Tops y Unique.</p>
+<p>Exportar a CSV (<strong>Export to CSV</strong>): el usuario obtendrá un fichero de descarga en formato CSV que incluye los datos correspondientes al atributo que se seleccione, pudiendo fijar un límite de las filas que se incluirán en el archivo. Disponible solo para las vistas Tops, Raw y Unique.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/export_to_csv.png" alt="export to csv">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Máquina del tiempo (<strong>Time machine</strong>): regresa la máquina a un estado anterior. Al seleccionar esta opción el usuario podrá visualizar los datos tal y como si estuviera viéndolos en el día y hora del pasado que haya indicado. Disponible para todas las vistas.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/timemachine.png" alt="timemachine">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Guardar pestañas como predeterminadas (<strong>Save tabs as default</strong>): al aplicar esta opción, las columnas o pestañas de datos que se hayan incluido para el análisis se mostrarán por defecto en las nuevas consultas que se realicen. Disponible para las vistas Raw, Unique y Tops.</p>
 </li>
 <li>
-<p>Máquina del tiempo (<strong>Time machine</strong>): regresa la máquina a un estado anterior. Al seleccionar esta opción el usuario podrá visualizar los datos tal y como si estuviera viéndolos en el día y hora del pasado que haya indicado. Disponible para todas las vistas menos para Raw.</p>
+<p>Orden de las agregaciones (<strong>Sort Aggregations</strong>): mediante esta opción el usuario puede elegir el orden en el que se mostrarán las agregaciones disponibles. Disponible para las vistas Raw, Tops y Unique.</p>
 </li>
+</ul>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/sort_aggregations.png" alt="sort aggregations">
+</div>
+</div>
+<div class="ulist">
+<ul>
 <li>
-<p>Guardar pestañas/columnas como predeterminadas (Save tabs/columns as default): al aplicar esta opción, las columnas o pestañas de datos que se hayan incluido para el análisis se mostrarán por defecto en las nuevas consultas que se realicen. Disponible para las vistas Raw, Unique y Tops.</p>
+<p>Orden de las columnas (Sort columns): mediante esta opción el usuario puede elergir el orden en el que se mostrarán las columnas disponibles. Disponible únicamente para la vista Raw.</p>
 </li>
-<li>
-<p>Orden de las columnas (Sort columns): mediante esta opción el usuario puede elegir el orden en el que se mostrarán las columnas o pestañas. Disponible para la vista de Raw.</p>
-</li>
+</ul>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/sort_columns.png" alt="sort columns">
+</div>
+</div>
+<div class="ulist">
+<ul>
 <li>
 <p>Recargar (<strong>Start reloading</strong>): activa la cuenta atrás para que se efectúe la recarga de los datos. En cualquier momento, el usuario puede detener esta recarga seleccionando Stop reloading (opción que sustituye a Start reloading una vez que se ha activado esta). En el extremo izquierdo de la barra de sección aparecerá una cuenta atrás indicándole el tiempo de espera hasta la recarga. Disponible para la vista Raw.</p>
 </li>
 </ul>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/traffic_submenu_with_reloading.png" alt="traffic submenu with reloading">
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -1948,10 +2019,199 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 <p>Los atributos nos ayudan a realizar un análisis exhaustivo y personalizado de cada uno de los elementos que intervienen en el tráfico de la red que se está analizando.</p>
 </div>
 <div class="paragraph">
-<p>Estos se organizan en <strong>pestañas o columnas</strong> según la vista que estemos consultando. Las opciones que se muestran son comunes a todas las vistas salvo para el caso de Compare (ofrece solo la posibilidad de comparación no por atributos sino por semanas o meses) y Maps.</p>
+<p>Estos se organizan en <strong>pestañas o columnas</strong> según la vista que estemos consultando. Las opciones que se muestran son comunes a todas las vistas salvo para el caso de Compare (ofrece solo la posibilidad de comparación no por atributos sino por semanas o meses).</p>
 </div>
 <div class="paragraph">
-<p>Existen dos opciones muy útiles para la localización de las IPs que mayor tráfico generan: Scatter Plot y SRC/DST MAP.</p>
+<p>A continuación enumeramos los atributos que el usuario tiene disponibles y los diferentes aspectos
+que puede consultar de cada uno de ellos:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Application</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Application</p>
+</li>
+<li>
+<p>Engine</p>
+</li>
+<li>
+<p>HTTP User Agent</p>
+</li>
+<li>
+<p>Host</p>
+</li>
+<li>
+<p>Host L2</p>
+</li>
+<li>
+<p>Referer</p>
+</li>
+<li>
+<p>Referer L2</p>
+</li>
+<li>
+<p>Selector</p>
+</li>
+<li>
+<p>Product Type</p>
+</li>
+<li>
+<p>URL</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Flow</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Direction</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Interface</p>
+<div class="ulist">
+<ul>
+<li>
+<p>LAN Interface</p>
+</li>
+<li>
+<p>LAN Description</p>
+</li>
+<li>
+<p>WAN Interface</p>
+</li>
+<li>
+<p>WAN Description</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Location</p>
+<div class="ulist">
+<ul>
+<li>
+<p>WAN IP Country</p>
+</li>
+<li>
+<p>WAN IP AS</p>
+</li>
+<li>
+<p>WAN IP MAP</p>
+</li>
+<li>
+<p>Service Provider</p>
+</li>
+<li>
+<p>Namespace</p>
+</li>
+<li>
+<p>Deployment</p>
+</li>
+<li>
+<p>Market</p>
+</li>
+<li>
+<p>Organization</p>
+</li>
+<li>
+<p>Campus</p>
+</li>
+<li>
+<p>Building</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Network</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Conversation</p>
+</li>
+<li>
+<p>LAN IP</p>
+</li>
+<li>
+<p>LAN IP Name</p>
+</li>
+<li>
+<p>LAN Net Address</p>
+</li>
+<li>
+<p>WAN IP</p>
+</li>
+<li>
+<p>WAN IP Name</p>
+</li>
+<li>
+<p>Protocol</p>
+</li>
+<li>
+<p>TOS</p>
+</li>
+<li>
+<p>Sensor Type</p>
+</li>
+<li>
+<p>Scatterplot</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Transport</p>
+<div class="ulist">
+<ul>
+<li>
+<p>LAN L4 Port</p>
+</li>
+<li>
+<p>WAN L4 Port</p>
+</li>
+<li>
+<p>TPC flags</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>UUID</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Service Provider UUID</p>
+</li>
+<li>
+<p>Namespace UUID</p>
+</li>
+<li>
+<p>Deployment UUID</p>
+</li>
+<li>
+<p>Market UUID</p>
+</li>
+<li>
+<p>Organization UUID</p>
+</li>
+<li>
+<p>Campus UUID</p>
+</li>
+<li>
+<p>Building UUID</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 </div>
 </div>
