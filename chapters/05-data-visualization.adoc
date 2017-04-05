@@ -148,3 +148,8 @@ Estas son las diferentes unidades y métricas que encontrará en esta pestaña:
 * bps/station
 
 NOTE: Optimice sus métricas combinando diferentes tipos de agregación con las opciones de granuralidad (lapsos de tiempo) que se encuentran disponibles.
+
+=== 5.5 Granularidad
+Llamamos granularidad al grado de detalle con el que podemos visualizar los eventos. Las opciones de granuralidad varían según el rango de tiempo que se esté mostrando (1h., 2h., last week, last month, all, etc.).
+
+NOTE: La vista Raw es la más indicada para aplicar granuralidad para observar los datos en detalle.
