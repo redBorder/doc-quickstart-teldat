@@ -851,7 +851,7 @@ Por defecto la contraseña de root es "<strong>teldat</strong>"
 </div>
 </div>
 <div class="paragraph">
-<p>Espere hasta que lla instalación se haya completado al 100%. Este proceso puede durar unos minutos.</p>
+<p>Espere hasta que la instalación se haya completado al 100%.</p>
 </div>
 <div class="paragraph">
 <p>Una vez finalizada la instalación, el sistema será reiniciado. Durante el primer arranque el sistema procederá
@@ -865,14 +865,14 @@ a realizar una serie de acciones para configurarse por primera vez.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Este proceso puede tardar varios minutos</p>
+<p>Estos procesos puede tardar varios minutos</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Una vez que en la terminal nos apareczca la sigueinte imagen, ya podremos acceder.</p>
+<p>Una vez que en la terminal nos aparezca la sigueinte imagen, ya podremos acceder.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -886,7 +886,7 @@ a realizar una serie de acciones para configurarse por primera vez.</p>
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-LAs credenciales por defecto son "usuario: root / password: teldat"
+Las credenciales por defecto son "usuario: root / password: teldat"
 </td>
 </tr>
 </table>
@@ -895,7 +895,7 @@ LAs credenciales por defecto son "usuario: root / password: teldat"
 <div class="sect2">
 <h3 id="_configuración_inicial_wizard">Configuración inicial - Wizard</h3>
 <div class="paragraph">
-<p>Una vez hemos hecho login en el manager, debemos ejecutar el comando <strong>rb_sysconf</strong> para realizar la configuración inicial.</p>
+<p>Una vez logueados en el manager, debemos ejecutar el comando <strong>rb_sysconf</strong> para realizar la configuración inicial.</p>
 </div>
 <div class="paragraph">
 <p>Estas son las opciones que encontrará en la pantalla principal de este menú:</p>
@@ -906,10 +906,11 @@ LAs credenciales por defecto son "usuario: root / password: teldat"
 <p><strong>System Configuration</strong>: configuración del hostname, IP del Manager, hora y estado del Manager.</p>
 </li>
 <li>
-<p><strong>Network Configuration</strong>: creación de bondings, segmentos, DNS, rutas e IPMI. Recuerde que, para poner en funcionamiento el Manager, se necesitan por lo menos dos conexiones de red.</p>
+<p><strong>Network Configuration</strong>: creación de bondings, segmentos, DNS, rutas e IPMI.
+Recuerde que para formar un cluster se necesitan por lo menos dos conexiones de red, no siendo así para instalaciones de un solo nodo.</p>
 </li>
 <li>
-<p><strong>Passwords</strong>: acceda a esta opción si desea modificar las contraseñas que haya definido por cada rol de usuario.</p>
+<p><strong>Passwords</strong>: acceda a esta opción si desea modificar las contraseñas de los usuarios del sistema.</p>
 </li>
 <li>
 <p><strong>w) start simple wizard</strong>: inicia un asistente que le permitirá de forma sencilla y rápida realizar la instalación y configuración del Manager.</p>
@@ -928,7 +929,7 @@ LAs credenciales por defecto son "usuario: root / password: teldat"
 <p>Para realizar la instalación automática del manager, usaremos la opción <strong>w) start simple wizard</strong>.</p>
 </div>
 <div class="paragraph">
-<p>Como podrá comprobar, existen una serie de opciones definidas por defecto.
+<p>Existen una serie de opciones definidas por defecto (indicadas entre corchetes).
 Para aceptarlas tan solo tiene que pulsar Enter. No obstante, puede modificarlas manualmente
 en cualquier momento del proceso de instalación.</p>
 </div>
@@ -937,9 +938,6 @@ en cualquier momento del proceso de instalación.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
-<li>
-<p>Selected Mode: cluster. Seleccionar el modo cluster para unir más de un Manager.</p>
-</li>
 <li>
 <p>Insert Hostname [rbmanager]. La opción que viene definida por defecto es la de rbmanager. Este es un nombre que identifica de manera clara y sencilla al Manager y su posición dentro del cluster.</p>
 </li>
@@ -950,7 +948,7 @@ en cualquier momento del proceso de instalación.</p>
 <p>Insert DNS Primary. Definido por defecto. El usuario podrá cambiarlo para indicar el servidor que provee DNS a su red y al que estará asociado el Manager.</p>
 </li>
 <li>
-<p>Insert DNS Secondary (optional). Indicar DNS secundario de manera opcional. Se aconseja introducir un DNS alternativo que sustituya al DNS primario en caso de fallo del servidor</p>
+<p>Insert DNS Secondary (optional). Indicar DNS secundario de manera opcional. Se aconseja introducir un DNS alternativo que sustituya al DNS primario en caso de fallo del servidor.</p>
 </li>
 </ol>
 </div>
@@ -980,14 +978,11 @@ mensaje rotulado en verde: DNS and domain settings applied successfully.</p>
 </div>
 <div class="paragraph">
 <p>El siguiente paso es indicar el servidor de hora: <strong>NTP server [pool.ntp.org]:</strong>
-Si existe algún NTP server en su red, se debe indicar. En caso contrario, se asignará uno por defecto.</p>
+Si existe algún servidor NTP en su red que quiera utilizar, se debe indicar aquí. En caso contrario, se asignará uno por defecto.</p>
 </div>
 <div class="paragraph">
 <p>Si sólo va a desplegar un manager, necesitará una única interfaz de red. Por el contrario, si va a desplegar un cluster
-con múltiples managers será necesario al menos reservar 2 interfaces de red.</p>
-</div>
-<div class="paragraph">
-<p>Para la creación de un cluster es necesario que el usuario reserve dos interfaces de red:</p>
+con múltiples managers será necesario al menos reservar 2 interfaces de red:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1060,7 +1055,8 @@ la red de sincronismo.</p>
 </div>
 <div class="paragraph">
 <p>Como último paso se preguntan una serie de opciones de configuración relacionadas con la creación de un cluster de varios managers
-y la configuración de servicios fuera del manager.</p>
+y la configuración de servicios fuera del manager. Se recomienda dejar los valores por defecto para el caso
+de instalaciones on-premise.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1123,7 +1119,7 @@ A través de la interfaz web nos dirigimos a Tools &#8594; Licenses</p>
 <p>En una instalación nueva nos encontraremos esta vista como se muestra arriba, donde aún no se ha cargado ninguna licencia.</p>
 </div>
 <div class="paragraph">
-<p>Para obtener una licencia debemos de pulsa en el botón "Request license". Nos aparecerá un formulario donde tendremos que
+<p>Para obtener una licencia debemos pulsar en el botón "Request license". Nos aparecerá un formulario donde tendremos que
 indicar la cantidad de MB diarios que se van a consumir y el número máximo de sensores de cada tipo.</p>
 </div>
 <div class="imageblock" style="text-align: center">
@@ -1167,7 +1163,7 @@ interfaz de gestión de usuarios, accesible en <strong>Tools &#8594; Users setti
 </div>
 <div class="paragraph">
 <p>Para buscar un usuario concreto es posible introducir sus datos en el buscador, o bien, navegar por el listado alfabético que se
-muestra sobre el listado de usuairos dados de alta.</p>
+muestra sobre el listado de usuarios dados de alta.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1175,7 +1171,7 @@ muestra sobre el listado de usuairos dados de alta.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Solo el usuario con el rol de <strong>Súper Administrador</strong> tiene habilitada esta función. El resto de usuarios solo podrá visualizar las
+<p>Sólo el usuario con el rol de <strong>Súper Administrador</strong> tiene habilitada esta función. El resto de usuarios sólo podrá visualizar las
 diferentes secciones de la plataforma, pero no modificar su contenido (salvo en el caso de su propio perfil de usuario).</p>
 </div>
 <div class="admonitionblock important">
@@ -1210,7 +1206,7 @@ ha hecho login, la IP y la hora desde las cuales realizó el último acceso.</
 </div>
 <div class="paragraph">
 <p>Para acceder directamente al menú de configuración de nuestro perfil de usuario, podemos hacerlo también pulsando sobre
-el nombre de usuario que aparece en la barra superio de herramientas, y pulsar sobre el botón <strong>My profile</strong></p>
+el nombre de usuario que aparece en la barra superior de herramientas, y pulsar sobre el botón <strong>My profile</strong></p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1251,7 +1247,7 @@ un resumen de su estado y actividad dentro de la plataforma.</p>
 <p>Email</p>
 </li>
 <li>
-<p>Top Domain: Dominio superio máximo al que el usuario puede acceder. El dominio de más alto nivel es <strong>root</strong>.</p>
+<p>Top Domain: Dominio superior máximo al que el usuario puede acceder. El dominio de más alto nivel es <strong>root</strong>.</p>
 </li>
 <li>
 <p>Another actions: Nos encontramos 3 botones para realizar las siguientes acciones:</p>
@@ -1349,7 +1345,7 @@ Cada vez que deseemos modificar nuestra propia cuenta de usuario deberemos de in
 </div>
 </li>
 <li>
-<p><strong>Área principal</strong>: la información que se muestra en este área dependenrá de la vista seleccionada en <strong>View</strong>. Existen tres vistas disponibles para visualizar la organización de los sensores registrados en el Manager:</p>
+<p><strong>Área principal</strong>: la información que se muestra en este área dependerá de la vista seleccionada en <strong>View</strong>. Existen tres vistas disponibles para visualizar la organización de los sensores registrados en el Manager:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1396,6 +1392,10 @@ Cada vista presenta su propio menú de opciones y las diferentes posibilidades d
 <div class="paragraph">
 <p>Seleccione el tipo de sensor en el menú desplegable y a continuación, complete la información que se solicita.</p>
 </div>
+<div class="paragraph">
+<p>Para registrar sensores de Teldat, se deberá seleccionar tanto el tipo de sensor como su número de serie. En el caso de que el sensor no sea de Teldat,
+se deberá elegir un tipo de sensor genérico e identificarlo mediante la IP del sensor o su red.</p>
+</div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
 <img src="images/sensors/add_sensors_dialog.png" alt="add sensors dialog">
@@ -1425,7 +1425,7 @@ Cada vista presenta su propio menú de opciones y las diferentes posibilidades d
 <div class="sect2">
 <h3 id="_4_3_añadir_un_dominio">4.3 Añadir un dominio</h3>
 <div class="paragraph">
-<p>Para añadir un dominio debe seleccionar la opción <strong>+Add Domain</strong> que se encuentra en el submenú superior derecha, elegir el tipo de dominio que se quiere añadir, y a continuación, rellenar los campos requeridos (estos variarán según el tipo de dominio a crear)</p>
+<p>Para añadir un dominio se debe seleccionar la opción <strong>+Add Domain</strong> que se encuentra en el submenú superior derecho, elegir el tipo de dominio que se quiere añadir, y a continuación, rellenar los campos requeridos (estos variarán según el tipo de dominio a crear)</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1441,7 +1441,7 @@ Cada vista presenta su propio menú de opciones y las diferentes posibilidades d
 <div class="sect2">
 <h3 id="_4_4_editar_un_dominio">4.4 Editar un dominio</h3>
 <div class="paragraph">
-<p>Para acceder a la edición de un dominio debe hacer clic en el icono "Editar" situado a la derecha del dominio que desea editar desde la vistsa de árbol y seleccionar la opción <strong>Edit</strong>.</p>
+<p>Para acceder a la edición de un dominio se debe hacer clic en el icono "Editar" situado a la derecha del dominio que desea editar desde la vista de árbol y seleccionar la opción <strong>Edit</strong>.</p>
 </div>
 <div class="paragraph">
 <p>Estos son algunos de los datos que se pueden editar en un dominio. Dependiendo del tipo de dominio que se seleccione, aparecerán unos campos u otros:</p>
@@ -1449,22 +1449,13 @@ Cada vista presenta su propio menú de opciones y las diferentes posibilidades d
 <div class="ulist">
 <ul>
 <li>
-<p><strong>General</strong>: muestra información general del sensor. Nombre (no editable desde la web), tipo de dominio y descripción.</p>
+<p><strong>General</strong>: muestra información general del sensor. Nombre (no editable), tipo de dominio y descripción.</p>
 </li>
 <li>
 <p><strong>Namespace Rules</strong>: permite añadir reglas que se aplicarán a nivel de dominio.</p>
 </li>
 <li>
-<p><strong>IPS/IDS Settings</strong>: permite configurar los parámetros generales de los sensores IPS/IDS que cuelgan del dominio. Esta será la configuración que hereden todos los sensores que se encuentren debajo de este dominio.</p>
-</li>
-<li>
 <p><strong>Servidores (Servers)</strong>: En este apartado el usuario puede definir la configuración de los servidores Proxy y Syslog. Todos los valores que se muestran son los heredados por defecto. Sobreescribir en caso de que sea necesario.</p>
-</li>
-<li>
-<p><strong>IP variables</strong>: en este apartado se muestran los valores para las variables IP Snort. Aquellas que sean heredadas de un nivel superior, aparecerán con un check en la casilla <strong>Inherited</strong>.</p>
-</li>
-<li>
-<p><strong>Variables de puerto (Port variables)</strong>: en este apartado se muestran los valores para las variables de los puertos Snort. Aquellas que sean heredadas de un nivel superior, aparecerán con un check en la casilla <strong>Inherited</strong></p>
 </li>
 <li>
 <p><strong>Localización (Location)</strong>:  Localiza el sensor o el dominio en un mapamundi.</p>
@@ -1519,23 +1510,7 @@ Cada vista presenta su propio menú de opciones y las diferentes posibilidades d
 </div>
 </li>
 <li>
-<p><strong>Vistas</strong>: ofrece diferentes opciones de visualización de la información.</p>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Raw</strong>: datos de los eventos en bruto.</p>
-</li>
-<li>
-<p><strong>Tops</strong>: suma el total de datos de diferentes eventos para mostrarlo como uno único.</p>
-</li>
-<li>
-<p><strong>Compare</strong>: comparación de eventos comprendidos dentro de un periodo determinado.</p>
-</li>
-<li>
-<p><strong>Unique</strong>: muestra eventos que solo han sucedido una vez.</p>
-</li>
-</ul>
-</div>
+<p><strong>Vistas</strong>: ofrece diferentes opciones de visualización de la información. Se explicarán con más detalles posteriormente.</p>
 </li>
 <li>
 <p><strong>Agregación</strong>: son los diferentes valores o unidades de medida en las que se pueden mostrar los datos. Por ejemplo, flows por segundo (flows/s) o bytes por segundo (bps)</p>
@@ -1585,7 +1560,7 @@ Cada vista presenta su propio menú de opciones y las diferentes posibilidades d
 <p>Ordenar agregaciones (<strong>Sort Aggregations</strong>)</p>
 </li>
 <li>
-<p>Ordenar colummnas (<strong>Sort columns</strong>)</p>
+<p>Ordenar columnas (<strong>Sort columns</strong>)</p>
 </li>
 </ul>
 </div>
@@ -1602,7 +1577,7 @@ Cada vista presenta su propio menú de opciones y las diferentes posibilidades d
 <div class="sect3">
 <h4 id="_5_1_2_cuerpo_de_la_pantalla_filtrado_por_rango_de_tiempo_pestañas_de_atributos_y_vistas">5.1.2 Cuerpo de la pantalla: filtrado por rango de tiempo, pestañas de atributos y vistas.</h4>
 <div class="paragraph">
-<p><strong>Filtrado por rango de tiempo</strong>: acceso directo a los eventos filtrados en base a un periodo de tiempo</p>
+<p><strong>Filtrado por rango de tiempo</strong>: acceso directo a los eventos filtrados en base a un periodo de tiempo.</p>
 </div>
 <div class="paragraph">
 <p>Existe la posibilidad de seleccionar un rango de fechas diferente a las que se ofrecen por defecto. Dependiendo de las necesidades del usuario, podrá realizar una selección de tiempo personalizada a través de la opción <strong>Custom</strong>. Más adelante se especificará el procedimiento a seguir para realizar un filtro temporal personalizado.</p>
