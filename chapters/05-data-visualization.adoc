@@ -19,25 +19,26 @@ image::images/data-visualization/traffic_submenu.png[align="center"]
 ** Crear una alarma en base a las condiciones de los filtros aplicados (*Create an alarm*)
 ** Crear un widget basado en los filtros aplicados y aplicarlo en un dashboard o informe (*Create a widget on*)
 * vistas: ofrece diferentes opciones de visualización de la información.
-** Raw: datos de los eventos en bruto.
-** Tops: suma el total de datos de diferentes eventos para mostrarlo como uno único.
-** Compare: comparación de eventos comprendidos dentro de un periodo determinado.
-** Unique: muestra eventos que solo han sucedido una vez.
-* Agregación: son los diferentes valores o unidades de medida en las que se pueden mostrar los datos. Por ejemplo, flows por segundo (flows/s) o bytes por segundo (bps)
-* Granularidad: indica el grado de detalle temporal con el que es posible visualizar los datos. El mínimo valor de granularidad es un minuto.
-* Tipo de gráfica: muestra los diferentes tipos de gráfica entre los que podemos elegir para mostrar los datos. Los tipos de gráficas disponibles varían según el tipo de vista seleccionada. Estos son los siguientes:
+** *Raw*: datos de los eventos en bruto.
+** *Tops*: suma el total de datos de diferentes eventos para mostrarlo como uno único.
+** *Compare*: comparación de eventos comprendidos dentro de un periodo determinado.
+** *Unique*: muestra eventos que solo han sucedido una vez.
+* *Agregación*: son los diferentes valores o unidades de medida en las que se pueden mostrar los datos. Por ejemplo, flows por segundo (flows/s) o bytes por segundo (bps)
+* *Granularidad*: indica el grado de detalle temporal con el que es posible visualizar los datos. El mínimo valor de granularidad es un minuto.
+* *Tipo de gráfica*: muestra los diferentes tipos de gráfica entre los que podemos elegir para mostrar los datos. Los tipos de gráficas disponibles varían según el tipo de vista seleccionada. Estos son los siguientes:
 ** Area
 ** Stacked
 ** Line
 ** Bars
 ** SBars
-* Opciones: en este apartado el usuario podrá realizar diferentes acciones para la gestión de los datos que se muestran en esta sección. Las opciones varían según el tipo de vista seleccionada.
+* *Opciones*: en este apartado el usuario podrá realizar diferentes acciones para la gestión de los datos que se muestran en esta sección. Las opciones varían según el tipo de vista seleccionada.
 ** Mostrar total (*Show Total*)
 ** Exportar a CSV (*Export to CSV*)
 ** Máquina del tiempo (*Time Machine*)
 ** Guardar las pestañas como predeterminadas (*Save tabs as default*)
 ** Ordenar agregaciones (*Sort Aggregations*)
-* Atributos: Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenderse como datos propios del evento que son los que realmente nos aportan información. Estos son llamados "atributos".
+** Ordenar colummnas (*Sort columns*)
+* *Atributos*: Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenderse como datos propios del evento que son los que realmente nos aportan información. Estos son llamados "atributos".
 +
 Los atributos pueden mostrarse de varias maneras: en forma de pestañas o de columnas. (*Add tabs/Columns*) dependiendo de la vista que estemos consultando.
 
@@ -57,7 +58,8 @@ image::images/data-visualization/body.png[align="center"]
 
 image::images/data-visualization/view.png[align="center"]
 
-==== 5.1.3
+==== 5.1.3 Resumen, buscador y tabla de datos
+
 *Resumen*: bajo el área de Vista se encuentra un resumen relativo a todos los datos cargados que aparecen tanto en la vista como en la tabla de datos. En este resumen se indican, por este orden, el valor total de la agregación de todos los datos cargados, el valor total de la agregación de todos los datos cargados y seleccionados, el número de filas de datos cargadas y el porcentaje del valor agregado de los datos cargados sobre el total de datos.
 
 *Buscador*: permite realizar una búsqueda por atributo. Las búsquedas se convierten en filtros automáticamente tal y como veremos más adelante.
@@ -103,6 +105,7 @@ Las vistas que se encuentran disponibles para el Flow son las siguientes:
 NOTE: Las opciones que se muestran en la pestaña *Options* y los atributos *Add tab/Columns* variarán según el tipo de vista elegida.
 
 IMPORTANT: No olvide combinar las vistas con los diferentes tipos de gráficas. De este modo obtendrá múltiples posibilidades de análisis de los datos.
+
 ==== 5.3.1 Tops
 
 La vista *Tops* nos permite visualizar cuáles han sido los eventos más destacados según el intervalo de tiempo que se haya seleccionado. Lo que visualizamos en la gráfica es la suma del total de dichos eventos mostrados como un único evento. Si posamos el ratón por encima de cada uno de estos "picos" o Tops, veremos el desglose del evento por día, hora y tipo de dimensión o atributo que se esté consultando.
@@ -142,15 +145,8 @@ Estas son las diferentes unidades y métricas que encontrará en esta pestaña:
 * packets/s
 * flows
 * flows/s
-* client
-* quality
-* wireless stations
-* client/station
-* bps/client
-* flows/client
-* fps/client
-* bytes/station
-* bps/station
+
+image::images/data-visualization/aggregations.png[align="center"]
 
 NOTE: Optimice sus métricas combinando diferentes tipos de agregación con las opciones de granuralidad (lapsos de tiempo) que se encuentran disponibles.
 
@@ -158,6 +154,8 @@ NOTE: Optimice sus métricas combinando diferentes tipos de agregación con las 
 Llamamos granularidad al grado de detalle con el que podemos visualizar los eventos. Las opciones de granuralidad varían según el rango de tiempo que se esté mostrando (1h., 2h., last week, last month, all, etc.).
 
 NOTE: La vista Raw es la más indicada para aplicar granuralidad para observar los datos en detalle.
+
+image::images/data-visualization/granularity.png[align="center"]
 
 === 5.6 Tipos de gráficas
 
@@ -167,13 +165,23 @@ Las gráficas que se encuentran disponibles en cada momento, dependerán de la v
 
 *Stacked*: muestra la manera comparativa en una misma gráfica los datos correspondientes a cada una de los atributos seleccionados.
 
+image::images/data-visualization/stacked_graphic.png[align="center"]
+
 *Area*: gráfica que ofrece de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado, siendo el total del tráfico la suma del tráfico por atributo.
+
+image::images/data-visualization/area_graphic.png[align="center"]
 
 *Line*: muestra de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado; en este caso no se muestra el área sino que la gráfica viene representada por una línea.
 
+image::images/data-visualization/line_graphic.png[align="center"]
+
 *Bars*: ofrece los datos de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado, siendo el total, la suma de todos los valores de cada uno de esos elementos. En este caso, los datos se representan gráficamente a través de barras.
 
+image::images/data-visualization/bars_graphic.png[align="center"]
+
 *SBars*: o Stacked Bars, ofrece en una misma gráfica los datos obtenidos para cada uno de los elementos incluidos en el atributo seleccionado, por lo que se pueden visualizar los resultados de manera independiente por IP, sensor, etc., representados gráficamente or barras.
+
+image::images/data-visualization/sbars_graphic.png[align="center"]
 
 *Streams*: gráfica solo disponible para la vista Raw. Muestra los flujos de tráfico por sensor.
 
@@ -194,9 +202,9 @@ image::images/data-visualization/export_to_csv.png[align="center"]
 
 image::images/data-visualization/timemachine.png[align="center"]
 
-* Guardar pestañas como predeterminadas (Save tabs as default): al aplicar esta opción, las columnas o pestañas de datos que se hayan incluido para el análisis se mostrarán por defecto en las nuevas consultas que se realicen. Disponible para las vistas Raw, Unique y Tops.
+* Guardar pestañas como predeterminadas (*Save tabs as default*): al aplicar esta opción, las columnas o pestañas de datos que se hayan incluido para el análisis se mostrarán por defecto en las nuevas consultas que se realicen. Disponible para las vistas Raw, Unique y Tops.
 
-* Orden de las agregaciones (Sort Aggregations): mediante esta opción el usuario puede elegir el orden en el que se mostrarán las agregaciones disponibles. Disponible para las vistas Raw, Tops y Unique.
+* Orden de las agregaciones (*Sort Aggregations*): mediante esta opción el usuario puede elegir el orden en el que se mostrarán las agregaciones disponibles. Disponible para las vistas Raw, Tops y Unique.
 
 image::images/data-visualization/sort_aggregations.png[align="center"]
 
@@ -212,6 +220,60 @@ image::images/data-visualization/traffic_submenu_with_reloading.png[align="cente
 === 5.8 Atributos: pestañas y columnas
 Los atributos nos ayudan a realizar un análisis exhaustivo y personalizado de cada uno de los elementos que intervienen en el tráfico de la red que se está analizando.
 
-Estos se organizan en *pestañas o columnas* según la vista que estemos consultando. Las opciones que se muestran son comunes a todas las vistas salvo para el caso de Compare (ofrece solo la posibilidad de comparación no por atributos sino por semanas o meses) y Maps.
+Estos se organizan en *pestañas o columnas* según la vista que estemos consultando. Las opciones que se muestran son comunes a todas las vistas salvo para el caso de Compare (ofrece solo la posibilidad de comparación no por atributos sino por semanas o meses).
 
-Existen dos opciones muy útiles para la localización de las IPs que mayor tráfico generan: Scatter Plot y SRC/DST MAP.
+A continuación enumeramos los atributos que el usuario tiene disponibles y los diferentes aspectos
+que puede consultar de cada uno de ellos:
+
+* Application
+** Application
+** Engine
+** HTTP User Agent
+** Host
+** Host L2
+** Referer
+** Referer L2
+** Selector
+** Product Type
+** URL
+* Flow
+** Direction
+* Interface
+** LAN Interface
+** LAN Description
+** WAN Interface
+** WAN Description
+* Location
+** WAN IP Country
+** WAN IP AS
+** WAN IP MAP
+** Service Provider
+** Namespace
+** Deployment
+** Market
+** Organization
+** Campus
+** Building
+* Network
+** Conversation
+** LAN IP
+** LAN IP Name
+** LAN Net Address
+** WAN IP
+** WAN IP Name
+** Protocol
+** TOS
+** Sensor Type
+** Scatterplot
+* Transport
+** LAN L4 Port
+** WAN L4 Port
+** TPC flags
+* UUID
+** Service Provider UUID
+** Namespace UUID
+** Deployment UUID
+** Market UUID
+** Organization UUID
+** Campus UUID
+** Building UUID
