@@ -99,3 +99,20 @@ Las vistas que se encuentran disponibles para el Flow son las siguientes:
 NOTE: Las opciones que se muestran en la pestaña *Options* y los atributos *Add tab/Columns* variarán según el tipo de vista elegida.
 
 IMPORTANT: No olvide combinar las vistas con los diferentes tipos de gráficas. De este modo obtendrá múltiples posibilidades de análisis de los datos.
+==== 5.3.1 Tops
+
+La vista *Tops* nos permite visualizar cuáles han sido los eventos más destacados según el intervalo de tiempo que se haya seleccionado. Lo que visualizamos en la gráfica es la suma del total de dichos eventos mostrados como un único evento. Si posamos el ratón por encima de cada uno de estos "picos" o Tops, veremos el desglose del evento por día, hora y tipo de dimensión o atributo que se esté consultando.
+
+==== 5.3.2 Raw
+
+Esta vista nos ofrece los datos de los eventos en bruto, por tanto, visualizaremos la totalidad de eventos por atributos segmentados por franjas de tiempo.
+
+En la tabla de datos recogerá, por tanto, todos los datos de los eventos clasificados por columnas. Los datos se muestran a nivel de pantalla, no obstante, si desea ver más, basta con hacer scroll y esperar a que se carguen más datos: Load more.
+
+[NOTE]
+=======================
+Como se puede observar en la imagen, el tipo de gráfica ideal para la vista Raw es el de flujo de
+datos o *Streams*.
+
+En la vista Raw los atributos se muestran en columnas
+=======================
