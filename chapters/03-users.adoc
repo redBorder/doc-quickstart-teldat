@@ -6,11 +6,11 @@ interfaz de gestión de usuarios, accesible en *Tools -> Users settings*.
 image::images/users/users-01.png["users-01",link="images/users/users-01.png",align="center"]
 
 Para buscar un usuario concreto es posible introducir sus datos en el buscador, o bien, navegar por el listado alfabético que se
-muestra sobre el listado de usuairos dados de alta.
+muestra sobre el listado de usuarios dados de alta.
 
 image::images/users/users-02.png["users-02",link="images/users/users-02.png",align="center"]
 
-Solo el usuario con el rol de *Súper Administrador* tiene habilitada esta función. El resto de usuarios solo podrá visualizar las
+Sólo el usuario con el rol de *Súper Administrador* tiene habilitada esta función. El resto de usuarios sólo podrá visualizar las
 diferentes secciones de la plataforma, pero no modificar su contenido (salvo en el caso de su propio perfil de usuario).
 
 IMPORTANT: Un usuario es *Super Administrador* sólo si es Administrador y su Top Domain es root
@@ -25,7 +25,7 @@ También podemos encontrar 2 botones en cada línea de usuario:
 * Botón para eliminar usuario
 
 Para acceder directamente al menú de configuración de nuestro perfil de usuario, podemos hacerlo también pulsando sobre
-el nombre de usuario que aparece en la barra superio de herramientas, y pulsar sobre el botón *My profile*
+el nombre de usuario que aparece en la barra superior de herramientas, y pulsar sobre el botón *My profile*
 
 image::images/users/users-04.png["users-04",link="images/users/users-04.png",align="center"]
 
@@ -45,7 +45,7 @@ En el menú de configuración de usuario nos encontraremos las siguientes seccio
 ** Nombre
 ** Login/Username
 ** Email
-** Top Domain: Dominio superio máximo al que el usuario puede acceder. El dominio de más alto nivel es *root*.
+** Top Domain: Dominio superior máximo al que el usuario puede acceder. El dominio de más alto nivel es *root*.
 ** Another actions: Nos encontramos 3 botones para realizar las siguientes acciones:
 *** Edit password: Cambiar la contraseña de usuario.
 *** Recreate API Access Key: Regenerar la clave para acceso a la API Rest.

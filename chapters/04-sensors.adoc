@@ -14,7 +14,7 @@ En este apartado se introduce de forma breve al menú *Sensors* y sus correspond
 ** Añadir sensor (*+Add sensor*)
 ** Añadir dominio (*+Add domain*)
 ** Vista (*View*)
-* *Área principal*: la información que se muestra en este área dependenrá de la vista seleccionada en *View*. Existen tres vistas disponibles para visualizar la organización de los sensores registrados en el Manager:
+* *Área principal*: la información que se muestra en este área dependerá de la vista seleccionada en *View*. Existen tres vistas disponibles para visualizar la organización de los sensores registrados en el Manager:
 ** Árbol (*Tree*): listado que muestra la infraestructura de red según niveles de jerarquía y dependencia entre los elementos que la componen.
 +
 Al lado de cada uno de los elementos se muestran dos iconos que permiten realizar las acciones de edición y borrado de los mismos. Esta es la vista que se muestra por defecto.
@@ -31,6 +31,9 @@ Para añadir un sensor debe seleccionar la opción *+Add Sensor*. En el menú de
 
 Seleccione el tipo de sensor en el menú desplegable y a continuación, complete la información que se solicita.
 
+Para registrar sensores de Teldat, se deberá seleccionar tanto el tipo de sensor como su número de serie. En el caso de que el sensor no sea de Teldat,
+se deberá elegir un tipo de sensor genérico e identificarlo mediante la IP del sensor o su red.
+
 image::images/sensors/add_sensors_dialog.png[align="center"]
 
 
@@ -45,21 +48,18 @@ El sensor heredará de manera automática las propiedades del dominio raíz.
 
 === 4.3 Añadir un dominio
 
-Para añadir un dominio debe seleccionar la opción *+Add Domain* que se encuentra en el submenú superior derecha, elegir el tipo de dominio que se quiere añadir, y a continuación, rellenar los campos requeridos (estos variarán según el tipo de dominio a crear)
+Para añadir un dominio se debe seleccionar la opción *+Add Domain* que se encuentra en el submenú superior derecho, elegir el tipo de dominio que se quiere añadir, y a continuación, rellenar los campos requeridos (estos variarán según el tipo de dominio a crear)
 
 image::images/sensors/add_domain_menu.png[align="center"]
 
 image::images/sensors/add_domain_dialog.png[align="center"]
 
 === 4.4 Editar un dominio
-Para acceder a la edición de un dominio debe hacer clic en el icono "Editar" situado a la derecha del dominio que desea editar desde la vistsa de árbol y seleccionar la opción *Edit*.
+Para acceder a la edición de un dominio se debe hacer clic en el icono "Editar" situado a la derecha del dominio que desea editar desde la vista de árbol y seleccionar la opción *Edit*.
 
 Estos son algunos de los datos que se pueden editar en un dominio. Dependiendo del tipo de dominio que se seleccione, aparecerán unos campos u otros:
 
-* *General*: muestra información general del sensor. Nombre (no editable desde la web), tipo de dominio y descripción.
+* *General*: muestra información general del sensor. Nombre (no editable), tipo de dominio y descripción.
 * *Namespace Rules*: permite añadir reglas que se aplicarán a nivel de dominio.
-* *IPS/IDS Settings*: permite configurar los parámetros generales de los sensores IPS/IDS que cuelgan del dominio. Esta será la configuración que hereden todos los sensores que se encuentren debajo de este dominio.
 * *Servidores (Servers)*: En este apartado el usuario puede definir la configuración de los servidores Proxy y Syslog. Todos los valores que se muestran son los heredados por defecto. Sobreescribir en caso de que sea necesario.
-* *IP variables*: en este apartado se muestran los valores para las variables IP Snort. Aquellas que sean heredadas de un nivel superior, aparecerán con un check en la casilla *Inherited*.
-* *Variables de puerto (Port variables)*: en este apartado se muestran los valores para las variables de los puertos Snort. Aquellas que sean heredadas de un nivel superior, aparecerán con un check en la casilla *Inherited*
 * *Localización (Location)*:  Localiza el sensor o el dominio en un mapamundi.

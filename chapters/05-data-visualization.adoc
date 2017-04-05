@@ -18,11 +18,7 @@ image::images/data-visualization/traffic_submenu.png[align="center"]
 ** Crear un filtro avanzado (*Advance Search*)
 ** Crear una alarma en base a las condiciones de los filtros aplicados (*Create an alarm*)
 ** Crear un widget basado en los filtros aplicados y aplicarlo en un dashboard o informe (*Create a widget on*)
-* *Vistas*: ofrece diferentes opciones de visualización de la información.
-** *Raw*: datos de los eventos en bruto.
-** *Tops*: suma el total de datos de diferentes eventos para mostrarlo como uno único.
-** *Compare*: comparación de eventos comprendidos dentro de un periodo determinado.
-** *Unique*: muestra eventos que solo han sucedido una vez.
+* *Vistas*: ofrece diferentes opciones de visualización de la información. Se explicarán con más detalles posteriormente.
 * *Agregación*: son los diferentes valores o unidades de medida en las que se pueden mostrar los datos. Por ejemplo, flows por segundo (flows/s) o bytes por segundo (bps)
 * *Granularidad*: indica el grado de detalle temporal con el que es posible visualizar los datos. El mínimo valor de granularidad es un minuto.
 * *Tipo de gráfica*: muestra los diferentes tipos de gráfica entre los que podemos elegir para mostrar los datos. Los tipos de gráficas disponibles varían según el tipo de vista seleccionada. Estos son los siguientes:
@@ -37,14 +33,14 @@ image::images/data-visualization/traffic_submenu.png[align="center"]
 ** Máquina del tiempo (*Time Machine*)
 ** Guardar las pestañas como predeterminadas (*Save tabs as default*)
 ** Ordenar agregaciones (*Sort Aggregations*)
-** Ordenar colummnas (*Sort columns*)
+** Ordenar columnas (*Sort columns*)
 * *Atributos*: Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenderse como datos propios del evento que son los que realmente nos aportan información. Estos son llamados "atributos".
 +
 Los atributos pueden mostrarse de varias maneras: en forma de pestañas o de columnas. (*Add tabs/Columns*) dependiendo de la vista que estemos consultando.
 
 ==== 5.1.2 Cuerpo de la pantalla: filtrado por rango de tiempo, pestañas de atributos y vistas.
 
-*Filtrado por rango de tiempo*: acceso directo a los eventos filtrados en base a un periodo de tiempo
+*Filtrado por rango de tiempo*: acceso directo a los eventos filtrados en base a un periodo de tiempo.
 
 Existe la posibilidad de seleccionar un rango de fechas diferente a las que se ofrecen por defecto. Dependiendo de las necesidades del usuario, podrá realizar una selección de tiempo personalizada a través de la opción *Custom*. Más adelante se especificará el procedimiento a seguir para realizar un filtro temporal personalizado.
 

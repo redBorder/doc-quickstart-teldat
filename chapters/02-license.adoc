@@ -18,7 +18,7 @@ image::images/license/license-02.png["license-02",link="images/install/license-0
 
 En una instalación nueva nos encontraremos esta vista como se muestra arriba, donde aún no se ha cargado ninguna licencia.
 
-Para obtener una licencia debemos de pulsa en el botón "Request license". Nos aparecerá un formulario donde tendremos que
+Para obtener una licencia debemos pulsar en el botón "Request license". Nos aparecerá un formulario donde tendremos que
 indicar la cantidad de MB diarios que se van a consumir y el número máximo de sensores de cada tipo.
 
 image::images/license/license-05.png["license-05",link="images/install/license-05.png",align="center"]

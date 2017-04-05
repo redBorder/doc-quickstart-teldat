@@ -33,31 +33,32 @@ Tras esto se procederá a la instalación de los paquetes de instalación del
 
 image::images/install/install-03.png["install-03",link="images/install/install-03.png",align="center"]
 
-Espere hasta que lla instalación se haya completado al 100%. Este proceso puede durar unos minutos.
+Espere hasta que la instalación se haya completado al 100%.
 
 Una vez finalizada la instalación, el sistema será reiniciado. Durante el primer arranque el sistema procederá
 a realizar una serie de acciones para configurarse por primera vez.
 
 [NOTE]
 ===============================
-Este proceso puede tardar varios minutos
+Estos procesos puede tardar varios minutos
 ===============================
 
-Una vez que en la terminal nos apareczca la sigueinte imagen, ya podremos acceder.
+Una vez que en la terminal nos aparezca la sigueinte imagen, ya podremos acceder.
 
 image::images/install/install-04.png["install-04",link="images/install/install-04.png",align="center"]
 
-IMPORTANT: LAs credenciales por defecto son "usuario: root / password: teldat"
+IMPORTANT: Las credenciales por defecto son "usuario: root / password: teldat"
 
 === Configuración inicial - Wizard
 
-Una vez hemos hecho login en el manager, debemos ejecutar el comando *rb_sysconf* para realizar la configuración inicial.
+Una vez logueados en el manager, debemos ejecutar el comando *rb_sysconf* para realizar la configuración inicial.
 
 Estas son las opciones que encontrará en la pantalla principal de este menú:
 
 . *System Configuration*: configuración del hostname, IP del Manager, hora y estado del Manager.
-. *Network Configuration*: creación de bondings, segmentos, DNS, rutas e IPMI. Recuerde que, para poner en funcionamiento el Manager, se necesitan por lo menos dos conexiones de red.
-. *Passwords*: acceda a esta opción si desea modificar las contraseñas que haya definido por cada rol de usuario.
+. *Network Configuration*: creación de bondings, segmentos, DNS, rutas e IPMI.
+    Recuerde que para formar un cluster se necesitan por lo menos dos conexiones de red, no siendo así para instalaciones de un solo nodo.
+. *Passwords*: acceda a esta opción si desea modificar las contraseñas de los usuarios del sistema.
 . *w) start simple wizard*: inicia un asistente que le permitirá de forma sencilla y rápida realizar la instalación y configuración del Manager.
 . *q) quit*: Salir. Nos devuelve a la pantalla principal de configuración del sistema.
 
@@ -65,17 +66,16 @@ image::images/install/install-05.png["install-05",link="images/install/install-0
 
 Para realizar la instalación automática del manager, usaremos la opción *w) start simple wizard*.
 
-Como podrá comprobar, existen una serie de opciones definidas por defecto.
+Existen una serie de opciones definidas por defecto (indicadas entre corchetes).
 Para aceptarlas tan solo tiene que pulsar Enter. No obstante, puede modificarlas manualmente
 en cualquier momento del proceso de instalación.
 
 *Mode, Hostname, DNS y NTP*
 
-. Selected Mode: cluster. Seleccionar el modo cluster para unir más de un Manager.
 . Insert Hostname [rbmanager]. La opción que viene definida por defecto es la de rbmanager. Este es un nombre que identifica de manera clara y sencilla al Manager y su posición dentro del cluster.
 . Insert domain: [redborder.cluster]. Dominio definido por defecto.
 . Insert DNS Primary. Definido por defecto. El usuario podrá cambiarlo para indicar el servidor que provee DNS a su red y al que estará asociado el Manager.
-. Insert DNS Secondary (optional). Indicar DNS secundario de manera opcional. Se aconseja introducir un DNS alternativo que sustituya al DNS primario en caso de fallo del servidor
+. Insert DNS Secondary (optional). Indicar DNS secundario de manera opcional. Se aconseja introducir un DNS alternativo que sustituya al DNS primario en caso de fallo del servidor.
 
 IMPORTANT: Es importante que se utilicen diferentes nombres para cada uno de los Managers que se van a unir al cluster.
 
@@ -87,12 +87,10 @@ image::images/install/install-06.png["install-06",link="images/install/install-0
 *Configuración de NTP y red de gestión*
 
 El siguiente paso es indicar el servidor de hora: *NTP server [pool.ntp.org]:*
-Si existe algún NTP server en su red, se debe indicar. En caso contrario, se asignará uno por defecto.
+Si existe algún servidor NTP en su red que quiera utilizar, se debe indicar aquí. En caso contrario, se asignará uno por defecto.
 
 Si sólo va a desplegar un manager, necesitará una única interfaz de red. Por el contrario, si va a desplegar un cluster
-con múltiples managers será necesario al menos reservar 2 interfaces de red.
-
-Para la creación de un cluster es necesario que el usuario reserve dos interfaces de red:
+con múltiples managers será necesario al menos reservar 2 interfaces de red:
 
 * Una para la red de gestión (Management IP address)
 * Otra para la red de sincronismo (Sync IP address)
@@ -125,7 +123,8 @@ Esta parte no aparecerá si sólo hemos configurado una interfaz de red en la m�
 *Configuración de cluster y servicios externos*
 
 Como último paso se preguntan una serie de opciones de configuración relacionadas con la creación de un cluster de varios managers
-y la configuración de servicios fuera del manager.
+y la configuración de servicios fuera del manager. Se recomienda dejar los valores por defecto para el caso
+de instalaciones on-premise.
 
 image::images/install/install-09.png["install-09",link="images/install/install-09.png",align="center"]
 
