@@ -1,23 +1,23 @@
 == Capítulo 3: Gestión de usuarios
 
-El alta o modificación de los datos de los usuarios, la gestión de sus permisos o la creación de nuevos registros es posible desde la
+El alta o modificación de los datos de los usuarios, la gestión de sus permisos o la creación de nuevos registros es posible desde la
 interfaz de gestión de usuarios, accesible en *Tools -> Users settings*.
 
 image::images/users/users-01.png["users-01",link="images/users/users-01.png",align="center"]
 
-Para buscar un usuario concreto es posible introducir sus datos en el buscador, o bien, navegar por el listado alfabético que se
+Para buscar un usuario concreto es posible introducir sus datos en el buscador, o bien, navegar por el listado alfabético que se
 muestra sobre el listado de usuarios dados de alta.
 
 image::images/users/users-02.png["users-02",link="images/users/users-02.png",align="center"]
 
-Sólo el usuario con el rol de *Súper Administrador* tiene habilitada esta función. El resto de usuarios sólo podrá visualizar las
+Sólo el usuario con el rol de *Súper Administrador* tiene habilitada esta función. El resto de usuarios sólo podrá visualizar las
 diferentes secciones de la plataforma, pero no modificar su contenido (salvo en el caso de su propio perfil de usuario).
 
 IMPORTANT: Un usuario es *Super Administrador* sólo si es Administrador y su Top Domain es root
 
 En el cuerpo de esta vista encontramos un listado de los usuarios dados de alta en la plataforma redborder,
-dirección de correo electrónico, Top Domain (máximo nivel al que tiene acceso el usuario), número de veces que
-ha hecho login, la IP y la hora desde las cuales realizó el último acceso.
+dirección de correo electrónico, Top Domain (máximo nivel al que tiene acceso el usuario), número de veces que
+ha hecho login, la IP y la hora desde las cuales realizó el último acceso.
 
 También podemos encontrar 2 botones en cada línea de usuario:
 
@@ -34,7 +34,7 @@ relacionadas con la actividad del usuario.
 
 === Configuración de usuarios
 
-Haciendo clic en el botón de configuración de un usuario podemos modificar los siguientes datos y visualizar
+Haciendo clic en el botón de configuración de un usuario podemos modificar los siguientes datos y visualizar
 un resumen de su estado y actividad dentro de la plataforma.
 
 image::images/users/users-03.png["users-03",link="images/users/users-03.png",align="center"]

@@ -5,10 +5,10 @@ la presente documentación nos referiremos a la máquina donde se va a instalar 
 
 === Instalación
 
-Para la instalación del manager, el usuario dispondrá de una imagen ISO con la que se deberá arrancar la máquina
+Para la instalación del manager, el usuario dispondrá de una imagen ISO con la que se deberá arrancar la máquina
 en la que se va a instalar.
 
-Al iniciar el asistente de instalación tendrá acceso a un menú tal y como se muestra a continuación:
+Al iniciar el asistente de instalación tendrá acceso a un menú tal y como se muestra a continuación:
 
 image::images/install/install-01.png["install-01",link="images/install/install-01.png",align="center"]
 
@@ -29,11 +29,11 @@ También en este menú se nos preguntará por la contraseña que deseamos config
 
 IMPORTANT: Por defecto la contraseña de root es "*teldat*"
 
-Tras esto se procederá a la instalación de los paquetes de instalación del software en el disco duro.
+Tras esto se procederá a la instalación de los paquetes de instalación del software en el disco duro.
 
 image::images/install/install-03.png["install-03",link="images/install/install-03.png",align="center"]
 
-Espere hasta que la instalación se haya completado al 100%.
+Espere hasta que la instalación se haya completado al 100%.
 
 Una vez finalizada la instalación, el sistema será reiniciado. Durante el primer arranque el sistema procederá
 a realizar una serie de acciones para configurarse por primera vez.
@@ -53,33 +53,33 @@ IMPORTANT: Las credenciales por defecto son "usuario: root / password: teldat"
 
 Una vez logueados en el manager, debemos ejecutar el comando *rb_sysconf* para realizar la configuración inicial.
 
-Estas son las opciones que encontrará en la pantalla principal de este menú:
+Estas son las opciones que encontrará en la pantalla principal de este menú:
 
-. *System Configuration*: configuración del hostname, IP del Manager, hora y estado del Manager.
-. *Network Configuration*: creación de bondings, segmentos, DNS, rutas e IPMI.
+. *System Configuration*: configuración del hostname, IP del Manager, hora y estado del Manager.
+. *Network Configuration*: creación de bondings, segmentos, DNS, rutas e IPMI.
     Recuerde que para formar un cluster se necesitan por lo menos dos conexiones de red, no siendo así para instalaciones de un solo nodo.
-. *Passwords*: acceda a esta opción si desea modificar las contraseñas de los usuarios del sistema.
-. *w) start simple wizard*: inicia un asistente que le permitirá de forma sencilla y rápida realizar la instalación y configuración del Manager.
-. *q) quit*: Salir. Nos devuelve a la pantalla principal de configuración del sistema.
+. *Passwords*: acceda a esta opción si desea modificar las contraseñas de los usuarios del sistema.
+. *w) start simple wizard*: inicia un asistente que le permitirá de forma sencilla y rápida realizar la instalación y configuración del Manager.
+. *q) quit*: Salir. Nos devuelve a la pantalla principal de configuración del sistema.
 
 image::images/install/install-05.png["install-05",link="images/install/install-05.png",align="center"]
 
-Para realizar la instalación automática del manager, usaremos la opción *w) start simple wizard*.
+Para realizar la instalación automática del manager, usaremos la opción *w) start simple wizard*.
 
 Existen una serie de opciones definidas por defecto (indicadas entre corchetes).
 Para aceptarlas tan solo tiene que pulsar Enter. No obstante, puede modificarlas manualmente
-en cualquier momento del proceso de instalación.
+en cualquier momento del proceso de instalación.
 
 *Mode, Hostname, DNS y NTP*
 
-. Insert Hostname [rbmanager]. La opción que viene definida por defecto es la de rbmanager. Este es un nombre que identifica de manera clara y sencilla al Manager y su posición dentro del cluster.
+. Insert Hostname [rbmanager]. La opción que viene definida por defecto es la de rbmanager. Este es un nombre que identifica de manera clara y sencilla al Manager y su posición dentro del cluster.
 . Insert domain: [redborder.cluster]. Dominio definido por defecto.
-. Insert DNS Primary. Definido por defecto. El usuario podrá cambiarlo para indicar el servidor que provee DNS a su red y al que estará asociado el Manager.
+. Insert DNS Primary. Definido por defecto. El usuario podrá cambiarlo para indicar el servidor que provee DNS a su red y al que estará asociado el Manager.
 . Insert DNS Secondary (optional). Indicar DNS secundario de manera opcional. Se aconseja introducir un DNS alternativo que sustituya al DNS primario en caso de fallo del servidor.
 
 IMPORTANT: Es importante que se utilicen diferentes nombres para cada uno de los Managers que se van a unir al cluster.
 
-Una vez introducidos estos valores, el sistema le avisará de que los cambios han sido aplicados con éxito mediante el siguiente
+Una vez introducidos estos valores, el sistema le avisará de que los cambios han sido aplicados con éxito mediante el siguiente
 mensaje rotulado en verde: DNS and domain settings applied successfully.
 
 image::images/install/install-06.png["install-06",link="images/install/install-06.png",align="center"]
@@ -87,12 +87,12 @@ image::images/install/install-06.png["install-06",link="images/install/install-0
 *Configuración de NTP y red de gestión*
 
 El siguiente paso es indicar el servidor de hora: *NTP server [pool.ntp.org]:*
-Si existe algún servidor NTP en su red que quiera utilizar, se debe indicar aquí. En caso contrario, se asignará uno por defecto.
+Si existe algún servidor NTP en su red que quiera utilizar, se debe indicar aquí. En caso contrario, se asignará uno por defecto.
 
 Si sólo va a desplegar un manager, necesitará una única interfaz de red. Por el contrario, si va a desplegar un cluster
 con múltiples managers será necesario al menos reservar 2 interfaces de red:
 
-* Una para la red de gestión (Management IP address)
+* Una para la red de gestión (Management IP address)
 * Otra para la red de sincronismo (Sync IP address)
 
 En cada una de estas interfaces se configurará un bonding de red.
@@ -104,7 +104,7 @@ La configuración del bonding de gestión solicitará los siguientes datos:
 * Insert default gateway for this management interface (Y/n)
 * Insert a route for this bonding (y/N)?: Opción para insertar una ruta estática.
 
-Una vez introducidos estos valores, el sistema le avisará de que el bonding ha sido creado con éxito.
+Una vez introducidos estos valores, el sistema le avisará de que el bonding ha sido creado con éxito.
 
 image::images/install/install-07.png["install-07",link="images/install/install-07.png",align="center"]
 
