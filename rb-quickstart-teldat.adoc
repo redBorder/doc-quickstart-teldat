@@ -15,7 +15,7 @@
 :table-caption: Tabla
 :stem: latexmath
 
-= redborder quickstart - Teldat
+= redborder quickstart guide - Teldat
 
 include::chapters/01-install.adoc[]
 
