@@ -18,7 +18,7 @@ En este apartado se introduce de forma breve al menú *Sensors* y sus correspond
 ** Árbol (*Tree*): listado que muestra la infraestructura de red según niveles de jerarquía y dependencia entre los elementos que la componen.
 +
 Al lado de cada uno de los elementos se muestran dos iconos que permiten realizar las acciones de edición y borrado de los mismos. Esta es la vista que se muestra por defecto.
-** Proxis clientes (*Client Proxies*): listado que muestra los proxies clientes por orden alfabético
+** Proxies clientes (*Client Proxies*): listado que muestra los proxies clientes por orden alfabético
 ** Sensores Flow (*Flow sensors*): listado que muestra los sensores de tipo flow por orden alfabético.
 ** Sensores IPS (*IPS sensors*): listado que muestra los sensores de tipo IPS por orden alfabético.
 ** Sensores de Social (*Social sensors*): listado que muestra los sensores de tipo Social por orden alfabético.
@@ -27,9 +27,7 @@ TIP: Cada vista presenta su propio menú de opciones y las diferentes posibilida
 
 === 4.2 Añadir un sensor
 
-Para añadir un sensor debe seleccionar la opción *+Add Sensor*. En el menú desplegable se muestran los diferentes tipos de sensores que pueden añadirse al árbol.
-
-Seleccione el tipo de sensor en el menú desplegable y a continuación, complete la información que se solicita.
+Para añadir un sensor debe seleccionar la opción *+Add Sensor*. En el menú desplegable se muestran los diferentes tipos de sensores que pueden añadirse al árbol. Seleccione el tipo de sensor en el menú desplegable y a continuación, complete la información que se solicita.
 
 Para registrar sensores de Teldat, se deberá seleccionar tanto el tipo de sensor como su número de serie. En el caso de que el sensor no sea de Teldat,
 se deberá elegir un tipo de sensor genérico e identificarlo mediante la IP del sensor o su red.
@@ -39,7 +37,7 @@ image::images/sensors/add_sensors_dialog.png[align="center"]
 
 [IMPORTANT]
 =================================
-En el momento en el que se crea un sensor en redBorder este pasa, por defecto, a colocarse como raíz, por encima del nivel de dominio.
+En el momento en el que se crea un sensor en el manager, este pasa, por defecto, a colocarse como raíz, por encima del nivel de dominio.
 
 El usuario puede organizar su infraestructura de sensores en cualquier momento, arrastrando y soltando el sensor en el nivel en el que se quiera colocar.
 
