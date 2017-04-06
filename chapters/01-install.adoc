@@ -121,9 +121,7 @@ Esta parte no aparecerá si sólo hemos configurado una interfaz de red en la m�
 
 *Configuración de cluster y servicios externos*
 
-Como último paso se preguntan una serie de opciones de configuración relacionadas con la creación de un cluster de varios managers
-y la configuración de servicios fuera del manager. Se recomienda dejar los valores por defecto para el caso
-de instalaciones on-premise.
+Como último paso se preguntan una serie de opciones de configuración relacionadas con la creación de un cluster de varios managers y la configuración de servicios fuera del manager. Para instalaciones on-premises, se recomienda dejar los valores por defecto.
 
 image::images/install/install-09.png["install-09",link="images/install/install-09.png",align="center"]
 
