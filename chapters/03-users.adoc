@@ -3,12 +3,12 @@
 El alta o modificación de los datos de los usuarios, la gestión de sus permisos o la creación de nuevos registros es posible desde la
 interfaz de gestión de usuarios, accesible en *Tools -> Users*.
 
-image::images/users/users-01.png["users-01",link="images/users/users-01.png",align="center"]
+image::images/users/users-01.png["users-01",align="center"]
 
 Para buscar un usuario concreto es posible introducir sus datos en el buscador, o bien, navegar por el listado alfabético que se
 muestra sobre los usuarios dados de alta.
 
-image::images/users/users-02.png["users-02",link="images/users/users-02.png",align="center"]
+image::images/users/users-02.png["users-02",align="center"]
 
 Sólo el usuario con el rol de *Súper Administrador* tiene habilitada esta función. El resto de usuarios sólo podrá visualizar las
 diferentes secciones de la plataforma, pero no modificar su contenido (salvo en el caso de su propio perfil de usuario).
@@ -27,7 +27,7 @@ También podemos encontrar 2 botones en cada línea de usuario:
 Para acceder directamente al menú de configuración de nuestro perfil de usuario, podemos hacerlo también pulsando sobre
 el nombre de usuario que aparece en la barra superior de herramientas, y pulsar sobre el botón *My profile*
 
-image::images/users/users-04.png["users-04",link="images/users/users-04.png",align="center"]
+image::images/users/users-04.png["users-04",align="center"]
 
 En éste área podemos encontrar también el botón de ayuda *Show help* y de *Logout*. Además nos aparecerán notificaciones
 relacionadas con la actividad del usuario.
@@ -37,7 +37,7 @@ relacionadas con la actividad del usuario.
 Haciendo clic en el botón de configuración de un usuario podemos modificar los siguientes datos y visualizar
 un resumen de su estado y actividad dentro de la plataforma.
 
-image::images/users/users-03.png["users-03",link="images/users/users-03.png",align="center"]
+image::images/users/users-03.png["users-03",align="center"]
 
 En el menú de configuración de usuario nos encontraremos las siguientes secciones:
 
