@@ -64,10 +64,10 @@ image::images/data-visualization/view.png[align="center"]
 
 *Resumen*: bajo el área de Vista se encuentra un resumen relativo a todos los datos cargados que aparecen tanto en la vista como en la tabla de datos. En este resumen se indican, por este orden:
 
-* el valor total de la agregación de todos los datos cargados
-* el valor total de la agregación de todos los datos cargados y seleccionados
-* el número de filas de datos cargadas
-* el porcentaje del valor agregado de los datos cargados sobre el total de datos.
+* *Total*: valor total de la agregación de todos los datos cargados.
+* *Selected*: valor total de la agregación de todos los datos cargados y seleccionados.
+* *Visible Rows*: número de filas de datos cargadas.
+* *Visible/Total*: porcentaje del valor agregado de los datos cargados sobre el valor agregado del total de datos.
 
 *Buscador*: permite realizar una búsqueda por atributo. Las búsquedas se convierten en filtros automáticamente tal y como veremos más adelante.
 
@@ -92,7 +92,7 @@ image::images/data-visualization/advanced_search.png[align="center"]
 
 *Acciones para los filtros:*
 
-Además de la opción de búsqueda avanzada (*Advaced Search*), el menú *Filters* muestra las siguientes opciones:
+Además de la opción de búsqueda avanzada (*Advanced Search*), el menú *Filters* muestra las siguientes opciones:
 
 * Crear alarmas (*Create an alarm*): nos permite configurar una alarma en base a los filtros aplicados.
 * Crear un widget en (*Create a widget on*): crea un widget a partir de los filtros aplicados que se puede incluir en dashboards  o informes.
@@ -126,19 +126,19 @@ La tabla de datos recogerá, por tanto, todos los eventos ordenados en el tiempo
 Como se puede observar en la imagen, el tipo de gráfica ideal para la vista Raw es el de flujo de
   datos o *Streams*.
 
-En la vista Raw los atributos se muestran en columnas
+En la vista Raw los atributos se muestran en columnas.
 =======================
 
 ==== 5.3.3 Compare
 Esta vista ofrece una comparativa de la evolución de los eventos entre distintas horas, días, semanas o meses.
-De este modo, el usuario puede identificar de forma rápida el momento de mayor uso de la red en función de distintos parámetros, como pueden ser los bytes consumidos, los paquetes transmitidos o flujos recibidos.
+De este modo, el usuario puede identificar de forma rápida el momento de mayor uso de la red en función de distintos parámetros, como pueden ser los bytes consumidos, los paquetes transmitidos o los flujos recibidos.
 
 En la tabla de datos se muestra la suma de los valores de cada intervalo de tiempo.
 
 ==== 5.3.4 Unique
 A través de la vista *Unique*, el usuario podrá obtener información acerca de los elementos diferentes que han interactuado, al menos, una vez con la red en un periodo de tiempo determinado.
 
-También, es posible eleccionar el grupo de atributos que se desea analizar mediante la opción *Group By*.
+También, es posible seleccionar el grupo de atributos que se desea analizar mediante la opción *Group By*.
 
 === 5.4 Tipos de agregación
 El tipo de agregación permite que el usuario seleccione la unidad de medida en la que desea que se muestre la información.
@@ -168,8 +168,8 @@ image::images/data-visualization/granularity.png[align="center"]
 Es posible seleccionar el tipo de gráfica con el que se desean visualizar los datos obtenidos en las diferentes vistas. Las opciones son muy similares a las que se muestran en el proceso de creación de widgets personalizados del capítulo dedicado a los Dashboards.
 
 Las gráficas que se encuentran disponibles en cada momento dependerán de la vista seleccionada.
-Esta opción no aparece, por ejemplo, al aplicar la vista Map a los datos, puesto que los datos se representarán en esta vista, sobre un mapa.
-En todas las gráficas se realiza una representación de los valores seleccionados en función del tiempo, de la granularidad y agregación seleccionadas y de las distintas opciones disponibles en función de la vista. A continuación se describen los distintos tipos de gráficas disponibles.
+Esta opción no aparece, por ejemplo, al aplicar la vista Map a los datos, puesto que los datos se representarán en esta vista sobre un mapa.
+En todos los tipos de gráficas se realiza una representación de los valores seleccionados en función del tiempo, de la granularidad y agregación seleccionadas y de las distintas opciones disponibles en función de la vista. A continuación se describen los distintos tipos de gráficas disponibles.
 
 *Stacked*: composición de áreas apiladas, donde cada área representa el perfil temporal de un valor seleccionado.
 
@@ -202,7 +202,7 @@ A continuación se enumeran todas las opciones disponibles en esta pestaña. El 
 
 * Mostrar total (*Show Total*): al seleccionar esta opción se muestra en la gráfica una línea gris discontinua que representa la suma de las agregaciones de todos los atributos. Cuando esta opción se encuentra activa, en el listado de opciones se cambia esta opción por *Hide Total*. Disponible en las vistas Tops y Unique.
 
-* Mostrar total de los filtrados (*Show Total Filtered*): al seleccionar esta opción se muestra en la gráfica una línea gris discontinua (más clara que la anterior) que representa la suma de las agregaciones de todos los atributos resultantes de aplicar los filtros seleccionados. Cuando esta opción se encuentra activa, en el listado de opciones se cambia esta opción por *Hide Total Filtered*. Disponible en la vista Tops.
+* Mostrar total de los filtrados (*Show Total Filtered*): al seleccionar esta opción se muestra en la gráfica una línea gris discontinua (más clara que la de la opción anterior) que representa la suma de las agregaciones de todos los atributos resultantes de aplicar los filtros seleccionados. Cuando esta opción se encuentra activa, en el listado de opciones se cambia esta opción por *Hide Total Filtered*. Disponible en la vista Tops.
 
 * Exportar a CSV (*Export to CSV*): el usuario obtendrá un fichero de descarga en formato CSV que incluye los datos correspondientes al atributo que se seleccione, pudiendo fijar un límite de las filas que se incluirán en el archivo. Disponible solo para las vistas Tops, Raw y Unique.
 
