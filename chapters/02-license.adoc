@@ -33,5 +33,5 @@ el límite de sensores de cada tipo que podemos usar.
 
 image::images/license/license-04.png["license-04",link="images/license/license-04.png",align="center"]
 
-Un dato importante dentro de la vista de licencias es la cantidad de bytes diarios consumidos en el día actual. Si superamos este valor
+Un dato importante dentro de la vista de licencias es la cantidad de bytes diarios consumidos en el día actual. Si superamos este valor,
 automáticamente se dejarán de procesar eventos para los sensores asociados.
