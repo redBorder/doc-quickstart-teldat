@@ -138,7 +138,7 @@ En la tabla de datos se muestra la suma de los valores de cada intervalo de tiem
 ==== 5.3.4 Unique
 A través de la vista *Unique*, el usuario podrá obtener información acerca de los elementos diferentes que han interactuado, al menos, una vez con la red en un periodo de tiempo determinado.
 
-También, es posible seleccionar el grupo de atributos que se desea analizar mediante la opción *Group By*.
+También, es posible seleccionar el grupo de atributos que se desea analizar mediante la opción *Group by*.
 
 === 5.4 Tipos de agregación
 El tipo de agregación permite que el usuario seleccione la unidad de medida en la que desea que se muestre la información.
