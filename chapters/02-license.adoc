@@ -8,7 +8,7 @@ un nuevo sensor sin disponer de una licencia válida, nos aparecerá un mensaje 
 image::images/license/license-06.png["license-06",link="images/license/license-06.png",align="center"]
 
 Para acceder al menú de gestión de licencias tenemos que autenticarnos como administrador en el manager.
-A través de la interfaz web nos dirigimos a *Tools -> Licenses*
+A través de la interfaz web nos dirigimos a *Tools -> Licenses*.
 
 image::images/license/license-01.png["license-01",link="images/license/license-01.png",align="center"]
 
