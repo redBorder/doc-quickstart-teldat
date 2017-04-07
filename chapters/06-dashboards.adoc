@@ -46,12 +46,15 @@ Además, en el margen inferior de la pantalla el usuario verá una serie de opci
 * Borrar (*Delete*)
 * Convertir a informe (*Convert to report*)
 * Exportar dashboard (*Export dashboard*): el sistema creará un archivo comprimido para su descarga; paso necesario en caso de que se quiera realizar una importación.
+
 image::images/dashboards/edit_dashboard.png[align="center"]
+
 * Clonar dashboard (*Clone dashboard*): es posible clonar (copiar) los dashboards con el fin de enerlo disponibles para diferentes usuarios, importarlo, etc. Para ello, basta con asignarle un nombre al dashboard copiado.
+
 image::images/dashboards/clone_dashboard.png[align="center"]
 
 ==== 6.1.2 Añadir dashboard
-Los dashboards permiten tener un resumen visual que incluye los principales KPIs que son necesarios para el análisis de una infraestructura de red. El usuario puede combinar una serie de widgets que le permitan, una sola mirada, obtener información muy valiosa sobre las tendencias, cambios y excepciones asociadas al tráfico que se produce o pasa por su red.
+Los dashboards permiten tener un resumen visual que incluye los principales KPIs que son necesarios para el análisis de una infraestructura de red. El usuario puede combinar una serie de widgets que le permitan, a simple vista, obtener información muy valiosa sobre las tendencias, cambios y excepciones asociadas al tráfico que se produce o pasa por su red.
 
 Para crear un nuevo dashboard es necesario seleccionar la opción *Add dashboard*. A continuación, introducir una serie de datos de configuración general y guardar los cambios mediante el botón *Create dashboard*. El primer paso para crear un dashboard personalizado es la creación de un panel en blanco al que, posteriormente, se le añadirán aquellos widgets que cumplan con nuestras necesidades de
 visualización.
