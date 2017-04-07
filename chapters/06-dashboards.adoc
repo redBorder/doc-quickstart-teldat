@@ -96,9 +96,7 @@ El primer paso consiste en seleccionar el modo de visualización de datos o la c
 
 [NOTE]
 ==================================
-Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenerse como datos propios del evento que son los que realmente nos aportan información.
-
-A lo largo de este documento podrán encontrarse referencias al concepto de columna como "atributo" o "dimensión".
+Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenderse como datos propios del evento, que son los que realmente nos aportan información.
 
 El primer paso para personalizar un widget consiste en seleccionar el modo de visualización de los datos, pudiendo elegir además, vistas en las que se representa la cardinalidad de los mismos.
 ==================================
