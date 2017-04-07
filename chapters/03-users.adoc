@@ -1,12 +1,12 @@
 == Capítulo 3: Gestión de usuarios
 
 El alta o modificación de los datos de los usuarios, la gestión de sus permisos o la creación de nuevos registros es posible desde la
-interfaz de gestión de usuarios, accesible en *Tools -> Users settings*.
+interfaz de gestión de usuarios, accesible en *Tools -> Users*.
 
 image::images/users/users-01.png["users-01",link="images/users/users-01.png",align="center"]
 
 Para buscar un usuario concreto es posible introducir sus datos en el buscador, o bien, navegar por el listado alfabético que se
-muestra sobre el listado de usuarios dados de alta.
+muestra sobre los usuarios dados de alta.
 
 image::images/users/users-02.png["users-02",link="images/users/users-02.png",align="center"]
 
@@ -58,4 +58,4 @@ En el menú de configuración de usuario nos encontraremos las siguientes seccio
 
 * *Menú Stats*: Muestra estadísticas de uso de la plataforma por parte del usuario.
 
-IMPORTANT: Cada vez que deseemos modificar nuestra propia cuenta de usuario deberemos de introducir la contraseña para poder aplicar los cambios.
+IMPORTANT: Cada vez que deseemos modificar nuestra propia cuenta de usuario deberemos introducir la contraseña para poder aplicar los cambios.

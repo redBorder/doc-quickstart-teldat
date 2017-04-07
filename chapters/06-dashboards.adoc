@@ -2,20 +2,18 @@
 
 === 6.1 Opciones del Dashboard
 
-La primera opción que encontramos en la barra de menú en el área de análisis es la de Dashboard. Esta es la opción que se encuentra seleccionada por defecto nada más ingresar al administrador del Manager redBorder:
+La primera opción que encontramos en el área de análisis de la barra de menú es la de Dashboard. Esta es la opción que se encuentra seleccionada por defecto al ingresar a la web del manager.
 
 image::images/dashboards/dashboard.png[align="center"]
 
 La sección dashboard presenta múltiples opciones:
 
-* Listado de dashboards disponibles: en la primera parte del menú de dashboards, el usuario visualizará los dashboards que se han creado y que están disponibles para su perfil.
-*
-Al lado de cada uno de los dashboards se encuentran dos iconos:
+* Listado de dashboards disponibles: en la primera parte del menú de dashboards, el usuario visualizará los dashboards que se han creado y que están disponibles para su perfil. Al lado de cada uno de los dashboards se encuentran dos iconos:
 
 ** image:images/dashboards/wrench.png[width=24, height=24] : permite visualizar y editar la configuración general del panel.
 ** image:images/dashboards/copy.png[width=24, height=24] : permite clonar el dashboard seleccionado.
 
-* Añadir e importar dashboards (*Add dashboard/Import dashboard*): estas dos opciones permiten añadir un nuevo dashboard personalizado e importar aquellos que ya estén creados con el fin de poder compartirlos con otros usuarios o que se encuentren disponibles para otros perfiles.
+* Añadir e importar dashboards (*Add dashboard/Import dashboard*): estas dos opciones permiten añadir un nuevo dashboard personalizado e importar aquellos ya creados. Cualquier usuario podrá exportar un dashboard a un fichero y compartirlo con otros usuarios para que puedan importarlo en el momento que deseen.
 
 * Añadir widget (*Add widget*): esta opción permite añadir los widgets que se deseen para personalizar el dashboards.
 
@@ -23,7 +21,7 @@ Al lado de cada uno de los dashboards se encuentran dos iconos:
 
 * Bloqueo (*Locked/Unlocked*): el usuario tiene la opción de bloquear/desbloquear el dashboard que esté consultando para que ningún otro usuario con permisos pueda editarlo.
 
-* Máquina del tiempo (*Time Machine*): esta opción permite "viajar en el tiempo" y visualizar os resultados de las métricas de un día y hora determinados por el usuario a modo de histórico.
+* Máquina del tiempo (*Time Machine*): esta opción permite "viajar en el tiempo" y visualizar los resultados de las métricas de un día y hora determinados por el usuario a modo de histórico.
 
 image::images/dashboards/dashboard_menu.png[align="center", frame=all]
 
@@ -36,7 +34,7 @@ Información editable de la configuración general del dashboard:
 * Nombre del dashboard (*Name*)
 * Establecer el dashboard como predeterminado (*Set this dashboard as default*)
 * Estructura de visualización de los widgets y métricas del dashboard (*Layout*)
-* Descripción del contenido del dashboard (Description)
+* Descripción del contenido del dashboard (*Description*)
 * Color de fondo (*Background Color*)
 * Usuarios que pueden visualizar el dashboard y permisos de edición (*Dashboard users*): añadir y eliminar
 * Dominios que se incluyen en el dashboard (*Dashboard domains*): añadir y eliminar
@@ -51,12 +49,12 @@ Además, en el margen inferior de la pantalla el usuario verá una serie de opci
 
 image::images/dashboards/edit_dashboard.png[align="center"]
 
-clonar dashboard (*Clone dashboard*): es posible clonar (copiar) los dashboards con el fin de enerlo disponibles para diferentes usuarios, importarlo, etc. Para ello, basta con asignarle un nombre al dashboard copiado.
+* Clonar dashboard (*Clone dashboard*): es posible clonar (copiar) los dashboards con el fin de enerlo disponibles para diferentes usuarios, importarlo, etc. Para ello, basta con asignarle un nombre al dashboard copiado.
 
 image::images/dashboards/clone_dashboard.png[align="center"]
 
 ==== 6.1.2 Añadir dashboard
-Los dashboards permiten tener un resumen visual que incluye los principales KPIs que son necesarios para el análisis de una infraestructura de red. El usuario puede combinar una serie de widgets que le permitan, una sola mirada, obtener información muy valiosa sobre las tendencias, cambios y excepciones asociadas al tráfico que se produce o pasa por su red.
+Los dashboards permiten tener un resumen visual que incluye los principales KPIs que son necesarios para el análisis de una infraestructura de red. El usuario puede combinar una serie de widgets que le permitan, a simple vista, obtener información muy valiosa sobre las tendencias, cambios y excepciones asociadas al tráfico que se produce o pasa por su red.
 
 Para crear un nuevo dashboard es necesario seleccionar la opción *Add dashboard*. A continuación, introducir una serie de datos de configuración general y guardar los cambios mediante el botón *Create dashboard*. El primer paso para crear un dashboard personalizado es la creación de un panel en blanco al que, posteriormente, se le añadirán aquellos widgets que cumplan con nuestras necesidades de
 visualización.
@@ -66,7 +64,7 @@ Para crear un nuevo dashboard debemos indicar una serie de preferencias en la in
 image::images/dashboards/add_dashboard.png[align="center"]
 
 ==== 6.1.3 Importar dashboard
-La opción *Importar dashboard* es muy útil en el caso de que queramos compartir dashboards con otros usuarios , o incorporar a redBorder información obtenida de otras aplicaciones compatibles.
+La opción *Importar dashboard* es muy útil en el caso de que queramos compartir dashboards con otros usuarios, o incorporar al manager información obtenida de otras aplicaciones compatibles.
 
 IMPORTANT: Para importar un dashboard, es necesario que este, previamente, haya sido exportado como fichero comprimido y se encuentre disponible entre nuestros archivos.
 
@@ -83,14 +81,14 @@ El primer paso consiste en seleccionar el tipo de widget que se quiere añadir. 
 * *Apps*: visualización de los datos recibios por las diferentes Apps.
 ** Traffic
 * *Estado*: visualización de la configuración y estado de las máquinas e infraestructura de la red.
-** Infraestructure
+** Infrastructure
 * *Formato*: permite configurar el contenido y el formato de los widgets: texto, imágenes, URL, etc.
 ** Shapes
 
 image::images/dashboards/widget_selection.png[align="center"]
 
 ===== 6.1.4.1 Personalizar un widget de producto
-Algunos de los widgets que el usuario encuentra disponibles para añadir al dashboard de la plataforma redBorder permiten una personalización completa.
+Algunos de los widgets que el usuario encuentra disponibles para añadir al dashboard del manager permiten una personalización completa.
 
 Este es el caso del widget asignado a la App *Intrusion*. En primer lugar, veamos qué opciones de personalización se incluyen en este tipo de widgets.
 
@@ -98,9 +96,7 @@ El primer paso consiste en seleccionar el modo de visualización de datos o la c
 
 [NOTE]
 ==================================
-Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenerse como datos propios del evento que son los que realmente nos aportan información.
-
-A lo largo de este documento podrán encontrarse referencias al concepto de columna como "atributo" o "dimensión".
+Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenderse como datos propios del evento, que son los que realmente nos aportan información.
 
 El primer paso para personalizar un widget consiste en seleccionar el modo de visualización de los datos, pudiendo elegir además, vistas en las que se representa la cardinalidad de los mismos.
 ==================================
@@ -111,19 +107,19 @@ El primer paso para personalizar un widget consiste en seleccionar el modo de vi
 * *Map*: muestra información de geoposicionamiento. Es característico de la app *Traffic*
 * *Movements*: muestra información de movimiento asociada a los eventos. Es característico de la app *Mobility*
 * *RAW*: muestra los eventos en bruto (sin agregación).
-* *Tops*: agrega los eventos n base a una unidad para mostrar los más destacados, de manera que lo que se muestra es la suma del total de datos de diferentes eventos para mostrarlos como uno único.
-* *compare*: comparativa en el tiempo (horas, días, semanas y meses) de los eventos más destacados.
+* *Tops*: agrega los eventos en base a un atributo para mostrar los más destacados, de manera que lo que se muestra es la suma del total de datos de diferentes eventos para mostrarlos como uno único.
+* *Compare*: comparativa en el tiempo (horas, días, semanas y meses) de los eventos más destacados.
 
 +
-Un ejemplo de uso sería el de comparar en distintos días la evolución temporal del tráfico para una aplicación en concreto. A diferencia de la vista Tops, esto solo permite el estilo de gráfico "Serie".
+Un ejemplo de uso sería el de comparar en distintos días la evolución temporal del tráfico para una aplicación en concreto.
 * *Performance Index*: permite definir un indicador donde visualizar el rendimiento de los eventos que se deseen.
 
 ====== *Configuración de widgets según cardinalidad:*
 * *Single Unique*: mediante esta opción se aislan las ocurrencias o eventos de una columna para un momento determinado.
-* *Group Unique*: mediante esta opción se aislan las ocurrencias o eventos de una columna para un momento determinado agrupados según determinados criterios.
+* *Grouped Unique*: mediante esta opción se aislan las ocurrencias o eventos de una columna para un momento determinado agrupados según determinados criterios.
 
 ===== 6.1.4.2 Personalizar un widget de estado
-El usuario puede elegir entre cuatro tipos de widgets aplicables a las opciones de configuración del Manager redBorder. La opción de *Infrastructure* permite seleccionar el modo en el que se va a visualizar la información sobre configuración y estado de la infraestructura de red:
+El usuario puede elegir entre cuatro tipos de widgets aplicables a las opciones de configuración del manager. La opción de *Infrastructure* permite seleccionar el modo en el que se va a visualizar la información sobre configuración y estado de la infraestructura de red:
 
 * *Sensor*: Mapa/Árbol
 * *Clúster*: Diagrama/Tabla
@@ -150,8 +146,8 @@ Desde el dashboard el usuario tiene acceso directo a los widgets. En la esquina 
 
 * Clonar (*Clone*): permite duplicar el widget e incorporarlo directamente en el dashboard que seleccione el usuario.
 * Editar (*Edit*): da acceso a la configuración general del widget para modificar aquellos campose que se deseen.
-* Reacargar (*Reload*): actialización de los datos
-* Eliminar (*Delete*)
+* Recargar (*Reload*): actualización de los datos.
+* Eliminar (*Delete*).
 
 image::images/dashboards/widget_menu.png[align="center"]
 

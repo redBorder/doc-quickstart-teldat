@@ -6,7 +6,7 @@ En esta sección el usuario puede realizar la visualización, análisis y gesti�
 
 En el área de análisis de la barra de menú (lateral izquierdo), encontramos las diferentes secciones que corresponden a las Apps que tengamos integradas en la plataforma.
 
-A continuación veremos las diferentes opciones de visualización de datos, tipos de gráficas, granularidad (máximo grado de detalle temporal con el que consultar eventos) y atributos que se pueden combinar para obtener un visor de tráfico de red completamente personalizado.
+A continuación veremos las diferentes opciones de visualización de datos, tipos de gráficas, granularidad (nivel de detalle temporal con el que se agregan los eventos) y atributos que se pueden combinar para obtener un visor de tráfico de red completamente personalizado.
 
 image::images/data-visualization/traffic_data_visualization.png[align="center"]
 
@@ -14,14 +14,15 @@ image::images/data-visualization/traffic_data_visualization.png[align="center"]
 
 image::images/data-visualization/traffic_submenu.png[align="center"]
 
-* Filtros (*Filters*): permite al usuario aislar una porción de información para conseguir mayor grado de detalle. En esta pestaña, el usuario podrá visualizar el número de filtros que se han aplicado y realizar acciones sobre los mismos:
-** Crear un filtro avanzado (*Advance Search*)
+* Filtros (*Filters*): permite al usuario aislar una porción de información para conseguir mayor grado de detalle. En esta pestaña, el usuario podrá visualizar el número de filtros que se han aplicado y realizar las siguientes acciones sobre los mismos:
+
+** Crear un filtro avanzado (*Advanced Search*)
 ** Crear una alarma en base a las condiciones de los filtros aplicados (*Create an alarm*)
-** Crear un widget basado en los filtros aplicados y aplicarlo en un dashboard o informe (*Create a widget on*)
-* *Vistas*: ofrece diferentes opciones de visualización de la información. Se explicarán con más detalles posteriormente.
+** Crear un widget basado en los filtros aplicados e incluirlo en un dashboard o informe (*Create a widget on*)
+* *Vistas*: ofrece diferentes opciones de visualización de la información. Se explicarán con detalle posteriormente.
 * *Agregación*: son los diferentes valores o unidades de medida en las que se pueden mostrar los datos. Por ejemplo, flows por segundo (flows/s) o bytes por segundo (bps)
 * *Granularidad*: indica el grado de detalle temporal con el que es posible visualizar los datos. El mínimo valor de granularidad es un minuto.
-* *Tipo de gráfica*: muestra los diferentes tipos de gráfica entre los que podemos elegir para mostrar los datos. Los tipos de gráficas disponibles varían según el tipo de vista seleccionada. Estos son los siguientes:
+* *Tipo de gráfica*: muestra los diferentes tipos de gráficas entre los que podemos elegir para mostrar los datos. Los tipos de gráficas disponibles varían según el tipo de vista seleccionada. Estos son los siguientes:
 ** Area
 ** Stacked
 ** Line
@@ -34,9 +35,14 @@ image::images/data-visualization/traffic_submenu.png[align="center"]
 ** Guardar las pestañas como predeterminadas (*Save tabs as default*)
 ** Ordenar agregaciones (*Sort Aggregations*)
 ** Ordenar columnas (*Sort columns*)
-* *Atributos*: Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenderse como datos propios del evento que son los que realmente nos aportan información. Estos son llamados "atributos".
+* *Atributos*: Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenderse como datos propios del evento, que son los que realmente nos aportan información. Estos son llamados "atributos".
 +
 Los atributos pueden mostrarse de varias maneras: en forma de pestañas o de columnas. (*Add tabs/Columns*) dependiendo de la vista que estemos consultando.
+
+[NOTE]
+==================================
+A lo largo de este documento podrán encontrarse referencias al concepto de columna como "atributo" o "dimensión".
+==================================
 
 ==== 5.1.2 Cuerpo de la pantalla: filtrado por rango de tiempo, pestañas de atributos y vistas.
 
@@ -46,21 +52,26 @@ Existe la posibilidad de seleccionar un rango de fechas diferente a las que se o
 
 *Pestañas de atributos*: clasifican la información del tráfico de red por atributos. Navegando por cada una de las pestañas podemos conocer en detalle los valores asociados a los atributos que hayamos seleccionado.
 
-NOTE: El usuario puede variar el orden en el que se muestran las pestañas en cualquier momento. Para ello arrastrar la pestaña y soltar en la posición en la que se desea colocar.
+NOTE: El usuario puede variar el orden en el que se muestran las pestañas en cualquier momento. Para ello, debe arrastrar la pestaña y soltarla en la posición que desee.
 
 image::images/data-visualization/body.png[align="center"]
 
-*Vista*:  en esta zona se muestran los datos según la vista y tipo de gráfica seleccionadas. Al posicionar el cursor sobre cualquiera de los puntos que componen la gráfica, aparece un cuadro de diálogo en el que se le muestra en detalle la información para ese instante de tiempo, agregación y atributo.
+*Vista*:  en esta zona se muestran los datos según la vista y tipo de gráfica seleccionadas. Al posicionar el cursor sobre cualquiera de los puntos que componen la gráfica, aparece un cuadro de diálogo que muestra en detalle la información para ese instante de tiempo, agregación y atributo.
 
 image::images/data-visualization/view.png[align="center"]
 
 ==== 5.1.3 Resumen, buscador y tabla de datos
 
-*Resumen*: bajo el área de Vista se encuentra un resumen relativo a todos los datos cargados que aparecen tanto en la vista como en la tabla de datos. En este resumen se indican, por este orden, el valor total de la agregación de todos los datos cargados, el valor total de la agregación de todos los datos cargados y seleccionados, el número de filas de datos cargadas y el porcentaje del valor agregado de los datos cargados sobre el total de datos.
+*Resumen*: bajo el área de Vista se encuentra un resumen relativo a todos los datos cargados que aparecen tanto en la vista como en la tabla de datos. En este resumen se indican, por este orden:
+
+* *Total*: valor total de la agregación de todos los datos cargados.
+* *Selected*: valor total de la agregación de todos los datos cargados y seleccionados.
+* *Visible Rows*: número de filas de datos cargadas.
+* *Visible/Total*: porcentaje del valor agregado de los datos cargados sobre el valor agregado del total de datos.
 
 *Buscador*: permite realizar una búsqueda por atributo. Las búsquedas se convierten en filtros automáticamente tal y como veremos más adelante.
 
-*Tabla de datos*: muestra los valores clasificados por tipo de atributo seleccionado. Por ejemplo, cada fila puede estar mostrando cada una de las IPs de origen (Columna/Atributo: SRC Adress) con el detalle del porcentaje de bytes (Agregación) que está consumiendo ese elemento dentro de la red. Para el análisis aislado de uno o más elementos de esta barra (seleccionar como filtro), es necesario clicar sobre el elemento que desea filtrar. Para selección múltiple basta con mantener pulsada la tecla *Shift*.
+*Tabla de datos*: muestra los valores clasificados por tipo de atributo seleccionado. Por ejemplo, cada fila puede estar mostrando cada una de las IPs de origen (Columna/Atributo: SRC Address) con el detalle del porcentaje de bytes (Agregación) que está consumiendo ese elemento dentro de la red. Para el análisis aislado de un elemento de esta tabla es necesario hacer clic sobre el elemento que se desee filtrar. Para el análisis de más de un elemento se deberá realizar una selección múltiple, manteniendo pulsada la tecla *Ctrl* y seleccionando distintos elementos o, si se desea seleccionar un rango, utilizando la tecla *Shift*.
 
 image::images/data-visualization/overview.png[align="center"]
 
@@ -70,33 +81,31 @@ La opción *Filters* permite el filtrado de eventos según criterios definidos p
 
 *Opciones de filtrado*:
 
-* Filter zoom: aisla gráficamente los eventos según un rango de tiempo.
-* Filtrar por valor de atributo (*Filter Selected*): nos permite convertir en filtro a uno o más elementos presentes en la tabla.
+* *Filter Zoom*: tras seleccionar un rango temporal en la vista gráfica, es posible filtrar por ese rango de tiempo haciendo clic en el botón *Filter Zoom* que aparece en las opciones del submenú.
+* Filtrar por valor de atributo (*Filter Selected*): permite filtrar los elementos de la tabla seleccionados.
+* Excluir por valor de atributo (*Exclude Selected*): permite excluir los elementos de la tabla seleccionados.
 * Búsqueda avanzada (*Advanced Search*): permite establecer condiciones para realizar una búsqueda avanzada que actúe a modo de filtro. Muy útil para aislar y analizar datos muy concretos.
 
-Para guardar un filtro como "habitual" basta con seleccionar la opción *+Save Current Filter*.
+Para guardar un filtro basta con seleccionar la opción *+Save Current Filter*.
 
 image::images/data-visualization/advanced_search.png[align="center"]
 
 *Acciones para los filtros:*
 
-Además de la opción de búsqueda avanzada (*Advaced Search*), el menú *Filters* muestra las siguientes opciones:
+Además de la opción de búsqueda avanzada (*Advanced Search*), el menú *Filters* muestra las siguientes opciones:
 
-* Crear alarmas (*Create an alarm*) : nos permite configurar una alarma en base a los filtros aplicados.
-* Crear un widget en (*Create a widget on*) : crea un widget a partir de los filtros aplicados que se puede incluir en dashboards  o informes.
+* Crear alarmas (*Create an alarm*): nos permite configurar una alarma en base a los filtros aplicados.
+* Crear un widget en (*Create a widget on*): crea un widget a partir de los filtros aplicados que se puede incluir en dashboards  o informes.
 
 
 === 5.3 Vistas: múltiples opciones para visualizar los datos
 
-Las vistas ofrecen múltiples perspectivas para la visualización de los datos asociados al tráfico de red.
-
-NOTE: Recuerde que en la sección *Dashboard* puede crear widgets personalizados para monitorizar los eventos y que se muestren en una vista determinada.
-Las vistas que se encuentran disponibles para el Flow son las siguientes:
+Las vistas ofrecen múltiples perspectivas para la visualización de los datos asociados al tráfico de red. Las vistas que se encuentran disponibles en la App Traffic son las siguientes:
 
 * *Tops:* agregación de los eventos en base a una unidad para mostrar los más destacados. Suma el total de datos de diferentes eventos para mostrarlo como uno único.
 * *Raw:* vista de la totalidad de datos de los eventos en bruto, clasificados por atributos y franjas de tiempo.
 * *Compare:* comparación de intervalos de tiempo para analizar diferencias en el estado de la red.
-* *Unique:* muestra los elementos diferentes que ha interactuado con la red según atributo.
+* *Unique:* muestra los diferentes elementos que han interactuado con la red según el atributo.
 
 NOTE: Las opciones que se muestran en la pestaña *Options* y los atributos *Add tab/Columns* variarán según el tipo de vista elegida.
 
@@ -104,31 +113,32 @@ IMPORTANT: No olvide combinar las vistas con los diferentes tipos de gráficas. 
 
 ==== 5.3.1 Tops
 
-La vista *Tops* nos permite visualizar cuáles han sido los eventos más destacados según el intervalo de tiempo que se haya seleccionado. Lo que visualizamos en la gráfica es la suma del total de dichos eventos mostrados como un único evento. Si posamos el ratón por encima de cada uno de estos "picos" o Tops, veremos el desglose del evento por día, hora y tipo de dimensión o atributo que se esté consultando.
+La vista *Tops* nos permite visualizar cuáles han sido los eventos más destacados según el intervalo de tiempo que se haya seleccionado. Lo que visualizamos en la gráfica es la suma del total de dichos eventos mostrados como un único evento. Si pasamos el ratón por encima la gráfica, veremos el desglose del evento por día, hora y tipo de dimensión o atributo que se esté consultando.
 
 ==== 5.3.2 Raw
 
 Esta vista nos ofrece los datos de los eventos en bruto, por tanto, visualizaremos la totalidad de eventos por atributos segmentados por franjas de tiempo.
 
-En la tabla de datos recogerá, por tanto, todos los datos de los eventos clasificados por columnas. Los datos se muestran a nivel de pantalla, no obstante, si desea ver más, basta con hacer scroll y esperar a que se carguen más datos: Load more.
+La tabla de datos recogerá, por tanto, todos los eventos ordenados en el tiempo. Si desea ver más eventos, basta con ir al final de la tabla y aparecerán eventos anteriores.
 
 [NOTE]
 =======================
 Como se puede observar en la imagen, el tipo de gráfica ideal para la vista Raw es el de flujo de
   datos o *Streams*.
 
-En la vista Raw los atributos se muestran en columnas
+En la vista Raw los atributos se muestran en columnas.
 =======================
 
 ==== 5.3.3 Compare
-Esta vista ofrece una comparativa de los eventos por intervalo de tiempo (hora) o entre días. Esta comparativa se puede realizar por horas o por días con intervalos de 5 minutos, lo que garantiza *un grado de detalle máximo*. De este modo, el usuario puede identificar de forma rápida el momento de mayor uso de la red.
+Esta vista ofrece una comparativa de la evolución de los eventos entre distintas horas, días, semanas o meses.
+De este modo, el usuario puede identificar de forma rápida el momento de mayor uso de la red en función de distintos parámetros, como pueden ser los bytes consumidos, los paquetes transmitidos o los flujos recibidos.
 
-En la tabla de datos se mostrarán aquellos que corresponden al intervalo temporal seleccionado.
+En la tabla de datos se muestra la suma de los valores de cada intervalo de tiempo.
 
 ==== 5.3.4 Unique
 A través de la vista *Unique*, el usuario podrá obtener información acerca de los elementos diferentes que han interactuado, al menos, una vez con la red en un periodo de tiempo determinado.
 
-Seleccionar el grupo de atributos que se desea analizar mediante la opción *Group By*.
+También, es posible seleccionar el grupo de atributos que se desea analizar mediante la opción *Group by*.
 
 === 5.4 Tipos de agregación
 El tipo de agregación permite que el usuario seleccione la unidad de medida en la que desea que se muestre la información.
@@ -144,7 +154,7 @@ Estas son las diferentes unidades y métricas que encontrará en esta pestaña:
 
 image::images/data-visualization/aggregations.png[align="center"]
 
-NOTE: Optimice sus métricas combinando diferentes tipos de agregación con las opciones de granuralidad (lapsos de tiempo) que se encuentran disponibles.
+NOTE: Optimice sus métricas combinando diferentes tipos de agregación con las opciones de granuralidad (nivel de detalle temporal) que se encuentran disponibles.
 
 === 5.5 Granularidad
 Llamamos granularidad al grado de detalle con el que podemos visualizar los eventos. Las opciones de granuralidad varían según el rango de tiempo que se esté mostrando (1h., 2h., last week, last month, all, etc.).
@@ -155,46 +165,50 @@ image::images/data-visualization/granularity.png[align="center"]
 
 === 5.6 Tipos de gráficas
 
-Es posible seleccionar el tipo de gráfica con el que se desean visualizar los datos obtenidos en las diferentes vistas. Las opciones son muy similares a las que se han mostrado en el proceso de creación de widgets personalizados.
+Es posible seleccionar el tipo de gráfica con el que se desean visualizar los datos obtenidos en las diferentes vistas. Las opciones son muy similares a las que se muestran en el proceso de creación de widgets personalizados del capítulo dedicado a los Dashboards.
 
-Las gráficas que se encuentran disponibles en cada momento, dependerán de la vista seleccionada. Esta opción no aparece, por ejemplo, al aplicar la vista Map a los datos, puesto que los datos se representarán en esta vista, sobre un mapa.
+Las gráficas que se encuentran disponibles en cada momento dependerán de la vista seleccionada.
+Esta opción no aparece, por ejemplo, al aplicar la vista Map a los datos, puesto que los datos se representarán en esta vista sobre un mapa.
+En todos los tipos de gráficas se realiza una representación de los valores seleccionados en función del tiempo, de la granularidad y agregación seleccionadas y de las distintas opciones disponibles en función de la vista. A continuación se describen los distintos tipos de gráficas disponibles.
 
-*Stacked*: muestra la manera comparativa en una misma gráfica los datos correspondientes a cada una de los atributos seleccionados.
+*Stacked*: composición de áreas apiladas, donde cada área representa el perfil temporal de un valor seleccionado.
 
 image::images/data-visualization/stacked_graphic.png[align="center"]
 
-*Area*: gráfica que ofrece de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado, siendo el total del tráfico la suma del tráfico por atributo.
+*Area*: composición de áreas superpuestas, donde cada área representa el perfil temporal de un valor seleccionado.
 
 image::images/data-visualization/area_graphic.png[align="center"]
 
-*Line*: muestra de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado; en este caso no se muestra el área sino que la gráfica viene representada por una línea.
+*Line*: composición de líneas superpuestas, donde cada línea representa el perfil temporal de un valor seleccionado.
 
 image::images/data-visualization/line_graphic.png[align="center"]
 
-*Bars*: ofrece los datos de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado, siendo el total, la suma de todos los valores de cada uno de esos elementos. En este caso, los datos se representan gráficamente a través de barras.
+*Bars*: composición de conjuntos de barras superpuestas, donde cada conjunto de barras de distinto color representa el perfil temporal de un valor seleccionado.
 
 image::images/data-visualization/bars_graphic.png[align="center"]
 
-*SBars*: o Stacked Bars, ofrece en una misma gráfica los datos obtenidos para cada uno de los elementos incluidos en el atributo seleccionado, por lo que se pueden visualizar los resultados de manera independiente por IP, sensor, etc., representados gráficamente or barras.
+*SBars* (Stacked Bars): composición de conjuntos de barras apiladas, donde cada conjunto de barras de distinto color representa el perfil temporal de un valor seleccionado.
 
 image::images/data-visualization/sbars_graphic.png[align="center"]
 
-*Streams*: gráfica solo disponible para la vista Raw. Muestra los flujos de tráfico por sensor.
+*Streams*: composición de flujos, donde cada flujo representa las relaciones entre distinos atributos. Esta gráfica solo está disponible para la vista Raw. En la imagen inferior se muestran los flujos de tráfico de un sensor entre IPs LAN y WAN.
 
 image::images/data-visualization/streams_graphic.png[align="center"]
 
 === 5.7 Opciones
-Cada una de las vistas presenta una serie de opciones que le permiten al usuario, entre otras acciones, visualizar el total del tráfico, exportar los datos a CSV o llevar a la máquina a un estado del pasado para poder analizar y comparar comportamientos presentes y pasados.
+Cada una de las vistas presenta una serie de opciones que le permiten al usuario, entre otras acciones, visualizar el total del tráfico, exportar los datos a CSV o llevar al manager a un estado anterior para poder analizar comportamientos pasados.
 
 A continuación se enumeran todas las opciones disponibles en esta pestaña. El usuario debe tener en cuenta que estas opciones variarán según la vista seleccionada previamente.
 
-* Mostrar total (*Show Total*): al seleccionar esta opción se muestra en la gráfica el valor del total del tráfico diferenciado del recibido o emitido por cada uno de los atributos que se estén consultando. Cuando esta opción se encuentra activa, en el listado de opciones aparecerá "Hide total". Disponible en las vistas Top y Unique.
+* Mostrar total (*Show Total*): al seleccionar esta opción se muestra en la gráfica una línea gris discontinua que representa la suma de las agregaciones de todos los atributos. Cuando esta opción se encuentra activa, en el listado de opciones se cambia esta opción por *Hide Total*. Disponible en las vistas Tops y Unique.
+
+* Mostrar total de los filtrados (*Show Total Filtered*): al seleccionar esta opción se muestra en la gráfica una línea gris discontinua (más clara que la de la opción anterior) que representa la suma de las agregaciones de todos los atributos resultantes de aplicar los filtros seleccionados. Cuando esta opción se encuentra activa, en el listado de opciones se cambia esta opción por *Hide Total Filtered*. Disponible en la vista Tops.
 
 * Exportar a CSV (*Export to CSV*): el usuario obtendrá un fichero de descarga en formato CSV que incluye los datos correspondientes al atributo que se seleccione, pudiendo fijar un límite de las filas que se incluirán en el archivo. Disponible solo para las vistas Tops, Raw y Unique.
 
 image::images/data-visualization/export_to_csv.png[align="center"]
 
-* Máquina del tiempo (*Time machine*): regresa la máquina a un estado anterior. Al seleccionar esta opción el usuario podrá visualizar los datos tal y como si estuviera viéndolos en el día y hora del pasado que haya indicado. Disponible para todas las vistas.
+* Máquina del tiempo (*Time machine*): envía al manager a un estado anterior. Al seleccionar esta opción el usuario podrá visualizar los datos tal y como si estuviera viéndolos en el día y hora del momento pasado que haya indicado. Disponible para todas las vistas.
 
 image::images/data-visualization/timemachine.png[align="center"]
 
@@ -204,11 +218,11 @@ image::images/data-visualization/timemachine.png[align="center"]
 
 image::images/data-visualization/sort_aggregations.png[align="center"]
 
-* Orden de las columnas (Sort columns): mediante esta opción el usuario puede elergir el orden en el que se mostrarán las columnas disponibles. Disponible únicamente para la vista Raw.
+* Orden de las columnas (*Sort Columns*): mediante esta opción el usuario puede elergir el orden en el que se mostrarán las columnas disponibles. Disponible únicamente para la vista Raw.
 
 image::images/data-visualization/sort_columns.png[align="center"]
 
-* Recargar (*Start reloading*): activa la cuenta atrás para que se efectúe la recarga de los datos. En cualquier momento, el usuario puede detener esta recarga seleccionando Stop reloading (opción que sustituye a Start reloading una vez que se ha activado esta). En el extremo izquierdo de la barra de sección aparecerá una cuenta atrás indicándole el tiempo de espera hasta la recarga. Disponible para la vista Raw.
+* Recargar (*Start Reloading*): activa la cuenta atrás para que se efectúe la recarga de los datos. En cualquier momento, el usuario puede detener esta recarga seleccionando *Stop Reloading* (opción que sustituye a Start Reloading una vez que ésta se ha activado). En el extremo izquierdo de la barra de sección aparecerá una cuenta atrás indicándole el tiempo de espera hasta la recarga. Disponible para la vista Raw.
 
 image::images/data-visualization/traffic_submenu_with_reloading.png[align="center"]
 

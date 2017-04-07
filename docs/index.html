@@ -7,7 +7,7 @@
 <meta name="generator" content="Asciidoctor 1.5.5">
 <meta name="keywords" content="redborder, teldat, quickstart, guide, manual, visualizer">
 <meta name="author" content="redborder">
-<title>redborder quickstart - Teldat</title>
+<title>redborder quickstart guide - Teldat</title>
 <style>
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ========================================================================== HTML5 display definitions ========================================================================== */
@@ -701,7 +701,7 @@ b.conum * { color: inherit !important; }
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1>redborder quickstart - Teldat</h1>
+<h1>redborder quickstart guide - Teldat</h1>
 <div class="details">
 <span id="author" class="author">redborder</span><br>
 <span id="revnumber">version 0.0.1</span>
@@ -788,11 +788,11 @@ la presente documentación nos referiremos a la máquina donde se va a instalar 
 <div class="sect2">
 <h3 id="_instalación">Instalación</h3>
 <div class="paragraph">
-<p>Para la instalación del manager, el usuario dispondrá de una imagen ISO con la que se deberá arrancar la máquina
+<p>Para la instalación del manager, el usuario dispondrá de una imagen ISO con la que se deberá arrancar la máquina
 en la que se va a instalar.</p>
 </div>
 <div class="paragraph">
-<p>Al iniciar el asistente de instalación tendrá acceso a un menú tal y como se muestra a continuación:</p>
+<p>Al iniciar el asistente de instalación tendrá acceso a un menú tal y como se muestra a continuación:</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -843,7 +843,7 @@ Por defecto la contraseña de root es "<strong>teldat</strong>"
 </table>
 </div>
 <div class="paragraph">
-<p>Tras esto se procederá a la instalación de los paquetes de instalación del software en el disco duro.</p>
+<p>Tras esto se procederá a la instalación de los paquetes de instalación del software en el disco duro.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -851,7 +851,7 @@ Por defecto la contraseña de root es "<strong>teldat</strong>"
 </div>
 </div>
 <div class="paragraph">
-<p>Espere hasta que la instalación se haya completado al 100%.</p>
+<p>Espere hasta que la instalación se haya completado al 100%.</p>
 </div>
 <div class="paragraph">
 <p>Una vez finalizada la instalación, el sistema será reiniciado. Durante el primer arranque el sistema procederá
@@ -865,14 +865,14 @@ a realizar una serie de acciones para configurarse por primera vez.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Estos procesos puede tardar varios minutos</p>
+<p>Estos procesos pueden tardar varios minutos</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Una vez que en la terminal nos aparezca la sigueinte imagen, ya podremos acceder.</p>
+<p>Una vez que en la terminal nos aparezca la siguiente imagen, ya podremos acceder.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -898,25 +898,24 @@ Las credenciales por defecto son "usuario: root / password: teldat"
 <p>Una vez logueados en el manager, debemos ejecutar el comando <strong>rb_sysconf</strong> para realizar la configuración inicial.</p>
 </div>
 <div class="paragraph">
-<p>Estas son las opciones que encontrará en la pantalla principal de este menú:</p>
+<p>Estas son las opciones que encontrará en la pantalla principal de este menú:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><strong>System Configuration</strong>: configuración del hostname, IP del Manager, hora y estado del Manager.</p>
+<p><strong>System Configuration</strong>: configuración del hostname, IP del Manager, hora y estado del Manager.</p>
 </li>
 <li>
-<p><strong>Network Configuration</strong>: creación de bondings, segmentos, DNS, rutas e IPMI.
-Recuerde que para formar un cluster se necesitan por lo menos dos conexiones de red, no siendo así para instalaciones de un solo nodo.</p>
+<p><strong>Network Configuration</strong>: creación de bondings, segmentos, DNS, rutas e IPMI. Para formar un cluster se necesitan al menos dos interfaces de red, una para gestión y otra para comunicación entre los nodos del cluster. Para instalaciones de un solo nodo, solo es necesaria una interfaz de red para la gestión.</p>
 </li>
 <li>
-<p><strong>Passwords</strong>: acceda a esta opción si desea modificar las contraseñas de los usuarios del sistema.</p>
+<p><strong>Passwords</strong>: acceda a esta opción si desea modificar las contraseñas de los usuarios del sistema.</p>
 </li>
 <li>
-<p><strong>w) start simple wizard</strong>: inicia un asistente que le permitirá de forma sencilla y rápida realizar la instalación y configuración del Manager.</p>
+<p><strong>w) start simple wizard</strong>: inicia un asistente que le permitirá de forma sencilla y rápida realizar la instalación y configuración del Manager.</p>
 </li>
 <li>
-<p><strong>q) quit</strong>: Salir. Nos devuelve a la pantalla principal de configuración del sistema.</p>
+<p><strong>q) quit</strong>: Salir. Nos devuelve a la pantalla principal de configuración del sistema.</p>
 </li>
 </ol>
 </div>
@@ -926,12 +925,12 @@ Recuerde que para formar un cluster se necesitan por lo menos dos conexiones de 
 </div>
 </div>
 <div class="paragraph">
-<p>Para realizar la instalación automática del manager, usaremos la opción <strong>w) start simple wizard</strong>.</p>
+<p>Para realizar la instalación automática del manager, usaremos la opción <strong>w) start simple wizard</strong>.</p>
 </div>
 <div class="paragraph">
 <p>Existen una serie de opciones definidas por defecto (indicadas entre corchetes).
-Para aceptarlas tan solo tiene que pulsar Enter. No obstante, puede modificarlas manualmente
-en cualquier momento del proceso de instalación.</p>
+Para aceptarlas tan solo tiene que pulsar <strong>Enter</strong>. No obstante, puede modificarlas manualmente
+en cualquier momento del proceso de instalación.</p>
 </div>
 <div class="paragraph">
 <p><strong>Mode, Hostname, DNS y NTP</strong></p>
@@ -939,13 +938,13 @@ en cualquier momento del proceso de instalación.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Insert Hostname [rbmanager]. La opción que viene definida por defecto es la de rbmanager. Este es un nombre que identifica de manera clara y sencilla al Manager y su posición dentro del cluster.</p>
+<p>Insert Hostname [rbmanager]. La opción que viene definida por defecto es la de rbmanager. Este es un nombre que identifica de manera clara y sencilla al Manager y su posición dentro del cluster.</p>
 </li>
 <li>
 <p>Insert domain: [redborder.cluster]. Dominio definido por defecto.</p>
 </li>
 <li>
-<p>Insert DNS Primary. Definido por defecto. El usuario podrá cambiarlo para indicar el servidor que provee DNS a su red y al que estará asociado el Manager.</p>
+<p>Insert DNS Primary. Definido por defecto. El usuario podrá cambiarlo para indicar el servidor que provee DNS a su red y al que estará asociado el Manager.</p>
 </li>
 <li>
 <p>Insert DNS Secondary (optional). Indicar DNS secundario de manera opcional. Se aconseja introducir un DNS alternativo que sustituya al DNS primario en caso de fallo del servidor.</p>
@@ -965,7 +964,7 @@ Es importante que se utilicen diferentes nombres para cada uno de los Managers q
 </table>
 </div>
 <div class="paragraph">
-<p>Una vez introducidos estos valores, el sistema le avisará de que los cambios han sido aplicados con éxito mediante el siguiente
+<p>Una vez introducidos estos valores, el sistema le avisará de que los cambios han sido aplicados con éxito mediante el siguiente
 mensaje rotulado en verde: DNS and domain settings applied successfully.</p>
 </div>
 <div class="imageblock" style="text-align: center">
@@ -978,7 +977,7 @@ mensaje rotulado en verde: DNS and domain settings applied successfully.</p>
 </div>
 <div class="paragraph">
 <p>El siguiente paso es indicar el servidor de hora: <strong>NTP server [pool.ntp.org]:</strong>
-Si existe algún servidor NTP en su red que quiera utilizar, se debe indicar aquí. En caso contrario, se asignará uno por defecto.</p>
+Si existe algún servidor NTP en su red que quiera utilizar, se debe indicar aquí. En caso contrario, se asignará uno por defecto.</p>
 </div>
 <div class="paragraph">
 <p>Si sólo va a desplegar un manager, necesitará una única interfaz de red. Por el contrario, si va a desplegar un cluster
@@ -987,7 +986,7 @@ con múltiples managers será necesario al menos reservar 2 interfaces de red:</
 <div class="ulist">
 <ul>
 <li>
-<p>Una para la red de gestión (Management IP address)</p>
+<p>Una para la red de gestión (Management IP address)</p>
 </li>
 <li>
 <p>Otra para la red de sincronismo (Sync IP address)</p>
@@ -1017,7 +1016,7 @@ con múltiples managers será necesario al menos reservar 2 interfaces de red:</
 </ul>
 </div>
 <div class="paragraph">
-<p>Una vez introducidos estos valores, el sistema le avisará de que el bonding ha sido creado con éxito.</p>
+<p>Una vez introducidos estos valores, el sistema le avisará de que el bonding ha sido creado con éxito.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1054,9 +1053,7 @@ la red de sincronismo.</p>
 <p><strong>Configuración de cluster y servicios externos</strong></p>
 </div>
 <div class="paragraph">
-<p>Como último paso se preguntan una serie de opciones de configuración relacionadas con la creación de un cluster de varios managers
-y la configuración de servicios fuera del manager. Se recomienda dejar los valores por defecto para el caso
-de instalaciones on-premise.</p>
+<p>Como último paso se preguntan una serie de opciones de configuración relacionadas con la creación de un cluster de varios managers y la configuración de servicios fuera del manager. Para instalaciones on-premises, se recomienda dejar los valores por defecto.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1091,20 +1088,20 @@ de instalaciones on-premise.</p>
 </div>
 <div class="paragraph">
 <p>Es necesario disponer de una licencia válida para poder dar de alta sensores y visualizar datos. Si intentamos dar de alta
-un nuevo sensor sin disponer de una licencia válida, nos aparecerá un mensaje indicando que es necesario solictar una licencia.</p>
+un nuevo sensor sin disponer de una licencia válida, nos aparecerá un mensaje indicando que es necesario solicitar una licencia.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<a class="image" href="images/install/license-06.png"><img src="images/license/license-06.png" alt="license-06"></a>
+<a class="image" href="images/license/license-06.png"><img src="images/license/license-06.png" alt="license-06"></a>
 </div>
 </div>
 <div class="paragraph">
-<p>Para acceder al menú de gestión de licencias tenemos que autenticarnos como administrador al manager.
-A través de la interfaz web nos dirigimos a Tools &#8594; Licenses</p>
+<p>Para acceder al menú de gestión de licencias tenemos que autenticarnos como administrador en el manager.
+A través de la interfaz web nos dirigimos a <strong>Tools &#8594; Licenses</strong>.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<a class="image" href="images/install/license-01.png"><img src="images/license/license-01.png" alt="license-01"></a>
+<a class="image" href="images/license/license-01.png"><img src="images/license/license-01.png" alt="license-01"></a>
 </div>
 </div>
 <div class="paragraph">
@@ -1112,11 +1109,11 @@ A través de la interfaz web nos dirigimos a Tools &#8594; Licenses</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<a class="image" href="images/install/license-02.png"><img src="images/license/license-02.png" alt="license-02"></a>
+<a class="image" href="images/license/license-02.png"><img src="images/license/license-02.png" alt="license-02"></a>
 </div>
 </div>
 <div class="paragraph">
-<p>En una instalación nueva nos encontraremos esta vista como se muestra arriba, donde aún no se ha cargado ninguna licencia.</p>
+<p>En una instalación nueva nos encontraremos con la vista que se muestra arriba, donde aún no se ha cargado ninguna licencia.</p>
 </div>
 <div class="paragraph">
 <p>Para obtener una licencia debemos pulsar en el botón "Request license". Nos aparecerá un formulario donde tendremos que
@@ -1124,11 +1121,11 @@ indicar la cantidad de MB diarios que se van a consumir y el número máximo de 
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<a class="image" href="images/install/license-05.png"><img src="images/license/license-05.png" alt="license-05"></a>
+<a class="image" href="images/license/license-05.png"><img src="images/license/license-05.png" alt="license-05"></a>
 </div>
 </div>
 <div class="paragraph">
-<p>Una vez dispongamos del archivo de licencia (extensión .lic), para cargarla pulsaremos en el botón "Upload license"
+<p>Una vez dispongamos del archivo de licencia (extensión .lic), para cargarla en el manager pulsaremos en el botón "Upload license"
 y subiremos el archivo.</p>
 </div>
 <div class="paragraph">
@@ -1140,11 +1137,11 @@ el límite de sensores de cada tipo que podemos usar.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<a class="image" href="images/install/license-04.png"><img src="images/license/license-04.png" alt="license-04"></a>
+<a class="image" href="images/license/license-04.png"><img src="images/license/license-04.png" alt="license-04"></a>
 </div>
 </div>
 <div class="paragraph">
-<p>Un dato importante dentro de la vista de licencias es la cantidad de bytes diarios consumidos. Si superamos este valor
+<p>Un dato importante dentro de la vista de licencias es la cantidad de bytes diarios consumidos en el día actual. Si superamos este valor,
 automáticamente se dejarán de procesar eventos para los sensores asociados.</p>
 </div>
 </div>
@@ -1153,8 +1150,8 @@ automáticamente se dejarán de procesar eventos para los sensores asociados.</p
 <h2 id="_capítulo_3_gestión_de_usuarios">Capítulo 3: Gestión de usuarios</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>El alta o modificación de los datos de los usuarios, la gestión de sus permisos o la creación de nuevos registros es posible desde la
-interfaz de gestión de usuarios, accesible en <strong>Tools &#8594; Users settings</strong>.</p>
+<p>El alta o modificación de los datos de los usuarios, la gestión de sus permisos o la creación de nuevos registros es posible desde la
+interfaz de gestión de usuarios, accesible en <strong>Tools &#8594; Users</strong>.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1162,8 +1159,8 @@ interfaz de gestión de usuarios, accesible en <strong>Tools &#8594; Users setti
 </div>
 </div>
 <div class="paragraph">
-<p>Para buscar un usuario concreto es posible introducir sus datos en el buscador, o bien, navegar por el listado alfabético que se
-muestra sobre el listado de usuarios dados de alta.</p>
+<p>Para buscar un usuario concreto es posible introducir sus datos en el buscador, o bien, navegar por el listado alfabético que se
+muestra sobre los usuarios dados de alta.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1171,7 +1168,7 @@ muestra sobre el listado de usuarios dados de alta.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Sólo el usuario con el rol de <strong>Súper Administrador</strong> tiene habilitada esta función. El resto de usuarios sólo podrá visualizar las
+<p>Sólo el usuario con el rol de <strong>Súper Administrador</strong> tiene habilitada esta función. El resto de usuarios sólo podrá visualizar las
 diferentes secciones de la plataforma, pero no modificar su contenido (salvo en el caso de su propio perfil de usuario).</p>
 </div>
 <div class="admonitionblock important">
@@ -1188,8 +1185,8 @@ Un usuario es <strong>Super Administrador</strong> sólo si es Administrador y s
 </div>
 <div class="paragraph">
 <p>En el cuerpo de esta vista encontramos un listado de los usuarios dados de alta en la plataforma redborder,
-dirección de correo electrónico, Top Domain (máximo nivel al que tiene acceso el usuario), número de veces que
-ha hecho login, la IP y la hora desde las cuales realizó el último acceso.</p>
+dirección de correo electrónico, Top Domain (máximo nivel al que tiene acceso el usuario), número de veces que
+ha hecho login, la IP y la hora desde las cuales realizó el último acceso.</p>
 </div>
 <div class="paragraph">
 <p>También podemos encontrar 2 botones en cada línea de usuario:</p>
@@ -1220,7 +1217,7 @@ relacionadas con la actividad del usuario.</p>
 <div class="sect2">
 <h3 id="_configuración_de_usuarios">Configuración de usuarios</h3>
 <div class="paragraph">
-<p>Haciendo clic en el botón de configuración de un usuario podemos modificar los siguientes datos y visualizar
+<p>Haciendo clic en el botón de configuración de un usuario podemos modificar los siguientes datos y visualizar
 un resumen de su estado y actividad dentro de la plataforma.</p>
 </div>
 <div class="imageblock" style="text-align: center">
@@ -1296,7 +1293,7 @@ un resumen de su estado y actividad dentro de la plataforma.</p>
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-Cada vez que deseemos modificar nuestra propia cuenta de usuario deberemos de introducir la contraseña para poder aplicar los cambios.
+Cada vez que deseemos modificar nuestra propia cuenta de usuario deberemos introducir la contraseña para poder aplicar los cambios.
 </td>
 </tr>
 </table>
@@ -1315,7 +1312,7 @@ Cada vez que deseemos modificar nuestra propia cuenta de usuario deberemos de in
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/sensors/sensors_menu.png" alt="sensors menu">
+<a class="image" href="images/sensors/sensors_menu.png"><img src="images/sensors/sensors_menu.png" alt="sensors_menu"></a>
 </div>
 </div>
 <div class="sect2">
@@ -1355,7 +1352,7 @@ Cada vez que deseemos modificar nuestra propia cuenta de usuario deberemos de in
 </div>
 </li>
 <li>
-<p>Proxis clientes (<strong>Client Proxies</strong>): listado que muestra los proxies clientes por orden alfabético</p>
+<p>Proxies clientes (<strong>Client Proxies</strong>): listado que muestra los proxies clientes por orden alfabético</p>
 </li>
 <li>
 <p>Sensores Flow (<strong>Flow sensors</strong>): listado que muestra los sensores de tipo flow por orden alfabético.</p>
@@ -1387,10 +1384,7 @@ Cada vista presenta su propio menú de opciones y las diferentes posibilidades d
 <div class="sect2">
 <h3 id="_4_2_añadir_un_sensor">4.2 Añadir un sensor</h3>
 <div class="paragraph">
-<p>Para añadir un sensor debe seleccionar la opción <strong>+Add Sensor</strong>. En el menú desplegable se muestran los diferentes tipos de sensores que pueden añadirse al árbol.</p>
-</div>
-<div class="paragraph">
-<p>Seleccione el tipo de sensor en el menú desplegable y a continuación, complete la información que se solicita.</p>
+<p>Para añadir un sensor debe seleccionar la opción <strong>+Add Sensor</strong>. En el menú desplegable se muestran los diferentes tipos de sensores que pueden añadirse al árbol. Seleccione el tipo de sensor en el menú desplegable y a continuación, complete la información que se solicita.</p>
 </div>
 <div class="paragraph">
 <p>Para registrar sensores de Teldat, se deberá seleccionar tanto el tipo de sensor como su número de serie. En el caso de que el sensor no sea de Teldat,
@@ -1398,7 +1392,7 @@ se deberá elegir un tipo de sensor genérico e identificarlo mediante la IP del
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/sensors/add_sensors_dialog.png" alt="add sensors dialog">
+<a class="image" href="images/sensors/add_sensors_dialog.png"><img src="images/sensors/add_sensors_dialog.png" alt="add_sensors_dialog"></a>
 </div>
 </div>
 <div class="admonitionblock important">
@@ -1409,7 +1403,7 @@ se deberá elegir un tipo de sensor genérico e identificarlo mediante la IP del
 </td>
 <td class="content">
 <div class="paragraph">
-<p>En el momento en el que se crea un sensor en redBorder este pasa, por defecto, a colocarse como raíz, por encima del nivel de dominio.</p>
+<p>En el momento en el que se crea un sensor en el manager, este pasa, por defecto, a colocarse como raíz, por encima del nivel de dominio.</p>
 </div>
 <div class="paragraph">
 <p>El usuario puede organizar su infraestructura de sensores en cualquier momento, arrastrando y soltando el sensor en el nivel en el que se quiera colocar.</p>
@@ -1429,12 +1423,12 @@ se deberá elegir un tipo de sensor genérico e identificarlo mediante la IP del
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/sensors/add_domain_menu.png" alt="add domain menu">
+<a class="image" href="images/sensors/add_domain_menu.png"><img src="images/sensors/add_domain_menu.png" alt="add_domain_menu"></a>
 </div>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/sensors/add_domain_dialog.png" alt="add domain dialog">
+<a class="image" href="images/sensors/add_domain_dialog.png"><img src="images/sensors/add_domain_dialog.png" alt="add_domain_dialog"></a>
 </div>
 </div>
 </div>
@@ -1477,7 +1471,7 @@ se deberá elegir un tipo de sensor genérico e identificarlo mediante la IP del
 <p>En el área de análisis de la barra de menú (lateral izquierdo), encontramos las diferentes secciones que corresponden a las Apps que tengamos integradas en la plataforma.</p>
 </div>
 <div class="paragraph">
-<p>A continuación veremos las diferentes opciones de visualización de datos, tipos de gráficas, granularidad (máximo grado de detalle temporal con el que consultar eventos) y atributos que se pueden combinar para obtener un visor de tráfico de red completamente personalizado.</p>
+<p>A continuación veremos las diferentes opciones de visualización de datos, tipos de gráficas, granularidad (nivel de detalle temporal con el que se agregan los eventos) y atributos que se pueden combinar para obtener un visor de tráfico de red completamente personalizado.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1494,23 +1488,23 @@ se deberá elegir un tipo de sensor genérico e identificarlo mediante la IP del
 <div class="ulist">
 <ul>
 <li>
-<p>Filtros (<strong>Filters</strong>): permite al usuario aislar una porción de información para conseguir mayor grado de detalle. En esta pestaña, el usuario podrá visualizar el número de filtros que se han aplicado y realizar acciones sobre los mismos:</p>
+<p>Filtros (<strong>Filters</strong>): permite al usuario aislar una porción de información para conseguir mayor grado de detalle. En esta pestaña, el usuario podrá visualizar el número de filtros que se han aplicado y realizar las siguientes acciones sobre los mismos:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Crear un filtro avanzado (<strong>Advance Search</strong>)</p>
+<p>Crear un filtro avanzado (<strong>Advanced Search</strong>)</p>
 </li>
 <li>
 <p>Crear una alarma en base a las condiciones de los filtros aplicados (<strong>Create an alarm</strong>)</p>
 </li>
 <li>
-<p>Crear un widget basado en los filtros aplicados y aplicarlo en un dashboard o informe (<strong>Create a widget on</strong>)</p>
+<p>Crear un widget basado en los filtros aplicados e incluirlo en un dashboard o informe (<strong>Create a widget on</strong>)</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><strong>Vistas</strong>: ofrece diferentes opciones de visualización de la información. Se explicarán con más detalles posteriormente.</p>
+<p><strong>Vistas</strong>: ofrece diferentes opciones de visualización de la información. Se explicarán con detalle posteriormente.</p>
 </li>
 <li>
 <p><strong>Agregación</strong>: son los diferentes valores o unidades de medida en las que se pueden mostrar los datos. Por ejemplo, flows por segundo (flows/s) o bytes por segundo (bps)</p>
@@ -1519,7 +1513,7 @@ se deberá elegir un tipo de sensor genérico e identificarlo mediante la IP del
 <p><strong>Granularidad</strong>: indica el grado de detalle temporal con el que es posible visualizar los datos. El mínimo valor de granularidad es un minuto.</p>
 </li>
 <li>
-<p><strong>Tipo de gráfica</strong>: muestra los diferentes tipos de gráfica entre los que podemos elegir para mostrar los datos. Los tipos de gráficas disponibles varían según el tipo de vista seleccionada. Estos son los siguientes:</p>
+<p><strong>Tipo de gráfica</strong>: muestra los diferentes tipos de gráficas entre los que podemos elegir para mostrar los datos. Los tipos de gráficas disponibles varían según el tipo de vista seleccionada. Estos son los siguientes:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1566,12 +1560,26 @@ se deberá elegir un tipo de sensor genérico e identificarlo mediante la IP del
 </div>
 </li>
 <li>
-<p><strong>Atributos</strong>: Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenderse como datos propios del evento que son los que realmente nos aportan información. Estos son llamados "atributos".</p>
+<p><strong>Atributos</strong>: Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenderse como datos propios del evento, que son los que realmente nos aportan información. Estos son llamados "atributos".</p>
 <div class="paragraph">
 <p>Los atributos pueden mostrarse de varias maneras: en forma de pestañas o de columnas. (<strong>Add tabs/Columns</strong>) dependiendo de la vista que estemos consultando.</p>
 </div>
 </li>
 </ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>A lo largo de este documento podrán encontrarse referencias al concepto de columna como "atributo" o "dimensión".</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect3">
@@ -1592,7 +1600,7 @@ se deberá elegir un tipo de sensor genérico e identificarlo mediante la IP del
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-El usuario puede variar el orden en el que se muestran las pestañas en cualquier momento. Para ello arrastrar la pestaña y soltar en la posición en la que se desea colocar.
+El usuario puede variar el orden en el que se muestran las pestañas en cualquier momento. Para ello, debe arrastrar la pestaña y soltarla en la posición que desee.
 </td>
 </tr>
 </table>
@@ -1603,7 +1611,7 @@ El usuario puede variar el orden en el que se muestran las pestañas en cualquie
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Vista</strong>:  en esta zona se muestran los datos según la vista y tipo de gráfica seleccionadas. Al posicionar el cursor sobre cualquiera de los puntos que componen la gráfica, aparece un cuadro de diálogo en el que se le muestra en detalle la información para ese instante de tiempo, agregación y atributo.</p>
+<p><strong>Vista</strong>:  en esta zona se muestran los datos según la vista y tipo de gráfica seleccionadas. Al posicionar el cursor sobre cualquiera de los puntos que componen la gráfica, aparece un cuadro de diálogo que muestra en detalle la información para ese instante de tiempo, agregación y atributo.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1614,13 +1622,29 @@ El usuario puede variar el orden en el que se muestran las pestañas en cualquie
 <div class="sect3">
 <h4 id="_5_1_3_resumen_buscador_y_tabla_de_datos">5.1.3 Resumen, buscador y tabla de datos</h4>
 <div class="paragraph">
-<p><strong>Resumen</strong>: bajo el área de Vista se encuentra un resumen relativo a todos los datos cargados que aparecen tanto en la vista como en la tabla de datos. En este resumen se indican, por este orden, el valor total de la agregación de todos los datos cargados, el valor total de la agregación de todos los datos cargados y seleccionados, el número de filas de datos cargadas y el porcentaje del valor agregado de los datos cargados sobre el total de datos.</p>
+<p><strong>Resumen</strong>: bajo el área de Vista se encuentra un resumen relativo a todos los datos cargados que aparecen tanto en la vista como en la tabla de datos. En este resumen se indican, por este orden:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Total</strong>: valor total de la agregación de todos los datos cargados.</p>
+</li>
+<li>
+<p><strong>Selected</strong>: valor total de la agregación de todos los datos cargados y seleccionados.</p>
+</li>
+<li>
+<p><strong>Visible Rows</strong>: número de filas de datos cargadas.</p>
+</li>
+<li>
+<p><strong>Visible/Total</strong>: porcentaje del valor agregado de los datos cargados sobre el valor agregado del total de datos.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p><strong>Buscador</strong>: permite realizar una búsqueda por atributo. Las búsquedas se convierten en filtros automáticamente tal y como veremos más adelante.</p>
 </div>
 <div class="paragraph">
-<p><strong>Tabla de datos</strong>: muestra los valores clasificados por tipo de atributo seleccionado. Por ejemplo, cada fila puede estar mostrando cada una de las IPs de origen (Columna/Atributo: SRC Adress) con el detalle del porcentaje de bytes (Agregación) que está consumiendo ese elemento dentro de la red. Para el análisis aislado de uno o más elementos de esta barra (seleccionar como filtro), es necesario clicar sobre el elemento que desea filtrar. Para selección múltiple basta con mantener pulsada la tecla <strong>Shift</strong>.</p>
+<p><strong>Tabla de datos</strong>: muestra los valores clasificados por tipo de atributo seleccionado. Por ejemplo, cada fila puede estar mostrando cada una de las IPs de origen (Columna/Atributo: SRC Address) con el detalle del porcentaje de bytes (Agregación) que está consumiendo ese elemento dentro de la red. Para el análisis aislado de un elemento de esta tabla es necesario hacer clic sobre el elemento que se desee filtrar. Para el análisis de más de un elemento se deberá realizar una selección múltiple, manteniendo pulsada la tecla <strong>Ctrl</strong> y seleccionando distintos elementos o, si se desea seleccionar un rango, utilizando la tecla <strong>Shift</strong>.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1640,10 +1664,13 @@ El usuario puede variar el orden en el que se muestran las pestañas en cualquie
 <div class="ulist">
 <ul>
 <li>
-<p>Filter zoom: aisla gráficamente los eventos según un rango de tiempo.</p>
+<p><strong>Filter Zoom</strong>: tras seleccionar un rango temporal en la vista gráfica, es posible filtrar por ese rango de tiempo haciendo clic en el botón <strong>Filter Zoom</strong> que aparece en las opciones del submenú.</p>
 </li>
 <li>
-<p>Filtrar por valor de atributo (<strong>Filter Selected</strong>): nos permite convertir en filtro a uno o más elementos presentes en la tabla.</p>
+<p>Filtrar por valor de atributo (<strong>Filter Selected</strong>): permite filtrar los elementos de la tabla seleccionados.</p>
+</li>
+<li>
+<p>Excluir por valor de atributo (<strong>Exclude Selected</strong>): permite excluir los elementos de la tabla seleccionados.</p>
 </li>
 <li>
 <p>Búsqueda avanzada (<strong>Advanced Search</strong>): permite establecer condiciones para realizar una búsqueda avanzada que actúe a modo de filtro. Muy útil para aislar y analizar datos muy concretos.</p>
@@ -1651,7 +1678,7 @@ El usuario puede variar el orden en el que se muestran las pestañas en cualquie
 </ul>
 </div>
 <div class="paragraph">
-<p>Para guardar un filtro como "habitual" basta con seleccionar la opción <strong>+Save Current Filter</strong>.</p>
+<p>Para guardar un filtro basta con seleccionar la opción <strong>+Save Current Filter</strong>.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1662,15 +1689,15 @@ El usuario puede variar el orden en el que se muestran las pestañas en cualquie
 <p><strong>Acciones para los filtros:</strong></p>
 </div>
 <div class="paragraph">
-<p>Además de la opción de búsqueda avanzada (<strong>Advaced Search</strong>), el menú <strong>Filters</strong> muestra las siguientes opciones:</p>
+<p>Además de la opción de búsqueda avanzada (<strong>Advanced Search</strong>), el menú <strong>Filters</strong> muestra las siguientes opciones:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Crear alarmas (<strong>Create an alarm</strong>) : nos permite configurar una alarma en base a los filtros aplicados.</p>
+<p>Crear alarmas (<strong>Create an alarm</strong>): nos permite configurar una alarma en base a los filtros aplicados.</p>
 </li>
 <li>
-<p>Crear un widget en (<strong>Create a widget on</strong>) : crea un widget a partir de los filtros aplicados que se puede incluir en dashboards  o informes.</p>
+<p>Crear un widget en (<strong>Create a widget on</strong>): crea un widget a partir de los filtros aplicados que se puede incluir en dashboards  o informes.</p>
 </li>
 </ul>
 </div>
@@ -1678,20 +1705,7 @@ El usuario puede variar el orden en el que se muestran las pestañas en cualquie
 <div class="sect2">
 <h3 id="_5_3_vistas_múltiples_opciones_para_visualizar_los_datos">5.3 Vistas: múltiples opciones para visualizar los datos</h3>
 <div class="paragraph">
-<p>Las vistas ofrecen múltiples perspectivas para la visualización de los datos asociados al tráfico de red.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Recuerde que en la sección <strong>Dashboard</strong> puede crear widgets personalizados para monitorizar los eventos y que se muestren en una vista determinada.
-Las vistas que se encuentran disponibles para el Flow son las siguientes:
-</td>
-</tr>
-</table>
+<p>Las vistas ofrecen múltiples perspectivas para la visualización de los datos asociados al tráfico de red. Las vistas que se encuentran disponibles en la App Traffic son las siguientes:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1705,7 +1719,7 @@ Las vistas que se encuentran disponibles para el Flow son las siguientes:
 <p><strong>Compare:</strong> comparación de intervalos de tiempo para analizar diferencias en el estado de la red.</p>
 </li>
 <li>
-<p><strong>Unique:</strong> muestra los elementos diferentes que ha interactuado con la red según atributo.</p>
+<p><strong>Unique:</strong> muestra los diferentes elementos que han interactuado con la red según el atributo.</p>
 </li>
 </ul>
 </div>
@@ -1736,7 +1750,7 @@ No olvide combinar las vistas con los diferentes tipos de gráficas. De este mod
 <div class="sect3">
 <h4 id="_5_3_1_tops">5.3.1 Tops</h4>
 <div class="paragraph">
-<p>La vista <strong>Tops</strong> nos permite visualizar cuáles han sido los eventos más destacados según el intervalo de tiempo que se haya seleccionado. Lo que visualizamos en la gráfica es la suma del total de dichos eventos mostrados como un único evento. Si posamos el ratón por encima de cada uno de estos "picos" o Tops, veremos el desglose del evento por día, hora y tipo de dimensión o atributo que se esté consultando.</p>
+<p>La vista <strong>Tops</strong> nos permite visualizar cuáles han sido los eventos más destacados según el intervalo de tiempo que se haya seleccionado. Lo que visualizamos en la gráfica es la suma del total de dichos eventos mostrados como un único evento. Si pasamos el ratón por encima la gráfica, veremos el desglose del evento por día, hora y tipo de dimensión o atributo que se esté consultando.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1745,7 +1759,7 @@ No olvide combinar las vistas con los diferentes tipos de gráficas. De este mod
 <p>Esta vista nos ofrece los datos de los eventos en bruto, por tanto, visualizaremos la totalidad de eventos por atributos segmentados por franjas de tiempo.</p>
 </div>
 <div class="paragraph">
-<p>En la tabla de datos recogerá, por tanto, todos los datos de los eventos clasificados por columnas. Los datos se muestran a nivel de pantalla, no obstante, si desea ver más, basta con hacer scroll y esperar a que se carguen más datos: Load more.</p>
+<p>La tabla de datos recogerá, por tanto, todos los eventos ordenados en el tiempo. Si desea ver más eventos, basta con ir al final de la tabla y aparecerán eventos anteriores.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1759,7 +1773,7 @@ No olvide combinar las vistas con los diferentes tipos de gráficas. De este mod
   datos o <strong>Streams</strong>.</p>
 </div>
 <div class="paragraph">
-<p>En la vista Raw los atributos se muestran en columnas</p>
+<p>En la vista Raw los atributos se muestran en columnas.</p>
 </div>
 </td>
 </tr>
@@ -1769,10 +1783,11 @@ No olvide combinar las vistas con los diferentes tipos de gráficas. De este mod
 <div class="sect3">
 <h4 id="_5_3_3_compare">5.3.3 Compare</h4>
 <div class="paragraph">
-<p>Esta vista ofrece una comparativa de los eventos por intervalo de tiempo (hora) o entre días. Esta comparativa se puede realizar por horas o por días con intervalos de 5 minutos, lo que garantiza <strong>un grado de detalle máximo</strong>. De este modo, el usuario puede identificar de forma rápida el momento de mayor uso de la red.</p>
+<p>Esta vista ofrece una comparativa de la evolución de los eventos entre distintas horas, días, semanas o meses.
+De este modo, el usuario puede identificar de forma rápida el momento de mayor uso de la red en función de distintos parámetros, como pueden ser los bytes consumidos, los paquetes transmitidos o los flujos recibidos.</p>
 </div>
 <div class="paragraph">
-<p>En la tabla de datos se mostrarán aquellos que corresponden al intervalo temporal seleccionado.</p>
+<p>En la tabla de datos se muestra la suma de los valores de cada intervalo de tiempo.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1781,7 +1796,7 @@ No olvide combinar las vistas con los diferentes tipos de gráficas. De este mod
 <p>A través de la vista <strong>Unique</strong>, el usuario podrá obtener información acerca de los elementos diferentes que han interactuado, al menos, una vez con la red en un periodo de tiempo determinado.</p>
 </div>
 <div class="paragraph">
-<p>Seleccionar el grupo de atributos que se desea analizar mediante la opción <strong>Group By</strong>.</p>
+<p>También, es posible seleccionar el grupo de atributos que se desea analizar mediante la opción <strong>Group By</strong>.</p>
 </div>
 </div>
 </div>
@@ -1827,7 +1842,7 @@ No olvide combinar las vistas con los diferentes tipos de gráficas. De este mod
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Optimice sus métricas combinando diferentes tipos de agregación con las opciones de granuralidad (lapsos de tiempo) que se encuentran disponibles.
+Optimice sus métricas combinando diferentes tipos de agregación con las opciones de granuralidad (nivel de detalle temporal) que se encuentran disponibles.
 </td>
 </tr>
 </table>
@@ -1859,13 +1874,15 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 <div class="sect2">
 <h3 id="_5_6_tipos_de_gráficas">5.6 Tipos de gráficas</h3>
 <div class="paragraph">
-<p>Es posible seleccionar el tipo de gráfica con el que se desean visualizar los datos obtenidos en las diferentes vistas. Las opciones son muy similares a las que se han mostrado en el proceso de creación de widgets personalizados.</p>
+<p>Es posible seleccionar el tipo de gráfica con el que se desean visualizar los datos obtenidos en las diferentes vistas. Las opciones son muy similares a las que se muestran en el proceso de creación de widgets personalizados del capítulo dedicado a los Dashboards.</p>
 </div>
 <div class="paragraph">
-<p>Las gráficas que se encuentran disponibles en cada momento, dependerán de la vista seleccionada. Esta opción no aparece, por ejemplo, al aplicar la vista Map a los datos, puesto que los datos se representarán en esta vista, sobre un mapa.</p>
+<p>Las gráficas que se encuentran disponibles en cada momento dependerán de la vista seleccionada.
+Esta opción no aparece, por ejemplo, al aplicar la vista Map a los datos, puesto que los datos se representarán en esta vista sobre un mapa.
+En todos los tipos de gráficas se realiza una representación de los valores seleccionados en función del tiempo, de la granularidad y agregación seleccionadas y de las distintas opciones disponibles en función de la vista. A continuación se describen los distintos tipos de gráficas disponibles.</p>
 </div>
 <div class="paragraph">
-<p><strong>Stacked</strong>: muestra la manera comparativa en una misma gráfica los datos correspondientes a cada una de los atributos seleccionados.</p>
+<p><strong>Stacked</strong>: composición de áreas apiladas, donde cada área representa el perfil temporal de un valor seleccionado.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1873,7 +1890,7 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Area</strong>: gráfica que ofrece de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado, siendo el total del tráfico la suma del tráfico por atributo.</p>
+<p><strong>Area</strong>: composición de áreas superpuestas, donde cada área representa el perfil temporal de un valor seleccionado.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1881,7 +1898,7 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Line</strong>: muestra de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado; en este caso no se muestra el área sino que la gráfica viene representada por una línea.</p>
+<p><strong>Line</strong>: composición de líneas superpuestas, donde cada línea representa el perfil temporal de un valor seleccionado.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1889,7 +1906,7 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Bars</strong>: ofrece los datos de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado, siendo el total, la suma de todos los valores de cada uno de esos elementos. En este caso, los datos se representan gráficamente a través de barras.</p>
+<p><strong>Bars</strong>: composición de conjuntos de barras superpuestas, donde cada conjunto de barras de distinto color representa el perfil temporal de un valor seleccionado.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1897,7 +1914,7 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 </div>
 </div>
 <div class="paragraph">
-<p><strong>SBars</strong>: o Stacked Bars, ofrece en una misma gráfica los datos obtenidos para cada uno de los elementos incluidos en el atributo seleccionado, por lo que se pueden visualizar los resultados de manera independiente por IP, sensor, etc., representados gráficamente or barras.</p>
+<p><strong>SBars</strong> (Stacked Bars): composición de conjuntos de barras apiladas, donde cada conjunto de barras de distinto color representa el perfil temporal de un valor seleccionado.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1905,7 +1922,7 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Streams</strong>: gráfica solo disponible para la vista Raw. Muestra los flujos de tráfico por sensor.</p>
+<p><strong>Streams</strong>: composición de flujos, donde cada flujo representa las relaciones entre distinos atributos. Esta gráfica solo está disponible para la vista Raw. En la imagen inferior se muestran los flujos de tráfico de un sensor entre IPs LAN y WAN.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1916,7 +1933,7 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 <div class="sect2">
 <h3 id="_5_7_opciones">5.7 Opciones</h3>
 <div class="paragraph">
-<p>Cada una de las vistas presenta una serie de opciones que le permiten al usuario, entre otras acciones, visualizar el total del tráfico, exportar los datos a CSV o llevar a la máquina a un estado del pasado para poder analizar y comparar comportamientos presentes y pasados.</p>
+<p>Cada una de las vistas presenta una serie de opciones que le permiten al usuario, entre otras acciones, visualizar el total del tráfico, exportar los datos a CSV o llevar al manager a un estado anterior para poder analizar comportamientos pasados.</p>
 </div>
 <div class="paragraph">
 <p>A continuación se enumeran todas las opciones disponibles en esta pestaña. El usuario debe tener en cuenta que estas opciones variarán según la vista seleccionada previamente.</p>
@@ -1924,7 +1941,10 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 <div class="ulist">
 <ul>
 <li>
-<p>Mostrar total (<strong>Show Total</strong>): al seleccionar esta opción se muestra en la gráfica el valor del total del tráfico diferenciado del recibido o emitido por cada uno de los atributos que se estén consultando. Cuando esta opción se encuentra activa, en el listado de opciones aparecerá "Hide total". Disponible en las vistas Top y Unique.</p>
+<p>Mostrar total (<strong>Show Total</strong>): al seleccionar esta opción se muestra en la gráfica una línea gris discontinua que representa la suma de las agregaciones de todos los atributos. Cuando esta opción se encuentra activa, en el listado de opciones se cambia esta opción por <strong>Hide Total</strong>. Disponible en las vistas Tops y Unique.</p>
+</li>
+<li>
+<p>Mostrar total de los filtrados (<strong>Show Total Filtered</strong>): al seleccionar esta opción se muestra en la gráfica una línea gris discontinua (más clara que la de la opción anterior) que representa la suma de las agregaciones de todos los atributos resultantes de aplicar los filtros seleccionados. Cuando esta opción se encuentra activa, en el listado de opciones se cambia esta opción por <strong>Hide Total Filtered</strong>. Disponible en la vista Tops.</p>
 </li>
 <li>
 <p>Exportar a CSV (<strong>Export to CSV</strong>): el usuario obtendrá un fichero de descarga en formato CSV que incluye los datos correspondientes al atributo que se seleccione, pudiendo fijar un límite de las filas que se incluirán en el archivo. Disponible solo para las vistas Tops, Raw y Unique.</p>
@@ -1939,7 +1959,7 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 <div class="ulist">
 <ul>
 <li>
-<p>Máquina del tiempo (<strong>Time machine</strong>): regresa la máquina a un estado anterior. Al seleccionar esta opción el usuario podrá visualizar los datos tal y como si estuviera viéndolos en el día y hora del pasado que haya indicado. Disponible para todas las vistas.</p>
+<p>Máquina del tiempo (<strong>Time machine</strong>): envía al manager a un estado anterior. Al seleccionar esta opción el usuario podrá visualizar los datos tal y como si estuviera viéndolos en el día y hora del momento pasado que haya indicado. Disponible para todas las vistas.</p>
 </li>
 </ul>
 </div>
@@ -1966,7 +1986,7 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 <div class="ulist">
 <ul>
 <li>
-<p>Orden de las columnas (Sort columns): mediante esta opción el usuario puede elergir el orden en el que se mostrarán las columnas disponibles. Disponible únicamente para la vista Raw.</p>
+<p>Orden de las columnas (<strong>Sort Columns</strong>): mediante esta opción el usuario puede elergir el orden en el que se mostrarán las columnas disponibles. Disponible únicamente para la vista Raw.</p>
 </li>
 </ul>
 </div>
@@ -1978,7 +1998,7 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 <div class="ulist">
 <ul>
 <li>
-<p>Recargar (<strong>Start reloading</strong>): activa la cuenta atrás para que se efectúe la recarga de los datos. En cualquier momento, el usuario puede detener esta recarga seleccionando Stop reloading (opción que sustituye a Start reloading una vez que se ha activado esta). En el extremo izquierdo de la barra de sección aparecerá una cuenta atrás indicándole el tiempo de espera hasta la recarga. Disponible para la vista Raw.</p>
+<p>Recargar (<strong>Start Reloading</strong>): activa la cuenta atrás para que se efectúe la recarga de los datos. En cualquier momento, el usuario puede detener esta recarga seleccionando <strong>Stop Reloading</strong> (opción que sustituye a Start Reloading una vez que ésta se ha activado). En el extremo izquierdo de la barra de sección aparecerá una cuenta atrás indicándole el tiempo de espera hasta la recarga. Disponible para la vista Raw.</p>
 </li>
 </ul>
 </div>
@@ -2197,7 +2217,7 @@ que puede consultar de cada uno de ellos:</p>
 <div class="sect2">
 <h3 id="_6_1_opciones_del_dashboard">6.1 Opciones del Dashboard</h3>
 <div class="paragraph">
-<p>La primera opción que encontramos en la barra de menú en el área de análisis es la de Dashboard. Esta es la opción que se encuentra seleccionada por defecto nada más ingresar al administrador del Manager redBorder:</p>
+<p>La primera opción que encontramos en el área de análisis de la barra de menú es la de Dashboard. Esta es la opción que se encuentra seleccionada por defecto al ingresar a la web del manager.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -2210,9 +2230,7 @@ que puede consultar de cada uno de ellos:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Listado de dashboards disponibles: en la primera parte del menú de dashboards, el usuario visualizará los dashboards que se han creado y que están disponibles para su perfil.
-*
-Al lado de cada uno de los dashboards se encuentran dos iconos:</p>
+<p>Listado de dashboards disponibles: en la primera parte del menú de dashboards, el usuario visualizará los dashboards que se han creado y que están disponibles para su perfil. Al lado de cada uno de los dashboards se encuentran dos iconos:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -2225,7 +2243,7 @@ Al lado de cada uno de los dashboards se encuentran dos iconos:</p>
 </div>
 </li>
 <li>
-<p>Añadir e importar dashboards (<strong>Add dashboard/Import dashboard</strong>): estas dos opciones permiten añadir un nuevo dashboard personalizado e importar aquellos que ya estén creados con el fin de poder compartirlos con otros usuarios o que se encuentren disponibles para otros perfiles.</p>
+<p>Añadir e importar dashboards (<strong>Add dashboard/Import dashboard</strong>): estas dos opciones permiten añadir un nuevo dashboard personalizado e importar aquellos ya creados. Cualquier usuario podrá exportar un dashboard a un fichero y compartirlo con otros usuarios para que puedan importarlo en el momento que deseen.</p>
 </li>
 <li>
 <p>Añadir widget (<strong>Add widget</strong>): esta opción permite añadir los widgets que se deseen para personalizar el dashboards.</p>
@@ -2237,7 +2255,7 @@ Al lado de cada uno de los dashboards se encuentran dos iconos:</p>
 <p>Bloqueo (<strong>Locked/Unlocked</strong>): el usuario tiene la opción de bloquear/desbloquear el dashboard que esté consultando para que ningún otro usuario con permisos pueda editarlo.</p>
 </li>
 <li>
-<p>Máquina del tiempo (<strong>Time Machine</strong>): esta opción permite "viajar en el tiempo" y visualizar os resultados de las métricas de un día y hora determinados por el usuario a modo de histórico.</p>
+<p>Máquina del tiempo (<strong>Time Machine</strong>): esta opción permite "viajar en el tiempo" y visualizar los resultados de las métricas de un día y hora determinados por el usuario a modo de histórico.</p>
 </li>
 </ul>
 </div>
@@ -2268,7 +2286,7 @@ Al lado de cada uno de los dashboards se encuentran dos iconos:</p>
 <p>Estructura de visualización de los widgets y métricas del dashboard (<strong>Layout</strong>)</p>
 </li>
 <li>
-<p>Descripción del contenido del dashboard (Description)</p>
+<p>Descripción del contenido del dashboard (<strong>Description</strong>)</p>
 </li>
 <li>
 <p>Color de fondo (<strong>Background Color</strong>)</p>
@@ -2308,8 +2326,12 @@ Al lado de cada uno de los dashboards se encuentran dos iconos:</p>
 <img src="images/dashboards/edit_dashboard.png" alt="edit dashboard">
 </div>
 </div>
-<div class="paragraph">
-<p>clonar dashboard (<strong>Clone dashboard</strong>): es posible clonar (copiar) los dashboards con el fin de enerlo disponibles para diferentes usuarios, importarlo, etc. Para ello, basta con asignarle un nombre al dashboard copiado.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Clonar dashboard (<strong>Clone dashboard</strong>): es posible clonar (copiar) los dashboards con el fin de enerlo disponibles para diferentes usuarios, importarlo, etc. Para ello, basta con asignarle un nombre al dashboard copiado.</p>
+</li>
+</ul>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -2321,7 +2343,7 @@ Al lado de cada uno de los dashboards se encuentran dos iconos:</p>
 <div class="sect3">
 <h4 id="_6_1_2_añadir_dashboard">6.1.2 Añadir dashboard</h4>
 <div class="paragraph">
-<p>Los dashboards permiten tener un resumen visual que incluye los principales KPIs que son necesarios para el análisis de una infraestructura de red. El usuario puede combinar una serie de widgets que le permitan, una sola mirada, obtener información muy valiosa sobre las tendencias, cambios y excepciones asociadas al tráfico que se produce o pasa por su red.</p>
+<p>Los dashboards permiten tener un resumen visual que incluye los principales KPIs que son necesarios para el análisis de una infraestructura de red. El usuario puede combinar una serie de widgets que le permitan, a simple vista, obtener información muy valiosa sobre las tendencias, cambios y excepciones asociadas al tráfico que se produce o pasa por su red.</p>
 </div>
 <div class="paragraph">
 <p>Para crear un nuevo dashboard es necesario seleccionar la opción <strong>Add dashboard</strong>. A continuación, introducir una serie de datos de configuración general y guardar los cambios mediante el botón <strong>Create dashboard</strong>. El primer paso para crear un dashboard personalizado es la creación de un panel en blanco al que, posteriormente, se le añadirán aquellos widgets que cumplan con nuestras necesidades de
@@ -2339,7 +2361,7 @@ visualización.</p>
 <div class="sect3">
 <h4 id="_6_1_3_importar_dashboard">6.1.3 Importar dashboard</h4>
 <div class="paragraph">
-<p>La opción <strong>Importar dashboard</strong> es muy útil en el caso de que queramos compartir dashboards con otros usuarios , o incorporar a redBorder información obtenida de otras aplicaciones compatibles.</p>
+<p>La opción <strong>Importar dashboard</strong> es muy útil en el caso de que queramos compartir dashboards con otros usuarios, o incorporar al manager información obtenida de otras aplicaciones compatibles.</p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -2388,7 +2410,7 @@ dentro del listado de dashboards disponibles.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Infraestructure</p>
+<p>Infrastructure</p>
 </li>
 </ul>
 </div>
@@ -2413,7 +2435,7 @@ dentro del listado de dashboards disponibles.</p>
 <div class="sect4">
 <h5 id="_6_1_4_1_personalizar_un_widget_de_producto">6.1.4.1 Personalizar un widget de producto</h5>
 <div class="paragraph">
-<p>Algunos de los widgets que el usuario encuentra disponibles para añadir al dashboard de la plataforma redBorder permiten una personalización completa.</p>
+<p>Algunos de los widgets que el usuario encuentra disponibles para añadir al dashboard del manager permiten una personalización completa.</p>
 </div>
 <div class="paragraph">
 <p>Este es el caso del widget asignado a la App <strong>Intrusion</strong>. En primer lugar, veamos qué opciones de personalización se incluyen en este tipo de widgets.</p>
@@ -2429,10 +2451,7 @@ dentro del listado de dashboards disponibles.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenerse como datos propios del evento que son los que realmente nos aportan información.</p>
-</div>
-<div class="paragraph">
-<p>A lo largo de este documento podrán encontrarse referencias al concepto de columna como "atributo" o "dimensión".</p>
+<p>Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenderse como datos propios del evento, que son los que realmente nos aportan información.</p>
 </div>
 <div class="paragraph">
 <p>El primer paso para personalizar un widget consiste en seleccionar el modo de visualización de los datos, pudiendo elegir además, vistas en las que se representa la cardinalidad de los mismos.</p>
@@ -2461,12 +2480,12 @@ dentro del listado de dashboards disponibles.</p>
 <p><strong>RAW</strong>: muestra los eventos en bruto (sin agregación).</p>
 </li>
 <li>
-<p><strong>Tops</strong>: agrega los eventos n base a una unidad para mostrar los más destacados, de manera que lo que se muestra es la suma del total de datos de diferentes eventos para mostrarlos como uno único.</p>
+<p><strong>Tops</strong>: agrega los eventos en base a un atributo para mostrar los más destacados, de manera que lo que se muestra es la suma del total de datos de diferentes eventos para mostrarlos como uno único.</p>
 </li>
 <li>
-<p><strong>compare</strong>: comparativa en el tiempo (horas, días, semanas y meses) de los eventos más destacados.</p>
+<p><strong>Compare</strong>: comparativa en el tiempo (horas, días, semanas y meses) de los eventos más destacados.</p>
 <div class="paragraph">
-<p>Un ejemplo de uso sería el de comparar en distintos días la evolución temporal del tráfico para una aplicación en concreto. A diferencia de la vista Tops, esto solo permite el estilo de gráfico "Serie".</p>
+<p>Un ejemplo de uso sería el de comparar en distintos días la evolución temporal del tráfico para una aplicación en concreto.</p>
 </div>
 </li>
 <li>
@@ -2483,7 +2502,7 @@ dentro del listado de dashboards disponibles.</p>
 <p><strong>Single Unique</strong>: mediante esta opción se aislan las ocurrencias o eventos de una columna para un momento determinado.</p>
 </li>
 <li>
-<p><strong>Group Unique</strong>: mediante esta opción se aislan las ocurrencias o eventos de una columna para un momento determinado agrupados según determinados criterios.</p>
+<p><strong>Grouped Unique</strong>: mediante esta opción se aislan las ocurrencias o eventos de una columna para un momento determinado agrupados según determinados criterios.</p>
 </li>
 </ul>
 </div>
@@ -2492,7 +2511,7 @@ dentro del listado de dashboards disponibles.</p>
 <div class="sect4">
 <h5 id="_6_1_4_2_personalizar_un_widget_de_estado">6.1.4.2 Personalizar un widget de estado</h5>
 <div class="paragraph">
-<p>El usuario puede elegir entre cuatro tipos de widgets aplicables a las opciones de configuración del Manager redBorder. La opción de <strong>Infrastructure</strong> permite seleccionar el modo en el que se va a visualizar la información sobre configuración y estado de la infraestructura de red:</p>
+<p>El usuario puede elegir entre cuatro tipos de widgets aplicables a las opciones de configuración del manager. La opción de <strong>Infrastructure</strong> permite seleccionar el modo en el que se va a visualizar la información sobre configuración y estado de la infraestructura de red:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2549,10 +2568,10 @@ dentro del listado de dashboards disponibles.</p>
 <p>Editar (<strong>Edit</strong>): da acceso a la configuración general del widget para modificar aquellos campose que se deseen.</p>
 </li>
 <li>
-<p>Reacargar (<strong>Reload</strong>): actialización de los datos</p>
+<p>Recargar (<strong>Reload</strong>): actualización de los datos.</p>
 </li>
 <li>
-<p>Eliminar (<strong>Delete</strong>)</p>
+<p>Eliminar (<strong>Delete</strong>).</p>
 </li>
 </ul>
 </div>
@@ -2601,7 +2620,7 @@ con una ISO de redborder. Tan sólo tendremos que ejecutar el script rb_cluster
 <p>En primer lugar nos preguntará qué paquetes deseamos actualizar.
 Podemos optar por actualizar los paquetes del sistema, o los paquetes de redborder
 (lo cual supone la actualización de redborder).
-En este caso serán los paquetes de redBorder (opción 2).</p>
+En este caso serán los paquetes de redborder (opción 2).</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -2621,7 +2640,7 @@ Choose an option: 2</pre>
 (para lo cual necesitamos conexión a internet), o desde un repositorio local.</p>
 </div>
 <div class="paragraph">
-<p>En este caso nos interesa actualizar el sistema desde un repositorio remoto, por indicaremos la opción 1.</p>
+<p>En este caso nos interesa actualizar el sistema desde un repositorio remoto, por lo que indicaremos la opción 1.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -2662,11 +2681,11 @@ Are you sure you want to continue? (y/N) y</pre>
 <h3 id="_actualización_desde_iso_offline_mode">Actualización desde ISO (offline mode)</h3>
 <div class="paragraph">
 <p>Para realizar la actualización de un cluster que no tiene acceso a Internet será necesario contar previamente con
-la ISO de redBorder de la versión a la que se desea actualizar. A partir de la ISO se realizará una actualización
+la ISO de redborder de la versión a la que se desea actualizar. A partir de la ISO se realizará una actualización
 del repositorio local del nodo master del cluster, el cual será usado por los restantes nodos que conforman el cluster.</p>
 </div>
 <div class="paragraph">
-<p>Lo primero a realizar es ejecutar el script ​<strong>rb_cluster_update.sh</strong></p>
+<p>Lo primero a realizar es ejecutar el script ​<strong>rb_cluster_update.sh</strong>.</p>
 </div>
 <div class="paragraph">
 <p>Una vez se ejecute el script rb_cluster_update.sh entraremos en un “wizard” donde
@@ -2674,10 +2693,8 @@ seremos guiados para realizar la actualización.</p>
 </div>
 <div class="paragraph">
 <p>En primer lugar nos preguntará qué paquetes deseamos actualizar. Podemos optar por actualizar los paquetes del sistema,
-o los paquetes de redborder (lo cual supone la actualización de redborder).</p>
-</div>
-<div class="paragraph">
-<p>En este caso serán los paquetes de redBorder (opción 2).</p>
+o los paquetes de redborder (lo cual supone la actualización de redborder).
+En este caso serán los paquetes de redborder (opción 2).</p>
 </div>
 <div class="listingblock">
 <div class="content">

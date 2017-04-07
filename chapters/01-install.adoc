@@ -40,10 +40,10 @@ a realizar una serie de acciones para configurarse por primera vez.
 
 [NOTE]
 ===============================
-Estos procesos puede tardar varios minutos
+Estos procesos pueden tardar varios minutos
 ===============================
 
-Una vez que en la terminal nos aparezca la sigueinte imagen, ya podremos acceder.
+Una vez que en la terminal nos aparezca la siguiente imagen, ya podremos acceder.
 
 image::images/install/install-04.png["install-04",link="images/install/install-04.png",align="center"]
 
@@ -56,8 +56,7 @@ Una vez logueados en el manager, debemos ejecutar el comando *rb_sysconf* para r
 Estas son las opciones que encontrará en la pantalla principal de este menú:
 
 . *System Configuration*: configuración del hostname, IP del Manager, hora y estado del Manager.
-. *Network Configuration*: creación de bondings, segmentos, DNS, rutas e IPMI.
-    Recuerde que para formar un cluster se necesitan por lo menos dos conexiones de red, no siendo así para instalaciones de un solo nodo.
+. *Network Configuration*: creación de bondings, segmentos, DNS, rutas e IPMI. Para formar un cluster se necesitan al menos dos interfaces de red, una para gestión y otra para comunicación entre los nodos del cluster. Para instalaciones de un solo nodo, solo es necesaria una interfaz de red para la gestión.
 . *Passwords*: acceda a esta opción si desea modificar las contraseñas de los usuarios del sistema.
 . *w) start simple wizard*: inicia un asistente que le permitirá de forma sencilla y rápida realizar la instalación y configuración del Manager.
 . *q) quit*: Salir. Nos devuelve a la pantalla principal de configuración del sistema.
@@ -67,7 +66,7 @@ image::images/install/install-05.png["install-05",link="images/install/install-0
 Para realizar la instalación automática del manager, usaremos la opción *w) start simple wizard*.
 
 Existen una serie de opciones definidas por defecto (indicadas entre corchetes).
-Para aceptarlas tan solo tiene que pulsar Enter. No obstante, puede modificarlas manualmente
+Para aceptarlas tan solo tiene que pulsar *Enter*. No obstante, puede modificarlas manualmente
 en cualquier momento del proceso de instalación.
 
 *Mode, Hostname, DNS y NTP*
@@ -122,9 +121,7 @@ Esta parte no aparecerá si sólo hemos configurado una interfaz de red en la m�
 
 *Configuración de cluster y servicios externos*
 
-Como último paso se preguntan una serie de opciones de configuración relacionadas con la creación de un cluster de varios managers
-y la configuración de servicios fuera del manager. Se recomienda dejar los valores por defecto para el caso
-de instalaciones on-premise.
+Como último paso se preguntan una serie de opciones de configuración relacionadas con la creación de un cluster de varios managers y la configuración de servicios fuera del manager. Para instalaciones on-premises, se recomienda dejar los valores por defecto.
 
 image::images/install/install-09.png["install-09",link="images/install/install-09.png",align="center"]
 

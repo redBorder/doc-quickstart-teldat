@@ -4,7 +4,7 @@ En este capítulo se describe el procedimiento para agregar nuevos sensores y do
 
 *Sensors* se encuentra disponible en el margen superior derecho del menú de cabecera, junto a la sección *Tools* y la zona de usuario.
 
-image::images/sensors/sensors_menu.png[align="center"]
+image::images/sensors/sensors_menu.png["sensors_menu",link="images/sensors/sensors_menu.png",align="center"]
 
 === 4.1 Sensors: menú y opciones
 En este apartado se introduce de forma breve al menú *Sensors* y sus correspondientes opciones:
@@ -18,7 +18,7 @@ En este apartado se introduce de forma breve al menú *Sensors* y sus correspond
 ** Árbol (*Tree*): listado que muestra la infraestructura de red según niveles de jerarquía y dependencia entre los elementos que la componen.
 +
 Al lado de cada uno de los elementos se muestran dos iconos que permiten realizar las acciones de edición y borrado de los mismos. Esta es la vista que se muestra por defecto.
-** Proxis clientes (*Client Proxies*): listado que muestra los proxies clientes por orden alfabético
+** Proxies clientes (*Client Proxies*): listado que muestra los proxies clientes por orden alfabético
 ** Sensores Flow (*Flow sensors*): listado que muestra los sensores de tipo flow por orden alfabético.
 ** Sensores IPS (*IPS sensors*): listado que muestra los sensores de tipo IPS por orden alfabético.
 ** Sensores de Social (*Social sensors*): listado que muestra los sensores de tipo Social por orden alfabético.
@@ -27,19 +27,17 @@ TIP: Cada vista presenta su propio menú de opciones y las diferentes posibilida
 
 === 4.2 Añadir un sensor
 
-Para añadir un sensor debe seleccionar la opción *+Add Sensor*. En el menú desplegable se muestran los diferentes tipos de sensores que pueden añadirse al árbol.
-
-Seleccione el tipo de sensor en el menú desplegable y a continuación, complete la información que se solicita.
+Para añadir un sensor debe seleccionar la opción *+Add Sensor*. En el menú desplegable se muestran los diferentes tipos de sensores que pueden añadirse al árbol. Seleccione el tipo de sensor en el menú desplegable y a continuación, complete la información que se solicita.
 
 Para registrar sensores de Teldat, se deberá seleccionar tanto el tipo de sensor como su número de serie. En el caso de que el sensor no sea de Teldat,
 se deberá elegir un tipo de sensor genérico e identificarlo mediante la IP del sensor o su red.
 
-image::images/sensors/add_sensors_dialog.png[align="center"]
+image::images/sensors/add_sensors_dialog.png["add_sensors_dialog",link="images/sensors/add_sensors_dialog.png",align="center"]
 
 
 [IMPORTANT]
 =================================
-En el momento en el que se crea un sensor en redBorder este pasa, por defecto, a colocarse como raíz, por encima del nivel de dominio.
+En el momento en el que se crea un sensor en el manager, este pasa, por defecto, a colocarse como raíz, por encima del nivel de dominio.
 
 El usuario puede organizar su infraestructura de sensores en cualquier momento, arrastrando y soltando el sensor en el nivel en el que se quiera colocar.
 
@@ -50,9 +48,9 @@ El sensor heredará de manera automática las propiedades del dominio raíz.
 
 Para añadir un dominio se debe seleccionar la opción *+Add Domain* que se encuentra en el submenú superior derecho, elegir el tipo de dominio que se quiere añadir, y a continuación, rellenar los campos requeridos (estos variarán según el tipo de dominio a crear)
 
-image::images/sensors/add_domain_menu.png[align="center"]
+image::images/sensors/add_domain_menu.png["add_domain_menu",link="images/sensors/add_domain_menu.png",align="center"]
 
-image::images/sensors/add_domain_dialog.png[align="center"]
+image::images/sensors/add_domain_dialog.png["add_domain_dialog",link="images/sensors/add_domain_dialog.png",align="center"]
 
 === 4.4 Editar un dominio
 Para acceder a la edición de un dominio se debe hacer clic en el icono "Editar" situado a la derecha del dominio que desea editar desde la vista de árbol y seleccionar la opción *Edit*.

@@ -18,7 +18,7 @@ con una ISO de redborder. Tan sólo tendremos que ejecutar el script rb_cluster
 En primer lugar nos preguntará qué paquetes deseamos actualizar.
 Podemos optar por actualizar los paquetes del sistema, o los paquetes de redborder
 (lo cual supone la actualización de redborder).
-En este caso serán los paquetes de redBorder (opción 2).
+En este caso serán los paquetes de redborder (opción 2).
 
 ----
 ##################################################################
@@ -35,7 +35,7 @@ Choose an option: 2
 A continuación podremos indicar si deseamos actualizar desde un repositorio remoto
 (para lo cual necesitamos conexión a internet), o desde un repositorio local.
 
-En este caso nos interesa actualizar el sistema desde un repositorio remoto, por indicaremos la opción 1.
+En este caso nos interesa actualizar el sistema desde un repositorio remoto, por lo que indicaremos la opción 1.
 
 ----
 Available repositories:
@@ -68,18 +68,17 @@ A partir de este momento se procederá a realizar la actualización del cluste
 === Actualización desde ISO (offline mode)
 
 Para realizar la actualización de un cluster que no tiene acceso a Internet será necesario contar previamente con
-la ISO de redBorder de la versión a la que se desea actualizar. A partir de la ISO se realizará una actualización
+la ISO de redborder de la versión a la que se desea actualizar. A partir de la ISO se realizará una actualización
 del repositorio local del nodo master del cluster, el cual será usado por los restantes nodos que conforman el cluster.
 
-Lo primero a realizar es ejecutar el script ​*rb_cluster_update.sh*
+Lo primero a realizar es ejecutar el script ​*rb_cluster_update.sh*.
 
 Una vez se ejecute el script rb_cluster_update.sh entraremos en un “wizard” donde
 seremos guiados para realizar la actualización.
 
 En primer lugar nos preguntará qué paquetes deseamos actualizar. Podemos optar por actualizar los paquetes del sistema,
 o los paquetes de redborder (lo cual supone la actualización de redborder).
-
-En este caso serán los paquetes de redBorder (opción 2).
+En este caso serán los paquetes de redborder (opción 2).
 
 ----
 ##################################################################
