@@ -4,7 +4,7 @@ En este capítulo se describe el procedimiento para agregar nuevos sensores y do
 
 *Sensors* se encuentra disponible en el margen superior derecho del menú de cabecera, junto a la sección *Tools* y la zona de usuario.
 
-image::images/sensors/sensors_menu.png[align="center"]
+image::images/sensors/sensors_menu.png["sensors_menu",link="images/sensors/sensors_menu.png",align="center"]
 
 === 4.1 Sensors: menú y opciones
 En este apartado se introduce de forma breve al menú *Sensors* y sus correspondientes opciones:
@@ -32,7 +32,7 @@ Para añadir un sensor debe seleccionar la opción *+Add Sensor*. En el menú de
 Para registrar sensores de Teldat, se deberá seleccionar tanto el tipo de sensor como su número de serie. En el caso de que el sensor no sea de Teldat,
 se deberá elegir un tipo de sensor genérico e identificarlo mediante la IP del sensor o su red.
 
-image::images/sensors/add_sensors_dialog.png[align="center"]
+image::images/sensors/add_sensors_dialog.png["add_sensors_dialog",link="images/sensors/add_sensors_dialog.png",align="center"]
 
 
 [IMPORTANT]
@@ -48,9 +48,9 @@ El sensor heredará de manera automática las propiedades del dominio raíz.
 
 Para añadir un dominio se debe seleccionar la opción *+Add Domain* que se encuentra en el submenú superior derecho, elegir el tipo de dominio que se quiere añadir, y a continuación, rellenar los campos requeridos (estos variarán según el tipo de dominio a crear)
 
-image::images/sensors/add_domain_menu.png[align="center"]
+image::images/sensors/add_domain_menu.png["add_domain_menu",link="images/sensors/add_domain_menu.png",align="center"]
 
-image::images/sensors/add_domain_dialog.png[align="center"]
+image::images/sensors/add_domain_dialog.png["add_domain_dialog",link="images/sensors/add_domain_dialog.png",align="center"]
 
 === 4.4 Editar un dominio
 Para acceder a la edición de un dominio se debe hacer clic en el icono "Editar" situado a la derecha del dominio que desea editar desde la vista de árbol y seleccionar la opción *Edit*.
