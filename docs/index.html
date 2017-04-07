@@ -1141,7 +1141,7 @@ el límite de sensores de cada tipo que podemos usar.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Un dato importante dentro de la vista de licencias es la cantidad de bytes diarios consumidos en el día actual. Si superamos este valor
+<p>Un dato importante dentro de la vista de licencias es la cantidad de bytes diarios consumidos en el día actual. Si superamos este valor,
 automáticamente se dejarán de procesar eventos para los sensores asociados.</p>
 </div>
 </div>
@@ -1312,7 +1312,7 @@ Cada vez que deseemos modificar nuestra propia cuenta de usuario deberemos intro
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/sensors/sensors_menu.png" alt="sensors menu">
+<a class="image" href="images/sensors/sensors_menu.png"><img src="images/sensors/sensors_menu.png" alt="sensors_menu"></a>
 </div>
 </div>
 <div class="sect2">
@@ -1392,7 +1392,7 @@ se deberá elegir un tipo de sensor genérico e identificarlo mediante la IP del
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/sensors/add_sensors_dialog.png" alt="add sensors dialog">
+<a class="image" href="images/sensors/add_sensors_dialog.png"><img src="images/sensors/add_sensors_dialog.png" alt="add_sensors_dialog"></a>
 </div>
 </div>
 <div class="admonitionblock important">
@@ -1423,12 +1423,12 @@ se deberá elegir un tipo de sensor genérico e identificarlo mediante la IP del
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/sensors/add_domain_menu.png" alt="add domain menu">
+<a class="image" href="images/sensors/add_domain_menu.png"><img src="images/sensors/add_domain_menu.png" alt="add_domain_menu"></a>
 </div>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/sensors/add_domain_dialog.png" alt="add domain dialog">
+<a class="image" href="images/sensors/add_domain_dialog.png"><img src="images/sensors/add_domain_dialog.png" alt="add_domain_dialog"></a>
 </div>
 </div>
 </div>
@@ -1513,7 +1513,7 @@ se deberá elegir un tipo de sensor genérico e identificarlo mediante la IP del
 <p><strong>Granularidad</strong>: indica el grado de detalle temporal con el que es posible visualizar los datos. El mínimo valor de granularidad es un minuto.</p>
 </li>
 <li>
-<p><strong>Tipo de gráfica</strong>: muestra los diferentes tipos de gráfica entre los que podemos elegir para mostrar los datos. Los tipos de gráficas disponibles varían según el tipo de vista seleccionada. Estos son los siguientes:</p>
+<p><strong>Tipo de gráfica</strong>: muestra los diferentes tipos de gráficas entre los que podemos elegir para mostrar los datos. Los tipos de gráficas disponibles varían según el tipo de vista seleccionada. Estos son los siguientes:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1560,12 +1560,26 @@ se deberá elegir un tipo de sensor genérico e identificarlo mediante la IP del
 </div>
 </li>
 <li>
-<p><strong>Atributos</strong>: Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenderse como datos propios del evento que son los que realmente nos aportan información. Estos son llamados "atributos".</p>
+<p><strong>Atributos</strong>: Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenderse como datos propios del evento, que son los que realmente nos aportan información. Estos son llamados "atributos".</p>
 <div class="paragraph">
 <p>Los atributos pueden mostrarse de varias maneras: en forma de pestañas o de columnas. (<strong>Add tabs/Columns</strong>) dependiendo de la vista que estemos consultando.</p>
 </div>
 </li>
 </ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>A lo largo de este documento podrán encontrarse referencias al concepto de columna como "atributo" o "dimensión".</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect3">
@@ -1586,7 +1600,7 @@ se deberá elegir un tipo de sensor genérico e identificarlo mediante la IP del
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-El usuario puede variar el orden en el que se muestran las pestañas en cualquier momento. Para ello arrastrar la pestaña y soltar en la posición en la que se desea colocar.
+El usuario puede variar el orden en el que se muestran las pestañas en cualquier momento. Para ello, debe arrastrar la pestaña y soltarla en la posición que desee.
 </td>
 </tr>
 </table>
@@ -1597,7 +1611,7 @@ El usuario puede variar el orden en el que se muestran las pestañas en cualquie
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Vista</strong>:  en esta zona se muestran los datos según la vista y tipo de gráfica seleccionadas. Al posicionar el cursor sobre cualquiera de los puntos que componen la gráfica, aparece un cuadro de diálogo en el que se le muestra en detalle la información para ese instante de tiempo, agregación y atributo.</p>
+<p><strong>Vista</strong>:  en esta zona se muestran los datos según la vista y tipo de gráfica seleccionadas. Al posicionar el cursor sobre cualquiera de los puntos que componen la gráfica, aparece un cuadro de diálogo que muestra en detalle la información para ese instante de tiempo, agregación y atributo.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1608,13 +1622,29 @@ El usuario puede variar el orden en el que se muestran las pestañas en cualquie
 <div class="sect3">
 <h4 id="_5_1_3_resumen_buscador_y_tabla_de_datos">5.1.3 Resumen, buscador y tabla de datos</h4>
 <div class="paragraph">
-<p><strong>Resumen</strong>: bajo el área de Vista se encuentra un resumen relativo a todos los datos cargados que aparecen tanto en la vista como en la tabla de datos. En este resumen se indican, por este orden, el valor total de la agregación de todos los datos cargados, el valor total de la agregación de todos los datos cargados y seleccionados, el número de filas de datos cargadas y el porcentaje del valor agregado de los datos cargados sobre el total de datos.</p>
+<p><strong>Resumen</strong>: bajo el área de Vista se encuentra un resumen relativo a todos los datos cargados que aparecen tanto en la vista como en la tabla de datos. En este resumen se indican, por este orden:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>el valor total de la agregación de todos los datos cargados</p>
+</li>
+<li>
+<p>el valor total de la agregación de todos los datos cargados y seleccionados</p>
+</li>
+<li>
+<p>el número de filas de datos cargadas</p>
+</li>
+<li>
+<p>el porcentaje del valor agregado de los datos cargados sobre el total de datos.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p><strong>Buscador</strong>: permite realizar una búsqueda por atributo. Las búsquedas se convierten en filtros automáticamente tal y como veremos más adelante.</p>
 </div>
 <div class="paragraph">
-<p><strong>Tabla de datos</strong>: muestra los valores clasificados por tipo de atributo seleccionado. Por ejemplo, cada fila puede estar mostrando cada una de las IPs de origen (Columna/Atributo: SRC Address) con el detalle del porcentaje de bytes (Agregación) que está consumiendo ese elemento dentro de la red. Para el análisis aislado de uno o más elementos de esta barra (seleccionar como filtro), es necesario clicar sobre el elemento que desea filtrar. Para selección múltiple basta con mantener pulsada la tecla <strong>Shift</strong>.</p>
+<p><strong>Tabla de datos</strong>: muestra los valores clasificados por tipo de atributo seleccionado. Por ejemplo, cada fila puede estar mostrando cada una de las IPs de origen (Columna/Atributo: SRC Address) con el detalle del porcentaje de bytes (Agregación) que está consumiendo ese elemento dentro de la red. Para el análisis aislado de un elemento de esta tabla es necesario hacer clic sobre el elemento que se desee filtrar. Para el análisis de más de un elemento se deberá realizar una selección múltiple, manteniendo pulsada la tecla <strong>Ctrl</strong> y seleccionando distintos elementos o, si se desea seleccionar un rango, utilizando la tecla <strong>Shift</strong>.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1634,10 +1664,13 @@ El usuario puede variar el orden en el que se muestran las pestañas en cualquie
 <div class="ulist">
 <ul>
 <li>
-<p>Filter zoom: aisla gráficamente los eventos según un rango de tiempo.</p>
+<p><strong>Filter Zoom</strong>: tras seleccionar un rango temporal en la vista gráfica, es posible filtrar por ese rango de tiempo haciendo clic en el botón <strong>Filter Zoom</strong> que aparece en las opciones del submenú.</p>
 </li>
 <li>
-<p>Filtrar por valor de atributo (<strong>Filter Selected</strong>): nos permite convertir en filtro a uno o más elementos presentes en la tabla.</p>
+<p>Filtrar por valor de atributo (<strong>Filter Selected</strong>): permite filtrar los elementos de la tabla seleccionados.</p>
+</li>
+<li>
+<p>Excluir por valor de atributo (<strong>Exclude Selected</strong>): permite excluir los elementos de la tabla seleccionados.</p>
 </li>
 <li>
 <p>Búsqueda avanzada (<strong>Advanced Search</strong>): permite establecer condiciones para realizar una búsqueda avanzada que actúe a modo de filtro. Muy útil para aislar y analizar datos muy concretos.</p>
@@ -1645,7 +1678,7 @@ El usuario puede variar el orden en el que se muestran las pestañas en cualquie
 </ul>
 </div>
 <div class="paragraph">
-<p>Para guardar un filtro como "habitual" basta con seleccionar la opción <strong>+Save Current Filter</strong>.</p>
+<p>Para guardar un filtro basta con seleccionar la opción <strong>+Save Current Filter</strong>.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1661,10 +1694,10 @@ El usuario puede variar el orden en el que se muestran las pestañas en cualquie
 <div class="ulist">
 <ul>
 <li>
-<p>Crear alarmas (<strong>Create an alarm</strong>) : nos permite configurar una alarma en base a los filtros aplicados.</p>
+<p>Crear alarmas (<strong>Create an alarm</strong>): nos permite configurar una alarma en base a los filtros aplicados.</p>
 </li>
 <li>
-<p>Crear un widget en (<strong>Create a widget on</strong>) : crea un widget a partir de los filtros aplicados que se puede incluir en dashboards  o informes.</p>
+<p>Crear un widget en (<strong>Create a widget on</strong>): crea un widget a partir de los filtros aplicados que se puede incluir en dashboards  o informes.</p>
 </li>
 </ul>
 </div>
@@ -1672,20 +1705,7 @@ El usuario puede variar el orden en el que se muestran las pestañas en cualquie
 <div class="sect2">
 <h3 id="_5_3_vistas_múltiples_opciones_para_visualizar_los_datos">5.3 Vistas: múltiples opciones para visualizar los datos</h3>
 <div class="paragraph">
-<p>Las vistas ofrecen múltiples perspectivas para la visualización de los datos asociados al tráfico de red.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Recuerde que en la sección <strong>Dashboard</strong> puede crear widgets personalizados para monitorizar los eventos y que se muestren en una vista determinada.
-Las vistas que se encuentran disponibles para el Flow son las siguientes:
-</td>
-</tr>
-</table>
+<p>Las vistas ofrecen múltiples perspectivas para la visualización de los datos asociados al tráfico de red. Las vistas que se encuentran disponibles en la App Traffic son las siguientes:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1699,7 +1719,7 @@ Las vistas que se encuentran disponibles para el Flow son las siguientes:
 <p><strong>Compare:</strong> comparación de intervalos de tiempo para analizar diferencias en el estado de la red.</p>
 </li>
 <li>
-<p><strong>Unique:</strong> muestra los elementos diferentes que ha interactuado con la red según atributo.</p>
+<p><strong>Unique:</strong> muestra los diferentes elementos que han interactuado con la red según el atributo.</p>
 </li>
 </ul>
 </div>
@@ -1730,7 +1750,7 @@ No olvide combinar las vistas con los diferentes tipos de gráficas. De este mod
 <div class="sect3">
 <h4 id="_5_3_1_tops">5.3.1 Tops</h4>
 <div class="paragraph">
-<p>La vista <strong>Tops</strong> nos permite visualizar cuáles han sido los eventos más destacados según el intervalo de tiempo que se haya seleccionado. Lo que visualizamos en la gráfica es la suma del total de dichos eventos mostrados como un único evento. Si posamos el ratón por encima de cada uno de estos "picos" o Tops, veremos el desglose del evento por día, hora y tipo de dimensión o atributo que se esté consultando.</p>
+<p>La vista <strong>Tops</strong> nos permite visualizar cuáles han sido los eventos más destacados según el intervalo de tiempo que se haya seleccionado. Lo que visualizamos en la gráfica es la suma del total de dichos eventos mostrados como un único evento. Si pasamos el ratón por encima la gráfica, veremos el desglose del evento por día, hora y tipo de dimensión o atributo que se esté consultando.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1739,7 +1759,7 @@ No olvide combinar las vistas con los diferentes tipos de gráficas. De este mod
 <p>Esta vista nos ofrece los datos de los eventos en bruto, por tanto, visualizaremos la totalidad de eventos por atributos segmentados por franjas de tiempo.</p>
 </div>
 <div class="paragraph">
-<p>En la tabla de datos recogerá, por tanto, todos los datos de los eventos clasificados por columnas. Los datos se muestran a nivel de pantalla, no obstante, si desea ver más, basta con hacer scroll y esperar a que se carguen más datos: Load more.</p>
+<p>La tabla de datos recogerá, por tanto, todos los eventos ordenados en el tiempo. Si desea ver más eventos, basta con ir al final de la tabla y aparecerán eventos anteriores.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1763,10 +1783,11 @@ No olvide combinar las vistas con los diferentes tipos de gráficas. De este mod
 <div class="sect3">
 <h4 id="_5_3_3_compare">5.3.3 Compare</h4>
 <div class="paragraph">
-<p>Esta vista ofrece una comparativa de los eventos por intervalo de tiempo (hora) o entre días. Esta comparativa se puede realizar por horas o por días con intervalos de 5 minutos, lo que garantiza <strong>un grado de detalle máximo</strong>. De este modo, el usuario puede identificar de forma rápida el momento de mayor uso de la red.</p>
+<p>Esta vista ofrece una comparativa de la evolución de los eventos entre distintas horas, días, semanas o meses.
+De este modo, el usuario puede identificar de forma rápida el momento de mayor uso de la red en función de distintos parámetros, como pueden ser los bytes consumidos, los paquetes transmitidos o flujos recibidos.</p>
 </div>
 <div class="paragraph">
-<p>En la tabla de datos se mostrarán aquellos que corresponden al intervalo temporal seleccionado.</p>
+<p>En la tabla de datos se muestra la suma de los valores de cada intervalo de tiempo.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1775,7 +1796,7 @@ No olvide combinar las vistas con los diferentes tipos de gráficas. De este mod
 <p>A través de la vista <strong>Unique</strong>, el usuario podrá obtener información acerca de los elementos diferentes que han interactuado, al menos, una vez con la red en un periodo de tiempo determinado.</p>
 </div>
 <div class="paragraph">
-<p>Seleccionar el grupo de atributos que se desea analizar mediante la opción <strong>Group By</strong>.</p>
+<p>También, es posible eleccionar el grupo de atributos que se desea analizar mediante la opción <strong>Group By</strong>.</p>
 </div>
 </div>
 </div>
@@ -1821,7 +1842,7 @@ No olvide combinar las vistas con los diferentes tipos de gráficas. De este mod
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Optimice sus métricas combinando diferentes tipos de agregación con las opciones de granuralidad (lapsos de tiempo) que se encuentran disponibles.
+Optimice sus métricas combinando diferentes tipos de agregación con las opciones de granuralidad (nivel de detalle temporal) que se encuentran disponibles.
 </td>
 </tr>
 </table>
@@ -1853,13 +1874,15 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 <div class="sect2">
 <h3 id="_5_6_tipos_de_gráficas">5.6 Tipos de gráficas</h3>
 <div class="paragraph">
-<p>Es posible seleccionar el tipo de gráfica con el que se desean visualizar los datos obtenidos en las diferentes vistas. Las opciones son muy similares a las que se han mostrado en el proceso de creación de widgets personalizados.</p>
+<p>Es posible seleccionar el tipo de gráfica con el que se desean visualizar los datos obtenidos en las diferentes vistas. Las opciones son muy similares a las que se muestran en el proceso de creación de widgets personalizados del capítulo dedicado a los Dashboards.</p>
 </div>
 <div class="paragraph">
-<p>Las gráficas que se encuentran disponibles en cada momento, dependerán de la vista seleccionada. Esta opción no aparece, por ejemplo, al aplicar la vista Map a los datos, puesto que los datos se representarán en esta vista, sobre un mapa.</p>
+<p>Las gráficas que se encuentran disponibles en cada momento dependerán de la vista seleccionada.
+Esta opción no aparece, por ejemplo, al aplicar la vista Map a los datos, puesto que los datos se representarán en esta vista, sobre un mapa.
+En todas las gráficas se realiza una representación de los valores seleccionados en función del tiempo, de la granularidad y agregación seleccionadas y de las distintas opciones disponibles en función de la vista. A continuación se describen los distintos tipos de gráficas disponibles.</p>
 </div>
 <div class="paragraph">
-<p><strong>Stacked</strong>: muestra la manera comparativa en una misma gráfica los datos correspondientes a cada una de los atributos seleccionados.</p>
+<p><strong>Stacked</strong>: composición de áreas apiladas, donde cada área representa el perfil temporal de un valor seleccionado.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1867,7 +1890,7 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Area</strong>: gráfica que ofrece de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado, siendo el total del tráfico la suma del tráfico por atributo.</p>
+<p><strong>Area</strong>: composición de áreas superpuestas, donde cada área representa el perfil temporal de un valor seleccionado.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1875,7 +1898,7 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Line</strong>: muestra de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado; en este caso no se muestra el área sino que la gráfica viene representada por una línea.</p>
+<p><strong>Line</strong>: composición de líneas superpuestas, donde cada línea representa el perfil temporal de un valor seleccionado.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1883,7 +1906,7 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Bars</strong>: ofrece los datos de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado, siendo el total, la suma de todos los valores de cada uno de esos elementos. En este caso, los datos se representan gráficamente a través de barras.</p>
+<p><strong>Bars</strong>: composición de conjuntos de barras superpuestas, donde cada conjunto de barras de distinto color representa el perfil temporal de un valor seleccionado.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1891,7 +1914,7 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 </div>
 </div>
 <div class="paragraph">
-<p><strong>SBars</strong>: o Stacked Bars, ofrece en una misma gráfica los datos obtenidos para cada uno de los elementos incluidos en el atributo seleccionado, por lo que se pueden visualizar los resultados de manera independiente por IP, sensor, etc., representados gráficamente or barras.</p>
+<p><strong>SBars</strong> (Stacked Bars): composición de conjuntos de barras apiladas, donde cada conjunto de barras de distinto color representa el perfil temporal de un valor seleccionado.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1899,7 +1922,7 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Streams</strong>: gráfica solo disponible para la vista Raw. Muestra los flujos de tráfico por sensor.</p>
+<p><strong>Streams</strong>: composición de flujos, donde cada flujo representa las relaciones entre distinos atributos. Esta gráfica solo está disponible para la vista Raw. En la imagen inferior se muestran los flujos de tráfico de un sensor entre IPs LAN y WAN.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1910,7 +1933,7 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 <div class="sect2">
 <h3 id="_5_7_opciones">5.7 Opciones</h3>
 <div class="paragraph">
-<p>Cada una de las vistas presenta una serie de opciones que le permiten al usuario, entre otras acciones, visualizar el total del tráfico, exportar los datos a CSV o llevar a la máquina a un estado del pasado para poder analizar y comparar comportamientos presentes y pasados.</p>
+<p>Cada una de las vistas presenta una serie de opciones que le permiten al usuario, entre otras acciones, visualizar el total del tráfico, exportar los datos a CSV o llevar al manager a un estado anterior para poder analizar comportamientos pasados.</p>
 </div>
 <div class="paragraph">
 <p>A continuación se enumeran todas las opciones disponibles en esta pestaña. El usuario debe tener en cuenta que estas opciones variarán según la vista seleccionada previamente.</p>
@@ -1918,7 +1941,10 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 <div class="ulist">
 <ul>
 <li>
-<p>Mostrar total (<strong>Show Total</strong>): al seleccionar esta opción se muestra en la gráfica el valor del total del tráfico diferenciado del recibido o emitido por cada uno de los atributos que se estén consultando. Cuando esta opción se encuentra activa, en el listado de opciones aparecerá "Hide total". Disponible en las vistas Top y Unique.</p>
+<p>Mostrar total (<strong>Show Total</strong>): al seleccionar esta opción se muestra en la gráfica una línea gris discontinua que representa la suma de las agregaciones de todos los atributos. Cuando esta opción se encuentra activa, en el listado de opciones se cambia esta opción por <strong>Hide Total</strong>. Disponible en las vistas Tops y Unique.</p>
+</li>
+<li>
+<p>Mostrar total de los filtrados (<strong>Show Total Filtered</strong>): al seleccionar esta opción se muestra en la gráfica una línea gris discontinua (más clara que la anterior) que representa la suma de las agregaciones de todos los atributos resultantes de aplicar los filtros seleccionados. Cuando esta opción se encuentra activa, en el listado de opciones se cambia esta opción por <strong>Hide Total Filtered</strong>. Disponible en la vista Tops.</p>
 </li>
 <li>
 <p>Exportar a CSV (<strong>Export to CSV</strong>): el usuario obtendrá un fichero de descarga en formato CSV que incluye los datos correspondientes al atributo que se seleccione, pudiendo fijar un límite de las filas que se incluirán en el archivo. Disponible solo para las vistas Tops, Raw y Unique.</p>
@@ -1933,7 +1959,7 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 <div class="ulist">
 <ul>
 <li>
-<p>Máquina del tiempo (<strong>Time machine</strong>): regresa la máquina a un estado anterior. Al seleccionar esta opción el usuario podrá visualizar los datos tal y como si estuviera viéndolos en el día y hora del pasado que haya indicado. Disponible para todas las vistas.</p>
+<p>Máquina del tiempo (<strong>Time machine</strong>): envía al manager a un estado anterior. Al seleccionar esta opción el usuario podrá visualizar los datos tal y como si estuviera viéndolos en el día y hora del momento pasado que haya indicado. Disponible para todas las vistas.</p>
 </li>
 </ul>
 </div>
@@ -1960,7 +1986,7 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 <div class="ulist">
 <ul>
 <li>
-<p>Orden de las columnas (Sort columns): mediante esta opción el usuario puede elergir el orden en el que se mostrarán las columnas disponibles. Disponible únicamente para la vista Raw.</p>
+<p>Orden de las columnas (<strong>Sort Columns</strong>): mediante esta opción el usuario puede elergir el orden en el que se mostrarán las columnas disponibles. Disponible únicamente para la vista Raw.</p>
 </li>
 </ul>
 </div>
@@ -1972,7 +1998,7 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 <div class="ulist">
 <ul>
 <li>
-<p>Recargar (<strong>Start reloading</strong>): activa la cuenta atrás para que se efectúe la recarga de los datos. En cualquier momento, el usuario puede detener esta recarga seleccionando Stop reloading (opción que sustituye a Start reloading una vez que se ha activado esta). En el extremo izquierdo de la barra de sección aparecerá una cuenta atrás indicándole el tiempo de espera hasta la recarga. Disponible para la vista Raw.</p>
+<p>Recargar (<strong>Start Reloading</strong>): activa la cuenta atrás para que se efectúe la recarga de los datos. En cualquier momento, el usuario puede detener esta recarga seleccionando <strong>Stop Reloading</strong> (opción que sustituye a Start Reloading una vez que ésta se ha activado). En el extremo izquierdo de la barra de sección aparecerá una cuenta atrás indicándole el tiempo de espera hasta la recarga. Disponible para la vista Raw.</p>
 </li>
 </ul>
 </div>
@@ -2291,21 +2317,33 @@ que puede consultar de cada uno de ellos:</p>
 <p>Convertir a informe (<strong>Convert to report</strong>)</p>
 </li>
 <li>
-<p>Exportar dashboard (<strong>Export dashboard</strong>): el sistema creará un archivo comprimido para su descarga; paso necesario en caso de que se quiera realizar una importación.
-image::images/dashboards/edit_dashboard.png[align="center"]</p>
-</li>
-<li>
-<p>Clonar dashboard (<strong>Clone dashboard</strong>): es posible clonar (copiar) los dashboards con el fin de enerlo disponibles para diferentes usuarios, importarlo, etc. Para ello, basta con asignarle un nombre al dashboard copiado.
-image::images/dashboards/clone_dashboard.png[align="center"]</p>
+<p>Exportar dashboard (<strong>Export dashboard</strong>): el sistema creará un archivo comprimido para su descarga; paso necesario en caso de que se quiera realizar una importación.</p>
 </li>
 </ul>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/dashboards/edit_dashboard.png" alt="edit dashboard">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Clonar dashboard (<strong>Clone dashboard</strong>): es posible clonar (copiar) los dashboards con el fin de enerlo disponibles para diferentes usuarios, importarlo, etc. Para ello, basta con asignarle un nombre al dashboard copiado.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/dashboards/clone_dashboard.png" alt="clone dashboard">
+</div>
 </div>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_6_1_2_añadir_dashboard">6.1.2 Añadir dashboard</h4>
 <div class="paragraph">
-<p>Los dashboards permiten tener un resumen visual que incluye los principales KPIs que son necesarios para el análisis de una infraestructura de red. El usuario puede combinar una serie de widgets que le permitan, una sola mirada, obtener información muy valiosa sobre las tendencias, cambios y excepciones asociadas al tráfico que se produce o pasa por su red.</p>
+<p>Los dashboards permiten tener un resumen visual que incluye los principales KPIs que son necesarios para el análisis de una infraestructura de red. El usuario puede combinar una serie de widgets que le permitan, a simple vista, obtener información muy valiosa sobre las tendencias, cambios y excepciones asociadas al tráfico que se produce o pasa por su red.</p>
 </div>
 <div class="paragraph">
 <p>Para crear un nuevo dashboard es necesario seleccionar la opción <strong>Add dashboard</strong>. A continuación, introducir una serie de datos de configuración general y guardar los cambios mediante el botón <strong>Create dashboard</strong>. El primer paso para crear un dashboard personalizado es la creación de un panel en blanco al que, posteriormente, se le añadirán aquellos widgets que cumplan con nuestras necesidades de
@@ -2413,10 +2451,7 @@ dentro del listado de dashboards disponibles.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenerse como datos propios del evento que son los que realmente nos aportan información.</p>
-</div>
-<div class="paragraph">
-<p>A lo largo de este documento podrán encontrarse referencias al concepto de columna como "atributo" o "dimensión".</p>
+<p>Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenderse como datos propios del evento, que son los que realmente nos aportan información.</p>
 </div>
 <div class="paragraph">
 <p>El primer paso para personalizar un widget consiste en seleccionar el modo de visualización de los datos, pudiendo elegir además, vistas en las que se representa la cardinalidad de los mismos.</p>
