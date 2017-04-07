@@ -2,7 +2,7 @@
 
 === 6.1 Opciones del Dashboard
 
-La primera opción que encontramos en el área de análisis de la barra de menú es la de Dashboard. Esta es la opción que se encuentra seleccionada por defecto al ingresar a la web manager.
+La primera opción que encontramos en el área de análisis de la barra de menú es la de Dashboard. Esta es la opción que se encuentra seleccionada por defecto al ingresar a la web del manager.
 
 image::images/dashboards/dashboard.png[align="center"]
 
@@ -146,8 +146,8 @@ Desde el dashboard el usuario tiene acceso directo a los widgets. En la esquina 
 
 * Clonar (*Clone*): permite duplicar el widget e incorporarlo directamente en el dashboard que seleccione el usuario.
 * Editar (*Edit*): da acceso a la configuración general del widget para modificar aquellos campose que se deseen.
-* Recargar (*Reload*): actualización de los datos
-* Eliminar (*Delete*)
+* Recargar (*Reload*): actualización de los datos.
+* Eliminar (*Delete*).
 
 image::images/dashboards/widget_menu.png[align="center"]
 
