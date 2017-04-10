@@ -193,6 +193,8 @@ La tabla de datos recogerá, por tanto, todos los eventos ordenados en el tiempo
 
 image::images/data-visualization/raw_view.png[align="center"]
 
+image::images/data-visualization/raw_detail.png[align="center"]
+
 [NOTE]
 =======================
 Como se puede observar en la imagen, el tipo de gráfica ideal para la vista Raw es el de flujo de
@@ -235,9 +237,11 @@ NOTE: Optimice sus métricas combinando diferentes tipos de agregación con las 
 === 5.5 Granularidad
 Llamamos granularidad al grado de detalle con el que podemos visualizar los eventos. Las opciones de granuralidad varían según el rango de tiempo que se esté mostrando (1h., 2h., last week, last month, all, etc.).
 
-NOTE: La vista Raw es la más indicada para aplicar granuralidad para observar los datos en detalle.
-
 image::images/data-visualization/granularity.png[align="center"]
+
+image::images/data-visualization/raw_with_granularity.png[align="center"]
+
+NOTE: La vista Raw es la más indicada para aplicar granuralidad para observar los datos en detalle.
 
 === 5.6 Tipos de gráficas
 
