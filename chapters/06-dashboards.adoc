@@ -105,7 +105,6 @@ El primer paso para personalizar un widget consiste en seleccionar el modo de vi
 * *Bandwith Line*: es un widget predefinido que muestra el uso del ancho de banda en bps. Muestra una gráfica simple. Es característico de la app *Traffic*.
 * *Bandwith*: es como *Bandwith line* ofreciendo un contenido más detallado. Es característico de la app *Traffic*.
 * *Map*: muestra información de geoposicionamiento. Es característico de la app *Traffic*
-* *Movements*: muestra información de movimiento asociada a los eventos. Es característico de la app *Mobility*
 * *RAW*: muestra los eventos en bruto (sin agregación).
 * *Tops*: agrega los eventos en base a un atributo para mostrar los más destacados, de manera que lo que se muestra es la suma del total de datos de diferentes eventos para mostrarlos como uno único.
 * *Compare*: comparativa en el tiempo (horas, días, semanas y meses) de los eventos más destacados.
