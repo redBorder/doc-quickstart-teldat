@@ -6,7 +6,8 @@ En esta sección el usuario puede realizar la visualización, análisis y gesti�
 
 En el área de análisis de la barra de menú (lateral izquierdo), encontramos las diferentes secciones que corresponden a las Apps que tengamos integradas en la plataforma.
 
-A continuación veremos las diferentes opciones de visualización de datos, tipos de gráficas, granularidad (nivel de detalle temporal con el que se agregan los eventos) y atributos que se pueden combinar para obtener un visor de tráfico de red completamente personalizado.
+A continuación veremos las diferentes opciones de visualización de datos, tipos de gráficas, granularidad (nivel de detalle temporal con el que se agregan los eventos) y dimensiones
+que se pueden combinar para obtener un visor de tráfico de red completamente personalizado.
 
 image::images/data-visualization/traffic_data_visualization.png[align="center"]
 
@@ -241,7 +242,7 @@ image::images/data-visualization/granularity.png[align="center"]
 
 image::images/data-visualization/raw_with_granularity.png[align="center"]
 
-NOTE: La vista Raw es la más indicada para aplicar granuralidad para observar los datos en detalle.
+NOTE: La vista Raw es la más indicada si se desean observar los datos en detalle.
 
 === 5.6 Tipos de gráficas
 

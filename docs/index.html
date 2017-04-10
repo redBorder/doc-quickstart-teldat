@@ -1172,8 +1172,13 @@ muestra sobre los usuarios dados de alta.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Sólo el usuario con el rol de <strong>Súper Administrador</strong> tiene habilitada esta función. El resto de usuarios sólo podrá visualizar las
-diferentes secciones de la plataforma, pero no modificar su contenido (salvo en el caso de su propio perfil de usuario).</p>
+<p>Sólo los usuarios con el rol de <strong>Administrador de dominio</strong> tiene habilitada esta función para poder administrar a los usuarios de su dominio.
+El resto de usuarios sólo podrá visualizar las diferentes secciones de la plataforma, pero no modificar su contenido (salvo en el caso de
+su propio perfil de usuario).</p>
+</div>
+<div class="paragraph">
+<p>Además de los administradores de dominio, existe un usuario Super Administrador que puede administrar a todos los usuarios registrados
+en la plataforma.</p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -1238,6 +1243,9 @@ un resumen de su estado y actividad dentro de la plataforma.</p>
 <p><strong>Menú principal</strong></p>
 <div class="ulist">
 <ul>
+<li>
+<p>Administrator: Si lo activamos convertimos al usuario en Adminsitrador de dominio establecido en "Top Domain".</p>
+</li>
 <li>
 <p>Nombre</p>
 </li>
@@ -1469,7 +1477,8 @@ se deberá elegir un tipo de sensor genérico e identificarlo mediante la IP del
 <p>En el área de análisis de la barra de menú (lateral izquierdo), encontramos las diferentes secciones que corresponden a las Apps que tengamos integradas en la plataforma.</p>
 </div>
 <div class="paragraph">
-<p>A continuación veremos las diferentes opciones de visualización de datos, tipos de gráficas, granularidad (nivel de detalle temporal con el que se agregan los eventos) y atributos que se pueden combinar para obtener un visor de tráfico de red completamente personalizado.</p>
+<p>A continuación veremos las diferentes opciones de visualización de datos, tipos de gráficas, granularidad (nivel de detalle temporal con el que se agregan los eventos) y dimensiones
+que se pueden combinar para obtener un visor de tráfico de red completamente personalizado.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -2010,7 +2019,7 @@ Optimice sus métricas combinando diferentes tipos de agregación con las opcion
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-La vista Raw es la más indicada para aplicar granuralidad para observar los datos en detalle.
+La vista Raw es la más indicada si se desean observar los datos en detalle.
 </td>
 </tr>
 </table>
