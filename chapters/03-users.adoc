@@ -10,8 +10,12 @@ muestra sobre los usuarios dados de alta.
 
 image::images/users/users-02.png["users-02",align="center"]
 
-Sólo el usuario con el rol de *Súper Administrador* tiene habilitada esta función. El resto de usuarios sólo podrá visualizar las
-diferentes secciones de la plataforma, pero no modificar su contenido (salvo en el caso de su propio perfil de usuario).
+Sólo los usuarios con el rol de *Administrador de dominio* tiene habilitada esta función para poder administrar a los usuarios de su dominio.
+El resto de usuarios sólo podrá visualizar las diferentes secciones de la plataforma, pero no modificar su contenido (salvo en el caso de
+su propio perfil de usuario).
+
+Además de los administradores de dominio, existe un usuario Super Administrador que puede administrar a todos los usuarios registrados
+en la plataforma.
 
 IMPORTANT: Un usuario es *Super Administrador* sólo si es Administrador y su Top Domain es root
 
@@ -42,6 +46,7 @@ image::images/users/users-03.png["users-03",align="center"]
 En el menú de configuración de usuario nos encontraremos las siguientes secciones:
 
 * *Menú principal*
+** Administrator: Si lo activamos convertimos al usuario en Adminsitrador de dominio establecido en "Top Domain".
 ** Nombre
 ** Login/Username
 ** Email
