@@ -90,10 +90,6 @@ image::images/dashboards/widget_selection.png[align="center"]
 ===== 6.1.4.1 Personalizar un widget de producto
 Algunos de los widgets que el usuario encuentra disponibles para añadir al dashboard del manager permiten una personalización completa.
 
-Este es el caso del widget asignado a la App *Intrusion*. En primer lugar, veamos qué opciones de personalización se incluyen en este tipo de widgets.
-
-El primer paso consiste en seleccionar el modo de visualización de datos o la cardinalidad, esto es, de qué modo deseamos visualizar los valores o datos de una determinada columna.
-
 [NOTE]
 ==================================
 Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenderse como datos propios del evento, que son los que realmente nos aportan información.
