@@ -738,7 +738,11 @@ b.conum * { color: inherit !important; }
 <li><a href="#_5_1_3_resumen_buscador_y_tabla_de_datos">5.1.3 Resumen, buscador y tabla de datos</a></li>
 </ul>
 </li>
-<li><a href="#_5_2_filtrar_eventos">5.2 Filtrar eventos</a></li>
+<li><a href="#_5_2_filtrar_eventos">5.2 Filtrar eventos</a>
+<ul class="sectlevel3">
+<li><a href="#_5_2_1_filtro_temporal_personalizado">5.2.1 Filtro temporal personalizado</a></li>
+</ul>
+</li>
 <li><a href="#_5_3_vistas_múltiples_opciones_para_visualizar_los_datos">5.3 Vistas: múltiples opciones para visualizar los datos</a>
 <ul class="sectlevel3">
 <li><a href="#_5_3_1_tops">5.3.1 Tops</a></li>
@@ -1357,12 +1361,6 @@ Cada vez que deseemos modificar nuestra propia cuenta de usuario deberemos intro
 <li>
 <p>Sensores Flow (<strong>Flow sensors</strong>): listado que muestra los sensores de tipo flow por orden alfabético.</p>
 </li>
-<li>
-<p>Sensores IPS (<strong>IPS sensors</strong>): listado que muestra los sensores de tipo IPS por orden alfabético.</p>
-</li>
-<li>
-<p>Sensores de Social (<strong>Social sensors</strong>): listado que muestra los sensores de tipo Social por orden alfabético.</p>
-</li>
 </ul>
 </div>
 </li>
@@ -1701,6 +1699,123 @@ El usuario puede variar el orden en el que se muestran las pestañas en cualquie
 </li>
 </ul>
 </div>
+<div class="sect3">
+<h4 id="_5_2_1_filtro_temporal_personalizado">5.2.1 Filtro temporal personalizado</h4>
+<div class="paragraph">
+<p>Es posible aislar los eventos correspondientes a un periodo de tiempo determinado para analizar con mayor grado de detalle los datos vinculados al atributo seleccionado.</p>
+</div>
+<div class="paragraph">
+<p>Existen cinco maneras de realizar un filtrado temporal:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Filtrado por rango de tiempo</p>
+</li>
+<li>
+<p>Filter Zoom</p>
+</li>
+<li>
+<p>Filtro personalizado</p>
+</li>
+<li>
+<p>Búsqueda avanzada</p>
+</li>
+<li>
+<p>Filtrado por atributo</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Filtrado por rango de tiempo</strong></p>
+</div>
+<div class="paragraph">
+<p>Una manera muy sencilla y rápida de visualizar tan solo los eventos correspondientes a un periodo de tiempo concreto es seleccionar algunas de las opciones que nos ofrecen las pestañas de la línea temporal de filtrado:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/range_time.png" alt="range time">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Filter Zoom</strong></p>
+</div>
+<div class="paragraph">
+<p>El usuario puede seleccionar un lapso de tiempo determinado de manera manual. Este filtro es muy útil para observar en detalle un evento. Para ello, hacer clic con el ratón en un punto determinado de la gráfica, arrastrar hasta el instante temporal deseado y soltar. De este modo, tendremos la vista para ese rango temporal y la tabla inferior mostrará tan solo los datos incluidos en esta franja.</p>
+</div>
+<div class="paragraph">
+<p>En el submenú de sección aparecerá indicado <strong>Filter Zoom</strong>.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/filter_zoom.png" alt="filter zoom">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Filtro personalizado (Custom)</strong></p>
+</div>
+<div class="paragraph">
+<p>La pestaña <strong>Custom</strong> de la línea de filtrado por rango de tiempo permite realizar un filtrado personalizado. Solo con arrastrar el ratón sobre la barra temporal es posible indicar una fecha de incio y de fin para el filtrado.</p>
+</div>
+<div class="paragraph">
+<p>Hacer clic en <strong>Submit</strong> para aplicar filtro.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/custom_filter.png" alt="custom filter">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Búsqueda avanzada (Advanced Search)</strong></p>
+</div>
+<div class="paragraph">
+<p>Al hacer clic en la pestaña <strong>Filters</strong> se despliega un submenú en el que encontramos la opción <strong>Advanced Search</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Esta es la opción que permite mayor grado de detalle, puesto que es el propio usuario el que determina las condiciones de la búsqueda, y por tanto, de filtrado.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/advanced_search.png" alt="advanced search">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Filtrado por atributo (Filter Selected)</strong></p>
+</div>
+<div class="paragraph">
+<p>Existen dos maneras de convertir un valor de un atributo en un filtro:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Buscador</strong>: introducir el valor del atributo que se desea buscar y pulsar la tecla <strong>Enter</strong>.</p>
+<div class="paragraph">
+<p>De manera automática se incluirá un filtro con el valor elegido. Se pueden incluir tantos filtros como búsquedas se realicen. Es posible eliminar el filtro desde la opción Filters.</p>
+</div>
+</li>
+<li>
+<p><strong>Selección filas de la tabla</strong>: es posible seleccionar una o más filas de la tabla simplemente hacer clic en cada una de ellas. Las filas seleccionadas aparecerán sombreadas en amarillo.</p>
+<div class="paragraph">
+<p>Una vez seleccionadas las filas seleccionar la opción <strong>Filter Selected</strong> para obtener la vista de los elementos filtrados. Para eliminar el filtro es necesario pulsar el botón <strong>Exclude Selected</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Es posible realizar acciones a nivel individual sobre cada uno de los elementos de la tabla. Haciendo clic sobre un elemento se despliega un submenú con las siguientes opciones:</p>
+</div>
+<div class="paragraph">
+<p><strong>Filter</strong>: añade el filtro correspondiente para incluir el elemento de los datos presentados.</p>
+</div>
+<div class="paragraph">
+<p><strong>Exclude</strong>: añade el filtro correspondiente para excluir el elemento de los datos presentados.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/attributes_selection.png" alt="attributes selection">
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_5_3_vistas_múltiples_opciones_para_visualizar_los_datos">5.3 Vistas: múltiples opciones para visualizar los datos</h3>
@@ -1752,6 +1867,11 @@ No olvide combinar las vistas con los diferentes tipos de gráficas. De este mod
 <div class="paragraph">
 <p>La vista <strong>Tops</strong> nos permite visualizar cuáles han sido los eventos más destacados según el intervalo de tiempo que se haya seleccionado. Lo que visualizamos en la gráfica es la suma del total de dichos eventos mostrados como un único evento. Si pasamos el ratón por encima la gráfica, veremos el desglose del evento por día, hora y tipo de dimensión o atributo que se esté consultando.</p>
 </div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/tops_view.png" alt="tops view">
+</div>
+</div>
 </div>
 <div class="sect3">
 <h4 id="_5_3_2_raw">5.3.2 Raw</h4>
@@ -1760,6 +1880,16 @@ No olvide combinar las vistas con los diferentes tipos de gráficas. De este mod
 </div>
 <div class="paragraph">
 <p>La tabla de datos recogerá, por tanto, todos los eventos ordenados en el tiempo. Si desea ver más eventos, basta con ir al final de la tabla y aparecerán eventos anteriores.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/raw_view.png" alt="raw view">
+</div>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/raw_detail.png" alt="raw detail">
+</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1789,6 +1919,11 @@ De este modo, el usuario puede identificar de forma rápida el momento de mayor 
 <div class="paragraph">
 <p>En la tabla de datos se muestra la suma de los valores de cada intervalo de tiempo.</p>
 </div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/compare_view.png" alt="compare view">
+</div>
+</div>
 </div>
 <div class="sect3">
 <h4 id="_5_3_4_unique">5.3.4 Unique</h4>
@@ -1797,6 +1932,11 @@ De este modo, el usuario puede identificar de forma rápida el momento de mayor 
 </div>
 <div class="paragraph">
 <p>También, es posible seleccionar el grupo de atributos que se desea analizar mediante la opción <strong>Group by</strong>.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/unique_view.png" alt="unique view">
+</div>
 </div>
 </div>
 </div>
@@ -1853,6 +1993,16 @@ Optimice sus métricas combinando diferentes tipos de agregación con las opcion
 <div class="paragraph">
 <p>Llamamos granularidad al grado de detalle con el que podemos visualizar los eventos. Las opciones de granuralidad varían según el rango de tiempo que se esté mostrando (1h., 2h., last week, last month, all, etc.).</p>
 </div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/granularity.png" alt="granularity">
+</div>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/data-visualization/raw_with_granularity.png" alt="raw with granularity">
+</div>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -1865,11 +2015,6 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 </tr>
 </table>
 </div>
-<div class="imageblock" style="text-align: center">
-<div class="content">
-<img src="images/data-visualization/granularity.png" alt="granularity">
-</div>
-</div>
 </div>
 <div class="sect2">
 <h3 id="_5_6_tipos_de_gráficas">5.6 Tipos de gráficas</h3>
@@ -1877,9 +2022,7 @@ La vista Raw es la más indicada para aplicar granuralidad para observar los dat
 <p>Es posible seleccionar el tipo de gráfica con el que se desean visualizar los datos obtenidos en las diferentes vistas. Las opciones son muy similares a las que se muestran en el proceso de creación de widgets personalizados del capítulo dedicado a los Dashboards.</p>
 </div>
 <div class="paragraph">
-<p>Las gráficas que se encuentran disponibles en cada momento dependerán de la vista seleccionada.
-Esta opción no aparece, por ejemplo, al aplicar la vista Map a los datos, puesto que los datos se representarán en esta vista sobre un mapa.
-En todos los tipos de gráficas se realiza una representación de los valores seleccionados en función del tiempo, de la granularidad y agregación seleccionadas y de las distintas opciones disponibles en función de la vista. A continuación se describen los distintos tipos de gráficas disponibles.</p>
+<p>Las gráficas que se encuentran disponibles en cada momento dependerán de la vista seleccionada. En todos los tipos de gráficas se realiza una representación de los valores seleccionados en función del tiempo, de la granularidad y agregación seleccionadas y de las distintas opciones disponibles en función de la vista. A continuación se describen los distintos tipos de gráficas disponibles.</p>
 </div>
 <div class="paragraph">
 <p><strong>Stacked</strong>: composición de áreas apiladas, donde cada área representa el perfil temporal de un valor seleccionado.</p>
@@ -2437,12 +2580,6 @@ dentro del listado de dashboards disponibles.</p>
 <div class="paragraph">
 <p>Algunos de los widgets que el usuario encuentra disponibles para añadir al dashboard del manager permiten una personalización completa.</p>
 </div>
-<div class="paragraph">
-<p>Este es el caso del widget asignado a la App <strong>Intrusion</strong>. En primer lugar, veamos qué opciones de personalización se incluyen en este tipo de widgets.</p>
-</div>
-<div class="paragraph">
-<p>El primer paso consiste en seleccionar el modo de visualización de datos o la cardinalidad, esto es, de qué modo deseamos visualizar los valores o datos de una determinada columna.</p>
-</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -2472,9 +2609,6 @@ dentro del listado de dashboards disponibles.</p>
 </li>
 <li>
 <p><strong>Map</strong>: muestra información de geoposicionamiento. Es característico de la app <strong>Traffic</strong></p>
-</li>
-<li>
-<p><strong>Movements</strong>: muestra información de movimiento asociada a los eventos. Es característico de la app <strong>Mobility</strong></p>
 </li>
 <li>
 <p><strong>RAW</strong>: muestra los eventos en bruto (sin agregación).</p>
@@ -2587,7 +2721,7 @@ dentro del listado de dashboards disponibles.</p>
 <i class="fa icon-caution" title="Caution"></i>
 </td>
 <td class="content">
-Cuando seleccione la opción <strong>Delete</strong>, el sistema no le mostrará una pregunta de confirmación, por lo que debe estar seguro de que desea eliminar ese widget. En caso de que elimine un widget por accidente, recuerde que siempre puede acudir a la opción "Añadir widget" para volver a insertarlo o duplicar alguno de similares características y editarlo a continuación.
+Cuando seleccione la opción <strong>Delete</strong>, el sistema le mostrará una pregunta de confirmación. En caso de que elimine un widget por accidente, recuerde que siempre puede acudir a la opción "Añadir widget" para volver a insertarlo o duplicar alguno de similares características y editarlo a continuación.
 </td>
 </tr>
 </table>

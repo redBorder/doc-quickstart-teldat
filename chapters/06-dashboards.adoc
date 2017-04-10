@@ -90,10 +90,6 @@ image::images/dashboards/widget_selection.png[align="center"]
 ===== 6.1.4.1 Personalizar un widget de producto
 Algunos de los widgets que el usuario encuentra disponibles para añadir al dashboard del manager permiten una personalización completa.
 
-Este es el caso del widget asignado a la App *Intrusion*. En primer lugar, veamos qué opciones de personalización se incluyen en este tipo de widgets.
-
-El primer paso consiste en seleccionar el modo de visualización de datos o la cardinalidad, esto es, de qué modo deseamos visualizar los valores o datos de una determinada columna.
-
 [NOTE]
 ==================================
 Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenderse como datos propios del evento, que son los que realmente nos aportan información.
@@ -105,7 +101,6 @@ El primer paso para personalizar un widget consiste en seleccionar el modo de vi
 * *Bandwith Line*: es un widget predefinido que muestra el uso del ancho de banda en bps. Muestra una gráfica simple. Es característico de la app *Traffic*.
 * *Bandwith*: es como *Bandwith line* ofreciendo un contenido más detallado. Es característico de la app *Traffic*.
 * *Map*: muestra información de geoposicionamiento. Es característico de la app *Traffic*
-* *Movements*: muestra información de movimiento asociada a los eventos. Es característico de la app *Mobility*
 * *RAW*: muestra los eventos en bruto (sin agregación).
 * *Tops*: agrega los eventos en base a un atributo para mostrar los más destacados, de manera que lo que se muestra es la suma del total de datos de diferentes eventos para mostrarlos como uno único.
 * *Compare*: comparativa en el tiempo (horas, días, semanas y meses) de los eventos más destacados.
@@ -151,4 +146,4 @@ Desde el dashboard el usuario tiene acceso directo a los widgets. En la esquina 
 
 image::images/dashboards/widget_menu.png[align="center"]
 
-CAUTION: Cuando seleccione la opción *Delete*, el sistema no le mostrará una pregunta de confirmación, por lo que debe estar seguro de que desea eliminar ese widget. En caso de que elimine un widget por accidente, recuerde que siempre puede acudir a la opción "Añadir widget" para volver a insertarlo o duplicar alguno de similares características y editarlo a continuación.
+CAUTION: Cuando seleccione la opción *Delete*, el sistema le mostrará una pregunta de confirmación. En caso de que elimine un widget por accidente, recuerde que siempre puede acudir a la opción "Añadir widget" para volver a insertarlo o duplicar alguno de similares características y editarlo a continuación.

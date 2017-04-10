@@ -97,6 +97,74 @@ Además de la opción de búsqueda avanzada (*Advanced Search*), el menú *Filte
 * Crear alarmas (*Create an alarm*): nos permite configurar una alarma en base a los filtros aplicados.
 * Crear un widget en (*Create a widget on*): crea un widget a partir de los filtros aplicados que se puede incluir en dashboards  o informes.
 
+==== 5.2.1 Filtro temporal personalizado
+
+Es posible aislar los eventos correspondientes a un periodo de tiempo determinado para analizar con mayor grado de detalle los datos vinculados al atributo seleccionado.
+
+Existen cinco maneras de realizar un filtrado temporal:
+
+* Filtrado por rango de tiempo
+* Filter Zoom
+* Filtro personalizado
+* Búsqueda avanzada
+* Filtrado por atributo
+
+*Filtrado por rango de tiempo*
+
+Una manera muy sencilla y rápida de visualizar tan solo los eventos correspondientes a un periodo de tiempo concreto es seleccionar algunas de las opciones que nos ofrecen las pestañas de la línea temporal de filtrado:
+
+image::images/data-visualization/range_time.png[align="center"]
+
+*Filter Zoom*
+
+El usuario puede seleccionar un lapso de tiempo determinado de manera manual. Este filtro es muy útil para observar en detalle un evento. Para ello, hacer clic con el ratón en un punto determinado de la gráfica, arrastrar hasta el instante temporal deseado y soltar. De este modo, tendremos la vista para ese rango temporal y la tabla inferior mostrará tan solo los datos incluidos en esta franja.
+
+En el submenú de sección aparecerá indicado *Filter Zoom*.
+
+image::images/data-visualization/filter_zoom.png[align="center"]
+
+*Filtro personalizado (Custom)*
+
+La pestaña *Custom* de la línea de filtrado por rango de tiempo permite realizar un filtrado personalizado. Solo con arrastrar el ratón sobre la barra temporal es posible indicar una fecha de incio y de fin para el filtrado.
+
+Hacer clic en *Submit* para aplicar filtro.
+
+image::images/data-visualization/custom_filter.png[align="center"]
+
+*Búsqueda avanzada (Advanced Search)*
+
+Al hacer clic en la pestaña *Filters* se despliega un submenú en el que encontramos la opción *Advanced Search*.
+
+Esta es la opción que permite mayor grado de detalle, puesto que es el propio usuario el que determina las condiciones de la búsqueda, y por tanto, de filtrado.
+
+image::images/data-visualization/advanced_search.png[align="center"]
+
+*Filtrado por atributo (Filter Selected)*
+
+Existen dos maneras de convertir un valor de un atributo en un filtro:
+
+1. *Buscador*: introducir el valor del atributo que se desea buscar y pulsar la tecla *Enter*.
+
++
+De manera automática se incluirá un filtro con el valor elegido. Se pueden incluir tantos filtros como búsquedas se realicen. Es posible eliminar el filtro desde la opción Filters.
+
+2. *Selección filas de la tabla*: es posible seleccionar una o más filas de la tabla simplemente hacer clic en cada una de ellas. Las filas seleccionadas aparecerán sombreadas en amarillo.
+
++
+Una vez seleccionadas las filas seleccionar la opción *Filter Selected* para obtener la vista de los elementos filtrados. Para eliminar el filtro es necesario pulsar el botón *Exclude Selected*.
+
++
+Es posible realizar acciones a nivel individual sobre cada uno de los elementos de la tabla. Haciendo clic sobre un elemento se despliega un submenú con las siguientes opciones:
+
++
+*Filter*: añade el filtro correspondiente para incluir el elemento de los datos presentados.
+
++
+*Exclude*: añade el filtro correspondiente para excluir el elemento de los datos presentados.
+
+
+image::images/data-visualization/attributes_selection.png[align="center"]
+
 
 === 5.3 Vistas: múltiples opciones para visualizar los datos
 
@@ -115,11 +183,17 @@ IMPORTANT: No olvide combinar las vistas con los diferentes tipos de gráficas. 
 
 La vista *Tops* nos permite visualizar cuáles han sido los eventos más destacados según el intervalo de tiempo que se haya seleccionado. Lo que visualizamos en la gráfica es la suma del total de dichos eventos mostrados como un único evento. Si pasamos el ratón por encima la gráfica, veremos el desglose del evento por día, hora y tipo de dimensión o atributo que se esté consultando.
 
+image::images/data-visualization/tops_view.png[align="center"]
+
 ==== 5.3.2 Raw
 
 Esta vista nos ofrece los datos de los eventos en bruto, por tanto, visualizaremos la totalidad de eventos por atributos segmentados por franjas de tiempo.
 
 La tabla de datos recogerá, por tanto, todos los eventos ordenados en el tiempo. Si desea ver más eventos, basta con ir al final de la tabla y aparecerán eventos anteriores.
+
+image::images/data-visualization/raw_view.png[align="center"]
+
+image::images/data-visualization/raw_detail.png[align="center"]
 
 [NOTE]
 =======================
@@ -135,10 +209,14 @@ De este modo, el usuario puede identificar de forma rápida el momento de mayor 
 
 En la tabla de datos se muestra la suma de los valores de cada intervalo de tiempo.
 
+image::images/data-visualization/compare_view.png[align="center"]
+
 ==== 5.3.4 Unique
 A través de la vista *Unique*, el usuario podrá obtener información acerca de los elementos diferentes que han interactuado, al menos, una vez con la red en un periodo de tiempo determinado.
 
 También, es posible seleccionar el grupo de atributos que se desea analizar mediante la opción *Group by*.
+
+image::images/data-visualization/unique_view.png[align="center"]
 
 === 5.4 Tipos de agregación
 El tipo de agregación permite que el usuario seleccione la unidad de medida en la que desea que se muestre la información.
@@ -159,17 +237,17 @@ NOTE: Optimice sus métricas combinando diferentes tipos de agregación con las 
 === 5.5 Granularidad
 Llamamos granularidad al grado de detalle con el que podemos visualizar los eventos. Las opciones de granuralidad varían según el rango de tiempo que se esté mostrando (1h., 2h., last week, last month, all, etc.).
 
-NOTE: La vista Raw es la más indicada para aplicar granuralidad para observar los datos en detalle.
-
 image::images/data-visualization/granularity.png[align="center"]
+
+image::images/data-visualization/raw_with_granularity.png[align="center"]
+
+NOTE: La vista Raw es la más indicada para aplicar granuralidad para observar los datos en detalle.
 
 === 5.6 Tipos de gráficas
 
 Es posible seleccionar el tipo de gráfica con el que se desean visualizar los datos obtenidos en las diferentes vistas. Las opciones son muy similares a las que se muestran en el proceso de creación de widgets personalizados del capítulo dedicado a los Dashboards.
 
-Las gráficas que se encuentran disponibles en cada momento dependerán de la vista seleccionada.
-Esta opción no aparece, por ejemplo, al aplicar la vista Map a los datos, puesto que los datos se representarán en esta vista sobre un mapa.
-En todos los tipos de gráficas se realiza una representación de los valores seleccionados en función del tiempo, de la granularidad y agregación seleccionadas y de las distintas opciones disponibles en función de la vista. A continuación se describen los distintos tipos de gráficas disponibles.
+Las gráficas que se encuentran disponibles en cada momento dependerán de la vista seleccionada. En todos los tipos de gráficas se realiza una representación de los valores seleccionados en función del tiempo, de la granularidad y agregación seleccionadas y de las distintas opciones disponibles en función de la vista. A continuación se describen los distintos tipos de gráficas disponibles.
 
 *Stacked*: composición de áreas apiladas, donde cada área representa el perfil temporal de un valor seleccionado.
 
