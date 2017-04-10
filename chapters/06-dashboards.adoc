@@ -150,4 +150,4 @@ Desde el dashboard el usuario tiene acceso directo a los widgets. En la esquina 
 
 image::images/dashboards/widget_menu.png[align="center"]
 
-CAUTION: Cuando seleccione la opción *Delete*, el sistema no le mostrará una pregunta de confirmación, por lo que debe estar seguro de que desea eliminar ese widget. En caso de que elimine un widget por accidente, recuerde que siempre puede acudir a la opción "Añadir widget" para volver a insertarlo o duplicar alguno de similares características y editarlo a continuación.
+CAUTION: Cuando seleccione la opción *Delete*, el sistema le mostrará una pregunta de confirmación. En caso de que elimine un widget por accidente, recuerde que siempre puede acudir a la opción "Añadir widget" para volver a insertarlo o duplicar alguno de similares características y editarlo a continuación.
