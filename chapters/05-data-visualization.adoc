@@ -115,11 +115,15 @@ IMPORTANT: No olvide combinar las vistas con los diferentes tipos de gráficas. 
 
 La vista *Tops* nos permite visualizar cuáles han sido los eventos más destacados según el intervalo de tiempo que se haya seleccionado. Lo que visualizamos en la gráfica es la suma del total de dichos eventos mostrados como un único evento. Si pasamos el ratón por encima la gráfica, veremos el desglose del evento por día, hora y tipo de dimensión o atributo que se esté consultando.
 
+image::images/data-visualization/tops_view.png[align="center"]
+
 ==== 5.3.2 Raw
 
 Esta vista nos ofrece los datos de los eventos en bruto, por tanto, visualizaremos la totalidad de eventos por atributos segmentados por franjas de tiempo.
 
 La tabla de datos recogerá, por tanto, todos los eventos ordenados en el tiempo. Si desea ver más eventos, basta con ir al final de la tabla y aparecerán eventos anteriores.
+
+image::images/data-visualization/raw_view.png[align="center"]
 
 [NOTE]
 =======================
@@ -135,10 +139,14 @@ De este modo, el usuario puede identificar de forma rápida el momento de mayor 
 
 En la tabla de datos se muestra la suma de los valores de cada intervalo de tiempo.
 
+image::images/data-visualization/compare_view.png[align="center"]
+
 ==== 5.3.4 Unique
 A través de la vista *Unique*, el usuario podrá obtener información acerca de los elementos diferentes que han interactuado, al menos, una vez con la red en un periodo de tiempo determinado.
 
 También, es posible seleccionar el grupo de atributos que se desea analizar mediante la opción *Group by*.
+
+image::images/data-visualization/unique_view.png[align="center"]
 
 === 5.4 Tipos de agregación
 El tipo de agregación permite que el usuario seleccione la unidad de medida en la que desea que se muestre la información.
@@ -167,9 +175,7 @@ image::images/data-visualization/granularity.png[align="center"]
 
 Es posible seleccionar el tipo de gráfica con el que se desean visualizar los datos obtenidos en las diferentes vistas. Las opciones son muy similares a las que se muestran en el proceso de creación de widgets personalizados del capítulo dedicado a los Dashboards.
 
-Las gráficas que se encuentran disponibles en cada momento dependerán de la vista seleccionada.
-Esta opción no aparece, por ejemplo, al aplicar la vista Map a los datos, puesto que los datos se representarán en esta vista sobre un mapa.
-En todos los tipos de gráficas se realiza una representación de los valores seleccionados en función del tiempo, de la granularidad y agregación seleccionadas y de las distintas opciones disponibles en función de la vista. A continuación se describen los distintos tipos de gráficas disponibles.
+Las gráficas que se encuentran disponibles en cada momento dependerán de la vista seleccionada. En todos los tipos de gráficas se realiza una representación de los valores seleccionados en función del tiempo, de la granularidad y agregación seleccionadas y de las distintas opciones disponibles en función de la vista. A continuación se describen los distintos tipos de gráficas disponibles.
 
 *Stacked*: composición de áreas apiladas, donde cada área representa el perfil temporal de un valor seleccionado.
 
