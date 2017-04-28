@@ -48,7 +48,7 @@ image::images/client-proxy/install-07.png[align="center"]
 
 Se pueden dar de alta sensores gestionados por el client proxy de una manera muy similar a como se hace en el cluster directamente. Para ello, hay que ir a la vista de sensores, y en la fila del client proxy, a la derecha, aparece el botón del menú, al hacer click aparecerán las opciones siguientes:
 
-* *Edit*: Accede a la vista de edición del client proxy.
+* *Edit*: Accede a la vista de información del client proxy.
 * *Add Sensor*: Permite añadir sensores al client proxy.
 
 image::images/client-proxy/install-08.png[align="center"]
@@ -153,5 +153,10 @@ Updated:
 
 Complete!
 ----
+
+[NOTE]
+===============================
+Este proceso puede tardar varios minutos
+===============================
 
 Tras esto, el client proxy estará actualizado a la última versión disponible en el repositorio.
