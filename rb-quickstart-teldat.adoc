@@ -30,3 +30,5 @@ include::chapters/05-data-visualization.adoc[]
 include::chapters/06-dashboards.adoc[]
 
 include::chapters/07-update.adoc[]
+
+include::chapters/08-client-proxy.adoc[]
