@@ -129,7 +129,7 @@ Una vez finalizado, aceptamos y se iniciará el proceso de configuración.
 
 [NOTE]
 ===============================
-Este proceso puede tardar varios minutos
+Este proceso puede tardar desde varios minutos a 2 horas dependiendo de la capacidad del manager que se esté instalando. Esto es debido principalmente a que en la primera instalación hay que alimentar la base de datos con un número importante de valores iniciales, pero en las sucesivas actualizaciones ya no será necesario.
 ===============================
 
 *Primera conexión a la aplicación web*
